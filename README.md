@@ -1,10 +1,5 @@
-### Hi there 👋
-
-<!--
-**Cheesewaffly/Cheesewaffly** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
+## Hi there! I'm Cheesewaffle, but my real name is Alden Luthfi 👋 
+[![Cheesewaffly's GitHub stats](https://github-readme-stats.vercel.app/api?username=Cheesewaffly&hide=prs&show_icons=true&include_all_commits=true&icon_color=f2c96d&bg_color=13161d&text_color=78fffd&border_color=2b3242&border_radius=10&title_color=44a3ff)](https://github.com/Cheesewaffly)
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning ...
 - 👯 I’m looking to collaborate on ...
@@ -13,4 +8,9 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+
+<!--
+**Cheesewaffly/Cheesewaffly** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
 -->
