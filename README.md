@@ -3,3 +3,6 @@
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Cheesewaffly&layout=compact&theme=github_dark&card_width=445&border_color=161b22)]([https://github.com/anuraghazra/github-readme-stats](https://github.com/Cheesewaffly))
 
+#### Interested in:
+- Graphic design (Ps, Ai, Ae, and Pr)
+- Programming (C, C++, Python, Java, etc.)
