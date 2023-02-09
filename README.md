@@ -2,7 +2,7 @@
 <h3 align = "center">Computer Science Student at the University of Indonesia</h3>
 
 ```python3
-def interests() -> str:
+def interests():
     s = ""
   
     a = [45, 103, 105, 32, 99, 97, 97, 10, 121, 114, 10, 110, 114]
@@ -14,7 +14,7 @@ def interests() -> str:
     for i, (sa, sb, sc, sd, se) in enumerate(zip(a, b, c, d, e)):
         s += str(chr(sa)) + sb.decode() + sc + f'{chr(d[i * 5 + 3])}' + se
   
-    return s
+    print(s)
 ```
 <p align = "left"><img align="center" src="https://github-readme-stats.vercel.app/api?username=Cheesewaffly&hide=prs&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true" alt="Github Stats" /></p>  
 <p align = "left"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cheesewaffly&layout=compact&theme=transparent&card_width=415&hide_border=true&exclude_repo=Sarwacatur" alt="Top Languages" /></p>
