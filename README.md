@@ -18,35 +18,35 @@ def interests() -> str:
         s += str(chr(sa)) + sb.decode() + sc + f'{chr(d[i * 6 + 3])}' + se + sf
   
     print(s)
+
+if __name__ == "__main__":
+    interests()
 ```
 ```java
-public static void skills() {
-    String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+public class Skills {
+    public static void main(String[] args) {
+        String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+        String a = "LSBFbmdsaXNoIGFuZCBJbmRvbmVzaWFuCi0gQWRvYmUgQXBwcyAoQUUsIE";
+        String b = "FJLCBQUywgYW5kIFBSKQotIFByb2dyYW1taW5nIExhbmd1YWdlcyAoSmF2";
+        String c = "YSwgUHl0aG9uLCBIYXNrZWxsLCBDLCBDKysp";
 
-    String a = "LSBFbmdsaXNoIGFuZCBJbmRvbmVzaWFuCi0gQWRvYmUgQXBwcyAoQUUsIE";
-    String b = "FJLCBQUywgYW5kIFBSKQotIFByb2dyYW1taW5nIExhbmd1YWdlcyAoSmF2";
-    String c = "YSwgUHl0aG9uLCBIYXNrZWxsLCBDLCBDKysp";
+        for (int i = 0; i < (a + b + c).length(); i += 4) {
+            String sub = (a + b + c).substring(i, i + 4);
 
-    String b64 = a + b + c, s = "";
+            int chunk = 0, mask1 = 0xFF0000, mask2 = 0xFF00, mask3 = 0xFF;
 
-    for (int i = 0; i < b64.length(); i += 4) {
-        String sub = b64.substring(i, i + 4);
+            chunk |= alphabet.indexOf(sub.charAt(0)) << 18;
+            chunk |= alphabet.indexOf(sub.charAt(1)) << 12;
+            chunk |= alphabet.indexOf(sub.charAt(2)) << 6;
+            chunk |= alphabet.indexOf(sub.charAt(3));
 
-        int chunk = 0;
-
-        chunk |= alphabet.indexOf(sub.charAt(0)) << 18;
-        chunk |= alphabet.indexOf(sub.charAt(1)) << 12;
-        chunk |= alphabet.indexOf(sub.charAt(2)) << 6;
-        chunk |= alphabet.indexOf(sub.charAt(3));
-
-        int mask1 = 0xFF0000, mask2 = 0xFF00, mask3 = 0xFF;
-
-        s += (char) ((chunk & mask1) >>> 16);
-        s += (char) ((chunk & mask2) >>> 8);
-        s += (char) (chunk & mask3);
+            System.out.printf("%c", (chunk & mask1) >>> 16);
+            System.out.printf("%c", (chunk & mask2) >>> 8);
+            System.out.printf("%c", chunk & mask3);
+        }
+        
+        System.out.print("\n");
     }
-
-    System.out.println(s);
 }
 ```
 
