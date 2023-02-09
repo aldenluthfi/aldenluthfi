@@ -17,5 +17,35 @@ def interests() -> str:
   
     print(s)
 ```
+```java
+public static skills() {
+    String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+    String a = "LSBFbmdsaXNoIGFuZCBJbmRvbmVzaWFuCi0gQWRvYmUgQXBwcyAoQUUsIE";
+    String b = "FJLCBQUywgYW5kIFBSKQotIFByb2dyYW1taW5nIExhbmd1YWdlcyAoSmF2";
+    String c = "YSwgUHl0aG9uLCBIYXNrZWxsLCBDLCBDKysp";
+
+    String b64 = a + b + c, s = "";
+
+    for (int i = 0; i < b64.length(); i += 4) {
+        String sub = b64.substring(i, i + 4);
+
+        int chunk = 0;
+
+        chunk |= alphabet.indexOf(sub.charAt(0)) << 18;
+        chunk |= alphabet.indexOf(sub.charAt(1)) << 12;
+        chunk |= alphabet.indexOf(sub.charAt(2)) << 6;
+        chunk |= alphabet.indexOf(sub.charAt(3));
+
+        int mask1 = 0xFF0000, mask2 = 0xFF00, mask3 = 0xFF;
+
+        s += (char) ((chunk & mask1) >>> 16);
+        s += (char) ((chunk & mask2) >>> 8);
+        s += (char) (chunk & mask3);
+    }
+
+    System.out.println(s);
+}
+```
 <p align = "left"><img align="center" src="https://github-readme-stats.vercel.app/api?username=Cheesewaffly&hide=prs&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true" alt="Github Stats" /></p>  
 <p align = "left"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cheesewaffly&layout=compact&theme=transparent&card_width=415&hide_border=true&exclude_repo=Sarwacatur" alt="Top Languages" /></p>
