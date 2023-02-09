@@ -18,7 +18,7 @@ def interests() -> str:
     print(s)
 ```
 ```java
-public static skills() {
+public static void skills() {
     String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
     String a = "LSBFbmdsaXNoIGFuZCBJbmRvbmVzaWFuCi0gQWRvYmUgQXBwcyAoQUUsIE";
