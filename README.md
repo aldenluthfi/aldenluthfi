@@ -2,15 +2,15 @@
 <h3 align = "center">Computer Science Student at the University of Indonesia</h3>
 
 ```python3
-def interests():
-    s = ""
+def interests() -> str:
+    s: str = ""
   
-    a = [45, 110, 111, 32, 109, 10, 112, 112, 77, 111]
-    b = [b' ', b'g', b'g', b'M', b'a', b'-', b't', b'h', b'a', b'r']
-    c = "C\niat oyne"
-    d = {3: 111, 9: 45, 15: 99, 21: 116, 27: 105, 33: 67, 39: 103, 45: 10, 51: 121, 57: 46}
-    e = "d \nhcrr- ."
-    f = 0x694C2D65737961204D2E.to_bytes(10, 'big').decode()
+    a: list[int] = [45, 110, 111, 32, 109, 10, 112, 112, 77, 111]
+    b: list[bytes] = [b' ', b'g', b'g', b'M', b'a', b'-', b't', b'h', b'a', b'r']
+    c: str = "C\niat oyne"
+    d: dict[int, int] = {3: 111, 9: 45, 15: 99, 21: 116, 27: 105, 33: 67, 39: 103, 45: 10, 51: 121, 57: 46}
+    e: str = "d \nhcrr- ."
+    f: str = 0x694C2D65737961204D2E.to_bytes(10, 'big').decode()
     
     for i, (sa, sb, sc, sd, se, sf) in enumerate(zip(a, b, c, d, e, f)):
         s += str(chr(sa)) + sb.decode() + sc + f'{chr(d[i * 6 + 3])}' + se + sf
