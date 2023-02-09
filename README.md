@@ -15,7 +15,7 @@ def interests() -> str:
     for i, (sa, sb, sc, sd, se, sf) in enumerate(zip(a, b, c, d, e, f)):
         s += str(chr(sa)) + sb.decode() + sc + f'{chr(d[i * 6 + 3])}' + se + sf
   
-    return s
+    print(s)
 ```
 <p align = "left"><img align="center" src="https://github-readme-stats.vercel.app/api?username=Cheesewaffly&hide=prs&show_icons=true&include_all_commits=true&theme=transparent&hide_border=true" alt="Github Stats" /></p>  
 <p align = "left"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cheesewaffly&layout=compact&theme=transparent&card_width=415&hide_border=true&exclude_repo=Sarwacatur" alt="Top Languages" /></p>
