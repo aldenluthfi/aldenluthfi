@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'heading';
+    src: url('../../../static/fonts/GreycliffCF-Heavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'heading-italic';
+    src: url('../../../static/fonts/GreycliffCF-HeavyOblique.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'body';
+    src: url('../../../static/fonts/FiraCode-Retina.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'body-bold';
+    src: url('../../../static/fonts/FiraCode-Bold.ttf') format('truetype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
