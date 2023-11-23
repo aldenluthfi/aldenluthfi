@@ -8,15 +8,30 @@
     src: url('../../../static/fonts/GreycliffCF-HeavyOblique.otf') format('opentype');
 }
 
-
 @font-face {
     font-family: 'body';
-    src: url('../../../static/fonts/FiraCode-Retina.ttf') format('truetype');
+    src: url('../../../static/fonts/CartographCF-Regular.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'body-bold';
-    src: url('../../../static/fonts/FiraCode-Bold.ttf') format('truetype');
+    src: url('../../../static/fonts/CartographCF-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'body-italic';
+    src: url('../../../static/fonts/CartographCF-RegularItalic.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'body-bold-italic';
+    src: url('../../../static/fonts/CartographCF-BoldItalic.otf') format('opentype');
+}
+
+
+@font-face {
+    font-family: 'code';
+    src: url('../../../static/fonts/FiraCode-Retina.ttf') format('truetype');
 }
 
 @tailwind base;

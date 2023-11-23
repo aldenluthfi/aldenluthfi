@@ -5,6 +5,8 @@
  * https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js
  */
 
+const colors = require('tailwindcss/colors')
+
 module.exports = {
     content: [
         /**
@@ -47,25 +49,70 @@ module.exports = {
                 '10xl': ['10rem', '10rem'],
                 '11xl': ['12rem', '12rem'],
                 '12xl': ['14rem', '14rem'],
-                '14xl': ['16rem', '16rem'],
-                '16xl': ['18rem', '18rem'],
+                '13xl': ['16rem', '16rem'],
+                '14xl': ['18rem', '18rem'],
             },
             fontFamily: {
                 'heading': ['heading', 'sans-serif'],
                 'heading-italic': ['heading-italic', 'sans-serif'],
+                'code': [
+                    "'code', 'sans-serif'",
+                    {
+                        fontFeatureSettings: '"ss10", "ss01", "ss04", "cv30", "cv14", "ss07", "cv30", "ss09", "cv12"',
+                    }
+                ],
                 'body': [
                     "'body', 'sans-serif'",
                     {
-                        fontFeatureSettings: '"ss10", "ss01", "ss04", "cv30", "cv14", "ss07", "cv30", "ss09", "cv12"',
+                        fontFeatureSettings: '"ss05", "liga", "ss02"',
                     }
                 ],
                 'body-bold': [
                     "'body-bold', 'sans-serif'",
                     {
-                        fontFeatureSettings: '"ss10", "ss01", "ss04", "cv30", "cv14", "ss07", "cv30", "ss09", "cv12"',
+                        fontFeatureSettings: '"ss05", "liga", "ss02"',
+                    }
+                ],
+                'body-italic': [
+                    "'body-italic', 'sans-serif'",
+                    {
+                        fontFeatureSettings: '"ss05", "liga", "ss02"',
+                    }
+                ],
+                'body-bold-italic': [
+                    "'body-bold-italic', 'sans-serif'",
+                    {
+                        fontFeatureSettings: '"ss05", "liga", "ss02"',
                     }
                 ],
             },
+            screens: {
+                'tablet': '768px',
+                'desktop': '1024px',
+            },
+            colors: {
+                'transparent': 'transparent',
+
+                'bg-primary': colors.white,
+                'bg-secondary': colors.slate[100],
+                'text': colors.neutral[950],
+
+                'accent-primary': {
+                    '50': '#ffffea',
+                    '100': '#fffcc5',
+                    '200': '#fffa85',
+                    '300': '#fff046',
+                    '400': '#ffe21b',
+                    '500': '#ffc300',
+                    '600': '#e29700',
+                    '700': '#bb6b02',
+                    '800': '#985308',
+                    '900': '#7c430b',
+                    '950': '#482300',
+                },
+
+                'accent-secondary': colors.slate
+            }
         },
     },
     plugins: [
@@ -73,7 +120,7 @@ module.exports = {
          * '@tailwindcss/forms' is the forms plugin that provides a minimal styling
          * for forms. If you don't like it or have own styling for forms,
          * comment the line below to disable '@tailwindcss/forms'.
-         */
+        **/
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/line-clamp'),

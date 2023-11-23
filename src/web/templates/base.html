@@ -11,10 +11,12 @@
   {% tailwind_css %}
 </head>
 
-<body>
+<body class="flex flex-col">
   {% include 'header.html' %}
-  {% block content %}
-  {% endblock %}
+  <main class="relative h-screen w-screen">
+    {% block content %}
+    {% endblock %}
+  </main>
   {% include 'footer.html' %}
 </body>
 
