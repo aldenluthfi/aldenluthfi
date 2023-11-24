@@ -1,0 +1,28 @@
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    deploy:
+        name: deploy website
+        runs-on: ubuntu-latest
+        steps:
+            - name: create ssh keys
+              run: |
+                mkdir -p ~/.ssh/
+                echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/key
+                chmod 600 ~/.ssh/key
+                ssh-keyscan -H aldenluth.fi > ~/.ssh/known_hosts
+            - name: connect and pull
+              run: ssh root@aldenluth.fi
+            - name: go to directory
+              run: cd /src/django-web
+            - name: clean docker
+              run: |
+                docker stop $(docker ps -a -q)
+                docker system prune -a -f
+            - name: build docker
+              run: docker-compose -d --build
+            - name: cleanup
+              run: rm -rf ~/.ssh
