@@ -16,7 +16,9 @@ jobs:
             - name: connect and pull
               run: ssh root@aldenluth.fi
             - name: go to directory
-              run: cd aldenluthfi/src/django-web
+              run: |
+                ls -al
+                cd aldenluthfi/src/django-web
             - name: clean docker
               run: |
                 docker stop $(docker ps -a -q)
