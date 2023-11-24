@@ -1,11 +1,11 @@
 FROM python:3.11-bullseye
 
-RUN apt-get update \
-  && apt-get install -y build-essential curl \
-  && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
-  && apt-get install -y nodejs --no-install-recommends \
-  && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
-  && apt-get clean
+RUN apt-get update
+RUN apt-get install -y build-essential curl
+RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN apt-get install -y nodejs --no-install-recommends
+RUN rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man
+RUN apt-get clean
 
 RUN python -m pip install --upgrade pip
 
