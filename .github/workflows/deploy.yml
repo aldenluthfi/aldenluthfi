@@ -1,3 +1,4 @@
+name: deployment
 on:
     push:
         branches:
@@ -14,16 +15,6 @@ jobs:
                 echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
                 ssh-keyscan -H aldenluth.fi > ~/.ssh/known_hosts
             - name: connect and pull
-              run: ssh root@aldenluth.fi
-            - name: go to directory
-              run: |
-                ls -al
-                cd aldenluthfi/src/django-web
-            - name: clean docker
-              run: |
-                docker stop $(docker ps -a -q)
-                docker system prune -a -f
-            - name: build docker
-              run: docker-compose -d --build
+              run: ssh root@aldenluth.fi "cd aldenluthfi/src/django-web && docker stop $(docker ps -a -q) && docker system prune -a -f && docker-compose -d --build"
             - name: cleanup
               run: rm -rf ~/.ssh
