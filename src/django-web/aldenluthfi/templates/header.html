@@ -1,10 +1,12 @@
-<header class="fixed top-0 z-50 w-screen bg-bg-primary">
+<header class="fixed top-0 z-50 w-screen bg-bg-primary shadow-md">
   <nav class="flex justify-between items-center h-20">
     <div class="pl-6 w-48">
-      <a href="{% url 'main:main' %}" class="font-heading text-2xl">aldenluth.fi</a>
+      <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
+        aldenluth.fi
+      </a>
     </div>
 
-    <div class="hidden tablet:grid font-body text-sm">
+    <div class="hidden tablet:grid font-body text-sm text-text">
       <ul class="tablet:grid gap-6 grid-cols-3">
         <li>
           <a href="">Projects</a>
@@ -39,8 +41,8 @@
         </svg>
       </div>
 
-      <div class="justify-end tablet:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-text stroke-1" width="35" height="35"
+      <div class="tablet:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-text stroke-1" width="35" height="35"
           viewBox="-1 -1 25 25" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M4 6l16 0" />

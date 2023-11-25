@@ -93,9 +93,9 @@ module.exports = {
             colors: {
                 'transparent': 'transparent',
 
-                'bg-primary': colors.white,
-                'bg-secondary': colors.slate[100],
-                'text': colors.neutral[950],
+                'bg-primary': colors.zinc[50],
+                'bg-secondary': colors.zinc[100],
+                'text': colors.zinc[900],
 
                 'accent-primary': {
                     '50': '#ffffea',
@@ -111,7 +111,7 @@ module.exports = {
                     '950': '#482300',
                 },
 
-                'accent-secondary': colors.slate
+                'accent-secondary': colors.zinc
             }
         },
     },
