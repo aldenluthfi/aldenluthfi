@@ -19,6 +19,5 @@ services:
       - django_gunicorn
 
 volumes:
-  static:
   - /etc/letsencrypt/ssl/fullchain.pem:/etc/nginx/ssl/fullchain.pem
   - /etc/letsencrypt/ssl/privkey.pem:/etc/nginx/ssl/privkey.pem
