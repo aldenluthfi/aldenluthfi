@@ -35,9 +35,7 @@
 }
 
 :root {
-  --light: #fff4d7;
-  --dark: #202020;
-  --transparent: rgba(255, 255, 255, 0);
+    cursor: none !important;
 }
 
 *,
