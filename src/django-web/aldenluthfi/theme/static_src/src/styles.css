@@ -34,6 +34,20 @@
     src: url('../../../static/fonts/FiraCode-Retina.ttf') format('truetype');
 }
 
+:root {
+  --light: #fff4d7;
+  --dark: #202020;
+  --transparent: rgba(255, 255, 255, 0);
+}
+
+*,
+*:before,
+*:after,
+a,
+button {
+  @apply cursor-none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
