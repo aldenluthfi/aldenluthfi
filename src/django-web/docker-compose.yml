@@ -15,9 +15,10 @@ services:
       - "80:80"
     volumes:
       - static:/staticfiles
+      - /etc/letsencrypt/live/aldenluth.fi/fullchain.pem:/etc/letsencrypt/live/aldenluth.fi/fullchain.pem
+      - /etc/letsencrypt/live/aldenluth.fi/privkey.pem:/etc/letsencrypt/live/aldenluth.fi/privkey.pem
     depends_on:
       - django_gunicorn
 
 volumes:
-  - /etc/letsencrypt/ssl/fullchain.pem:/etc/nginx/ssl/fullchain.pem
-  - /etc/letsencrypt/ssl/privkey.pem:/etc/nginx/ssl/privkey.pem
+  static:
