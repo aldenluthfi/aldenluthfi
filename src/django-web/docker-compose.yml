@@ -4,6 +4,8 @@ services:
   django_gunicorn:
     volumes:
       - static:/staticfiles
+      - /etc/letsencrypt/live/aldenluth.fi/fullchain.pem:/etc/letsencrypt/live/aldenluth.fi/fullchain.pem
+      - /etc/letsencrypt/live/aldenluth.fi/privkey.pem:/etc/letsencrypt/live/aldenluth.fi/privkey.pem
     env_file:
       - .env
     build: .
