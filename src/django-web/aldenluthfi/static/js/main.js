@@ -26,7 +26,7 @@ window.addEventListener(
         classList.remove('w-4')
         classList.remove('h-2')
         classList.remove('w-2')
-        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON")) {
+        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
             classList.add('h-6')
             classList.add('w-6')
         } else {
@@ -49,7 +49,7 @@ window.addEventListener(
         classList.remove('w-4')
         classList.remove('h-2')
         classList.remove('w-2')
-        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON")) {
+        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
             classList.add('w-10')
             classList.add('h-10')
         } else {
@@ -61,14 +61,14 @@ window.addEventListener(
 )
 
 function setClickable(target) {
-    const clickables = target.querySelectorAll("a, button");
+    const clickables = target.querySelectorAll("a, button, .clickable");
     clickables.forEach(clickable => {
         clickable.addEventListener(
             "mouseover",
             function (e) {
                 let classList = cursorDot.classList
-                classList.toggle('bg-transparent')
-                classList.toggle('bg-accent-primary-500')
+                classList.remove('bg-transparent')
+                classList.add('bg-accent-primary-500')
                 classList.remove('w-10')
                 classList.remove('h-10')
                 classList.remove('h-6')
@@ -90,8 +90,8 @@ function setClickable(target) {
             "mouseleave",
             function (e) {
                 let classList = cursorDot.classList
-                classList.toggle('bg-transparent')
-                classList.toggle('bg-accent-primary-500')
+                classList.add('bg-transparent')
+                classList.remove('bg-accent-primary-500')
                 classList.remove('w-10')
                 classList.remove('h-10')
                 classList.remove('h-6')
