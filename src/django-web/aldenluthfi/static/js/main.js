@@ -9,7 +9,7 @@ window.addEventListener(
         cursorDot.animate({
             left: `${e.clientX}px`,
             top: `${e.clientY}px`,
-        }, { duration: 100, fill: "forwards" });
+        }, { duration: 500, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
     }
 )
 
