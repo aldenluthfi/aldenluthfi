@@ -33,9 +33,9 @@ module.exports = {
          * patterns match your project structure.
          */
         /* JS 1: Ignore any JavaScript in node_modules folder. */
-        // '!../../**/node_modules',
+        '!../../**/node_modules',
         /* JS 2: Process all JavaScript files in the project. */
-        // '../../**/*.js',
+        '../../**/*.js',
 
         /**
          * Python: If you use Tailwind CSS classes in Python, uncomment the following line
@@ -45,6 +45,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            transitionTimingFunction: {
+                'bounce': 'cubic-bezier(0.59,-0.14,0.56,1.8)',
+            },
             fontSize: {
                 '10xl': ['10rem', '10rem'],
                 '11xl': ['12rem', '12rem'],
