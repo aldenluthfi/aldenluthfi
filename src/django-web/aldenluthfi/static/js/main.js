@@ -5,7 +5,9 @@ var mouseDown = 0;
 window.addEventListener(
     "mousemove",
     function (e) {
-        cursorDot.classList.remove('hidden')
+        if (document.body.clientWidth < 768) {
+            cursorDot.classList.remove('hidden')
+        }
         cursorDot.animate({
             left: `${e.clientX}px`,
             top: `${e.clientY}px`,
