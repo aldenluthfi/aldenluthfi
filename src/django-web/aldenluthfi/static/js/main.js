@@ -19,6 +19,9 @@ lightMode.addEventListener("click", function () {
 window.addEventListener(
     "mousemove",
     function (e) {
+        if (document.body.clientWidth >= 768) {
+            cursorDot.classList.remove('hidden')
+        }
         cursorDot.animate({
             left: `${e.clientX}px`,
             top: `${e.clientY}px`,
