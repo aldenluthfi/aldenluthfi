@@ -8,6 +8,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+    darkMode: 'class',
     content: [
         /**
          * HTML. Paths to Django template files that will contain Tailwind CSS classes.
@@ -36,6 +37,8 @@ module.exports = {
         '!../../**/node_modules',
         /* JS 2: Process all JavaScript files in the project. */
         '../../**/*.js',
+
+        '../../**/*.svg',
 
         /**
          * Python: If you use Tailwind CSS classes in Python, uncomment the following line
@@ -100,6 +103,10 @@ module.exports = {
                 'bg-secondary': colors.zinc[100],
                 'text': colors.zinc[900],
 
+                'bg-primary-dark': colors.zinc[900],
+                'bg-secondary-dark': colors.zinc[800],
+                'text-dark': colors.zinc[50],
+
                 'accent-primary': {
                     '50': '#ffffea',
                     '100': '#fffcc5',
@@ -112,6 +119,19 @@ module.exports = {
                     '800': '#985308',
                     '900': '#7c430b',
                     '950': '#482300',
+                },
+
+                'accent-primary-dark': {
+                    '950': '#ffffea',
+                    '900': '#fffcc5',
+                    '800': '#fffa85',
+                    '700': '#fff046',
+                    '600': '#ffe21b',
+                    '500': '#ffc300',
+                    '400': '#e29700',
+                    '300': '#bb6b02',
+                    '200': '#985308',
+                    '100': '#7c430b',
                 },
 
                 'accent-secondary': colors.zinc

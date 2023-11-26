@@ -1,12 +1,12 @@
-<header class="fixed top-0 z-10 w-screen bg-bg-primary">
+<header class="fixed top-0 z-10 w-screen bg-bg-primary dark:bg-bg-primary-dark">
   <nav class="flex justify-between items-center h-20">
     <div class="pl-6 w-48">
-      <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
+      <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text dark:text-text-dark">
         aldenluth.fi
       </a>
     </div>
 
-    <div class="hidden tablet:grid font-body text-sm text-text">
+    <div class="hidden tablet:grid font-body text-sm text-text dark:text-text-dark">
       <ul class="tablet:grid gap-6 grid-cols-3">
         <li>
           <a href="">Projects</a>
@@ -21,9 +21,9 @@
     </div>
 
     <div class="flex space-x-2 justify-end items-center pr-6 w-48">
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-text stroke-1" width="30" height="30"
-          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+      <div class="language">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-text dark:stroke-text-dark stroke-1"
+          width="30" height="30" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M4 5h7" />
           <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
@@ -33,17 +33,33 @@
         </svg>
       </div>
 
-      <div>
-        <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-text stroke-1" width="30" height="30"
-          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+      <button class="dark-mode">
+        <svg xmlns="http://www.w3.org/2000/svg" class="moon fill-transparent stroke-text dark:stroke-text-dark stroke-1"
+          width="30" height="30" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
         </svg>
-      </div>
+      </button>
 
-      <div class="tablet:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-text stroke-1" width="30" height="30"
-          viewBox="1 1 22 22" stroke-linecap="round" stroke-linejoin="round">
+      <button class="hidden light-mode">
+        <svg xmlns="http://www.w3.org/2000/svg" class="moon fill-transparent stroke-text dark:stroke-text-dark stroke-1"
+          width="30" height="30" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" />
+          <path d="M6.343 17.657l-1.414 1.414" />
+          <path d="M6.343 6.343l-1.414 -1.414" />
+          <path d="M17.657 6.343l1.414 -1.414" />
+          <path d="M17.657 17.657l1.414 1.414" />
+          <path d="M4 12h-2" />
+          <path d="M12 4v-2" />
+          <path d="M20 12h2" />
+          <path d="M12 20v2" />
+        </svg>
+      </button>
+
+      <div class="burger tablet:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-transparent stroke-text dark:stroke-text-dark stroke-1"
+          width="30" height="30" viewBox="1 1 22 22" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M4 15h16a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
           <path d="M12 4c3.783 0 6.953 2.133 7.786 5h-15.572c.833 -2.867 4.003 -5 7.786 -5z" />

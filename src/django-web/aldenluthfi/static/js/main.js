@@ -1,11 +1,25 @@
-const cursorDot = document.getElementsByClassName("cursor")[0];
+const cursorDot = document.querySelector(".cursor");
+const darkMode = document.querySelector(".dark-mode");
+const lightMode = document.querySelector(".light-mode");
 
 var mouseDown = 0;
+
+darkMode.addEventListener("click", function () {
+    document.documentElement.classList.add("dark");
+    lightMode.classList.toggle("hidden");
+    darkMode.classList.toggle("hidden");
+});
+
+lightMode.addEventListener("click", function () {
+    document.documentElement.classList.remove("dark");
+    lightMode.classList.toggle("hidden");
+    darkMode.classList.toggle("hidden");
+});
 
 window.addEventListener(
     "mousemove",
     function (e) {
-        if (document.body.clientWidth < 768) {
+        if (document.body.clientWidth >= 768) {
             cursorDot.classList.remove('hidden')
         }
         cursorDot.animate({

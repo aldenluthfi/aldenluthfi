@@ -40,10 +40,20 @@
 
 *,
 *:before,
-*:after,
-a,
-button {
+*:after {
   @apply cursor-none;
+}
+
+a {
+    @apply cursor-none;
+}
+
+button {
+    cursor: none !important;
+}
+
+svg {
+  pointer-events: none;
 }
 
 @tailwind base;
