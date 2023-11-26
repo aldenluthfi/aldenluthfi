@@ -34,26 +34,12 @@
     src: url('../../../static/fonts/FiraCode-Retina.ttf') format('truetype');
 }
 
-:root {
-    cursor: none !important;
-}
-
 *,
 *:before,
-*:after {
-  @apply cursor-none;
-}
-
-a {
-    @apply cursor-none;
-}
-
+*:after,
+a,
 button {
-    cursor: none !important;
-}
-
-svg {
-  pointer-events: none;
+  @apply cursor-none !important;
 }
 
 @tailwind base;

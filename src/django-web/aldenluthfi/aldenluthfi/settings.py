@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'tailwind',
     'theme',
     'django_browser_reload',
+    'svg',
 
     'main',
     'errors',
@@ -143,6 +144,11 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/staticfiles/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
+]
+
+SVG_DIRS = [
+    BASE_DIR / "static/icons",
+    BASE_DIR / "static/img"
 ]
 
 # Default primary key field type
