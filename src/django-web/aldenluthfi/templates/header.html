@@ -1,5 +1,5 @@
 {% load svg %}
-<header class="fixed top-0 z-10 w-screen bg-bg-primary">
+<header class="fixed top-0 z-10 w-screen bg-backgorund">
   <nav class="flex justify-between items-center h-20">
     <div class="pl-6 w-48">
       <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
@@ -8,14 +8,14 @@
     </div>
 
     <div class="hidden tablet:grid font-body text-sm text-text">
-      <ul class="tablet:grid gap-2 grid-cols-3">
-        <li class="py-2 px-3 rounded-md hover:bg-accent-primary-300 duration-200 ease-in-out clickable">
+      <ul class="tablet:grid gap-6 grid-cols-3">
+        <li class="py-2 px-3 rounded-md bg-buttons-default hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
           <a href="">Projects</a>
         </li>
-        <li class="py-2 px-3 rounded-md hover:bg-accent-primary-300  duration-200 ease-in-out clickable">
+        <li class="py-2 px-3 rounded-md bg-buttons-default hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
           <a href="">Writings</a>
         </li>
-        <li class="py-2 px-3 rounded-md hover:bg-accent-primary-300  duration-200 ease-in-out clickable">
+        <li class="py-2 px-3 rounded-md bg-buttons-default hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
           <a href="">Contacts</a>
         </li>
       </ul>

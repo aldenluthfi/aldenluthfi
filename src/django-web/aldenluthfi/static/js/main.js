@@ -68,7 +68,7 @@ function setClickable(target) {
             function (e) {
                 let classList = cursorDot.classList
                 classList.remove('bg-transparent')
-                classList.add('bg-accent-primary-500')
+                classList.add('bg-accent')
                 classList.remove('w-10')
                 classList.remove('h-10')
                 classList.remove('h-6')
@@ -91,7 +91,7 @@ function setClickable(target) {
             function (e) {
                 let classList = cursorDot.classList
                 classList.add('bg-transparent')
-                classList.remove('bg-accent-primary-500')
+                classList.remove('bg-accent')
                 classList.remove('w-10')
                 classList.remove('h-10')
                 classList.remove('h-6')
