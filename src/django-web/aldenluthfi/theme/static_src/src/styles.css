@@ -34,10 +34,6 @@
     src: url('../../../static/fonts/FiraCode-Retina.ttf') format('truetype');
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 *,
 *:before,
 *:after,
@@ -958,3 +954,7 @@ button {
 
     --accent: var(--rose-500);
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
