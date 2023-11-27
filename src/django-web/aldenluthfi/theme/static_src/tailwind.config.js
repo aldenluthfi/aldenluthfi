@@ -4,9 +4,6 @@
  * If you need the full config, get it from here:
  * https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js
  */
-
-const colors = require('tailwindcss/colors')
-
 module.exports = {
     darkMode: 'class',
     content: [
@@ -49,6 +46,9 @@ module.exports = {
     ],
     theme: {
         extend: {
+            transitionDuration: {
+                '50': '50ms',
+            },
             transitionTimingFunction: {
                 'bounce': 'cubic-bezier(0.59,-0.14,0.56,1.8)',
             },
@@ -99,6 +99,7 @@ module.exports = {
             },
             colors: {
                 'transparent': 'transparent',
+                'current': 'currentColor',
 
                 /* Theme Colors */
                 'background': 'rgba(var(--background) / <alpha-value>)',

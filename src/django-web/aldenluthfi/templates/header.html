@@ -1,13 +1,13 @@
 {% load svg %}
-<header class="fixed top-0 z-10 w-screen bg-backgorund">
-  <nav class="flex justify-between items-center h-20">
-    <div class="pl-6 w-48">
+<header class="fixed top-0 z-10 w-screen bg-backgrund">
+  <nav class="flex justify-between items-start h-20">
+    <div class="pl-6 w-48 my-auto">
       <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
         aldenluth.fi
       </a>
     </div>
 
-    <div class="hidden tablet:grid font-body text-sm text-text">
+    <div class="hidden w-screen tablet:flex justify-center font-body text-sm text-text my-auto">
       <ul class="tablet:grid gap-6 grid-cols-3">
         <li
           class="py-2 px-3 rounded-md bg-buttons-default hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
@@ -24,19 +24,41 @@
       </ul>
     </div>
 
-    <div class="flex space-x-2 justify-end items-center pr-6 w-48">
-
+    <div class="flex space-x-2 pr-6 w-48 my-auto justify-end">
       <button class="language">
         {% svg 'language' %}
       </button>
 
-      <button class="dark-mode">
-        {% svg 'moon' %}
-      </button>
+      <div class="relative flex flex-col justify-center items-center">
+        <button class="dark-mode peer">
+          {% svg 'moon' %}
+        </button>
 
-      <button class="hidden light-mode">
-        {% svg 'sun' %}
-      </button>
+        <button class="light-mode peer hidden">
+          {% svg 'sun' %}
+        </button>
+
+        <div class="hue-selector h-0 peer-hover:h-fit peer-hover:p-2 hover:h-fit hover:p-2 absolute top-[30px] duration-50 flex flex-col space-y-1 items-center bg-card-background rounded-md overflow-auto no-scrollbar m-2">
+          <button class="hue-neutral">{% svg 'hue-neutral' %}</button>
+          <button class="hue-red">{% svg 'hue-red' %}</button>
+          <button class="hue-orange">{% svg 'hue-orange' %}</button>
+          <button class="hue-amber">{% svg 'hue-amber' %}</button>
+          <button class="hue-yellow">{% svg 'hue-yellow' %}</button>
+          <button class="hue-lime">{% svg 'hue-lime' %}</button>
+          <button class="hue-green">{% svg 'hue-green' %}</button>
+          <button class="hue-emerald">{% svg 'hue-emerald' %}</button>
+          <button class="hue-teal">{% svg 'hue-teal' %}</button>
+          <button class="hue-cyan">{% svg 'hue-cyan' %}</button>
+          <button class="hue-sky">{% svg 'hue-sky' %}</button>
+          <button class="hue-bue">{% svg 'hue-blue' %}</button>
+          <button class="hue-indigo">{% svg 'hue-indigo' %}</button>
+          <button class="hue-violet">{% svg 'hue-indigo' %}</button>
+          <button class="hue-purple">{% svg 'hue-purple' %}</button>
+          <button class="hue-fuchsia">{% svg 'hue-fuchsia' %}</button>
+          <button class="hue-pink">{% svg 'hue-pink' %}</button>
+          <button class="hue-rose">{% svg 'hue-rose' %}</button>
+        </div>
+      </div>
 
       <button class="burger tablet:hidden">
         {% svg 'burger' %}

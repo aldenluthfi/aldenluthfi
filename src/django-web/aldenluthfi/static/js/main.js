@@ -1,4 +1,9 @@
 const cursorDot = document.querySelector(".cursor");
+
+const moon = document.querySelector(".dark-mode");
+const sun = document.querySelector(".light-mode");
+const hue = document.querySelector(".hue-selector");
+
 var mouseDown = 0;
 
 window.addEventListener(
