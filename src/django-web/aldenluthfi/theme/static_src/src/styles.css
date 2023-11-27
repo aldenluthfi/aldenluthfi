@@ -313,7 +313,7 @@ button {
     --card-background: var(--neutral-200);
     --sidebar-background: var(--neutral-300);
 
-    --text: var(--neutral-950);
+    --text: var(--neutral-900);
 
     --buttons-default: var(--neutral-200);
     --buttons-hover: var(--neutral-300);
@@ -331,7 +331,7 @@ button {
     --card-background: var(--neutral-800);
     --sidebar-background: var(--neutral-700);
 
-    --text: var(--neutral-50);
+    --text: var(--neutral-100);
 
     --buttons-default: var(--neutral-900);
     --buttons-hover: var(--neutral-800);
