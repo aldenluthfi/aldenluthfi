@@ -24,21 +24,27 @@
       </ul>
     </div>
 
-    <div class="flex space-x-2 pr-6 w-48 my-auto justify-end">
-      <button class="language">
-        {% svg 'language' %}
-      </button>
-
+    <div class="flex pr-6 w-48 my-auto justify-end">
       <div class="relative group flex flex-col justify-center items-center">
-        <a class="dark-mode peer p-2 rounded-md duration-50 focus:bg-card-background desktop:group-hover:bg-card-background" tabindex="0">
-          {% svg 'moon' %}
-        </a>
-
-        <a class="light-mode peer hidden p-2 rounded-md duration-50 focus:bg-card-background desktop:group-hover:bg-card-background" tabindex="0">
-          {% svg 'sun' %}
+        <a class="language p-2 rounded-md duration-50 max-desktop:focus:bg-card-background desktop:group-hover:bg-card-background" tabindex="0">
+          {% svg 'language' %}
         </a>
 
         <div class="hue-selector h-0 peer-focus:h-fit peer-focus:p-2 focus:h-fit focus:p-2 desktop:peer-hover:h-fit desktop:peer-hover:p-2 desktop:hover:h-fit desktop:hover:p-2 absolute top-7 duration-50 flex flex-col space-y-1 items-center bg-card-background rounded-md overflow-auto no-scrollbar m-2">
+
+        </div>
+      </div>
+
+      <div class="relative group flex flex-col justify-center items-center">
+        <a class="dark-mode peer z-20 p-2 rounded-t-md duration-50 max-desktop:focus:bg-card-background desktop:group-hover:bg-card-background" tabindex="0">
+          {% svg 'moon' %}
+        </a>
+
+        <a class="light-mode peer hidden z-20 p-2 rounded-t-md duration-50 max-desktop:focus:bg-card-background desktop:group-hover:bg-card-background" tabindex="0">
+          {% svg 'sun' %}
+        </a>
+
+        <div class="hue-selector h-0 peer-focus:h-54 peer-focus:p-2 focus:h-54 focus:p-2 desktop:peer-hover:h-54 desktop:peer-hover:p-2 desktop:hover:h-54 desktop:hover:p-2 absolute top-8 duration-50 flex flex-col space-y-1 items-center bg-card-background rounded-b-md overflow-auto no-scrollbar m-2">
           <button class="hue-neutral">{% svg 'hue-neutral' %}</button>
           <button class="hue-red">{% svg 'hue-red' %}</button>
           <button class="hue-orange">{% svg 'hue-orange' %}</button>
@@ -60,9 +66,11 @@
         </div>
       </div>
 
-      <button class="burger tablet:hidden">
-        {% svg 'burger' %}
-      </button>
+      <div class="relative group flex flex-col justify-center items-center">
+        <a class="burger tablet:hidden p-2 rounded-md" tabindex="0">
+          {% svg 'burger' %}
+        </a>
+      </div>
 
     </div>
   </nav>

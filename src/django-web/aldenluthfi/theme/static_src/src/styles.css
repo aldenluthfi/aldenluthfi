@@ -373,7 +373,7 @@ button {
     --buttons-active: var(--red-400);
     --buttons-disabled: var(--red-100);
 
-    --buttons-text: var(--red-500);
+    --buttons-text: var(--red-600);
     --buttons-text-disabled: var(--red-300);
 
     --accent: var(--red-500);
@@ -733,7 +733,7 @@ button {
     --buttons-active: var(--blue-400);
     --buttons-disabled: var(--blue-100);
 
-    --buttons-text: var(--blue-600);
+    --buttons-text: var(--blue-500);
     --buttons-text-disabled: var(--blue-400);
 
     --accent: var(--blue-500);
@@ -768,7 +768,7 @@ button {
     --buttons-active: var(--indigo-400);
     --buttons-disabled: var(--indigo-100);
 
-    --buttons-text: var(--indigo-600);
+    --buttons-text: var(--indigo-500);
     --buttons-text-disabled: var(--indigo-400);
 
     --accent: var(--indigo-500);

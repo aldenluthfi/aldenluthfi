@@ -10,7 +10,7 @@ dark.addEventListener(
     "mousedown",
     function (e) {
         if (document.body.clientWidth >= 1024 || dark == document.activeElement) {
-            current = document.documentElement.classList[0]
+            current = document.documentElement.classList[document.documentElement.classList.length - 1]
             hueClass = current + "-dark"
             document.documentElement.classList.remove(current);
             document.documentElement.classList.add(hueClass);
@@ -24,7 +24,7 @@ light.addEventListener(
     "mousedown",
     function (e) {
         if (document.body.clientWidth >= 1024 || light == document.activeElement) {
-            current = document.documentElement.classList[0]
+            current = document.documentElement.classList[document.documentElement.classList.length - 1]
             hueClass = current.replace("-dark", "")
             document.documentElement.classList.remove(current);
             document.documentElement.classList.add(hueClass);
