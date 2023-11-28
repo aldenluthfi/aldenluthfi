@@ -535,7 +535,7 @@ button {
     --buttons-active: var(--lime-700);
     --buttons-disabled: var(--lime-950);
 
-    --buttons-text: var(--lime-600);
+    --buttons-text: var(--lime-500);
     --buttons-text-disabled: var(--lime-800);
 
     --accent: var(--lime-500);
@@ -571,7 +571,7 @@ button {
     --buttons-active: var(--green-700);
     --buttons-disabled: var(--green-950);
 
-    --buttons-text: var(--green-600);
+    --buttons-text: var(--green-500);
     --buttons-text-disabled: var(--green-800);
 
     --accent: var(--green-500);
@@ -589,7 +589,7 @@ button {
     --buttons-active: var(--emerald-400);
     --buttons-disabled: var(--emerald-100);
 
-    --buttons-text: var(--emerald-700);
+    --buttons-text: var(--emerald-600);
     --buttons-text-disabled: var(--emerald-400);
 
     --accent: var(--emerald-500);
@@ -607,7 +607,7 @@ button {
     --buttons-active: var(--emerald-700);
     --buttons-disabled: var(--emerald-950);
 
-    --buttons-text: var(--emerald-600);
+    --buttons-text: var(--emerald-500);
     --buttons-text-disabled: var(--emerald-800);
 
     --accent: var(--emerald-500);
