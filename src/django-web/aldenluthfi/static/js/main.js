@@ -107,7 +107,7 @@ function setHue() {
 window.addEventListener(
     "mousemove",
     function (e) {
-        if (document.body.clientWidth >= 1024) {
+        if (document.body.clientWidth >= 1920) {
             cursorDot.classList.remove('hidden')
         }
 
