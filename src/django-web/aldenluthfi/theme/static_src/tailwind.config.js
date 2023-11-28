@@ -47,7 +47,7 @@ module.exports = {
     theme: {
         extend: {
             spacing: {
-                54: "215px"
+                54: "214px"
             },
             transitionDuration: {
                 '50': '50ms',
