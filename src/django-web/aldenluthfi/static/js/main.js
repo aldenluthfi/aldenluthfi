@@ -6,6 +6,15 @@ const hue = document.querySelector(".hue-selector");
 
 var mouseDown = 0;
 
+document.documentElement.addEventListener(
+    "click",
+    function (e) {
+        if (document.activeElement.tagName != "A" && document.activeElement.tagName != "BUTTON" && !document.activeElement.classList.contains("clickable")) {
+            document.activeElement.blur();
+        }
+    }
+)
+
 dark.addEventListener(
     "mousedown",
     function (e) {
@@ -86,6 +95,7 @@ window.addEventListener(
             classList.add('h-2')
             classList.add('w-2')
         }
+        this.document.activeElement.blur();
         mouseDown++;
     }
 )

@@ -49,9 +49,6 @@ module.exports = {
             spacing: {
                 54: "214px"
             },
-            transitionDuration: {
-                '50': '50ms',
-            },
             transitionTimingFunction: {
                 'bounce': 'cubic-bezier(0.59,-0.14,0.56,1.8)',
             },
