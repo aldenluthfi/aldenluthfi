@@ -6,6 +6,25 @@ const hue = document.querySelector(".hue-selector");
 
 var mouseDown = 0;
 
+window.addEventListener("DOMContentLoaded", () => {
+    let theme = localStorage.getItem("theme");
+    if (theme != null) {
+        document.documentElement.classList.add(theme);
+        if (theme.includes("-dark")) {
+            dark.classList.add("hidden");
+            light.classList.remove("hidden");
+        } else {
+            dark.classList.remove("hidden");
+            light.classList.add("hidden");
+        }
+    } else {
+        document.documentElement.classList.add("neutral");
+        localStorage.setItem("theme", "neutral");
+        dark.classList.remove("hidden");
+        light.classList.add("hidden");
+    }
+});
+
 document.documentElement.addEventListener(
     "click",
     function (e) {
@@ -23,6 +42,7 @@ dark.addEventListener(
             hueClass = current + "-dark"
             document.documentElement.classList.remove(current);
             document.documentElement.classList.add(hueClass);
+            localStorage.setItem("theme", hueClass);
             dark.classList.add("hidden");
             light.classList.remove("hidden")
         }
@@ -37,6 +57,7 @@ light.addEventListener(
             hueClass = current.replace("-dark", "")
             document.documentElement.classList.remove(current);
             document.documentElement.classList.add(hueClass);
+            localStorage.setItem("theme", hueClass);
             dark.classList.remove("hidden");
             light.classList.add("hidden");
         }
@@ -58,6 +79,7 @@ function setHue() {
                 }
                 document.documentElement.classList.remove(current)
                 document.documentElement.classList.add(hueClass)
+                localStorage.setItem("theme", hueClass);
             }
         );
     }
