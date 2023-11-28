@@ -110,10 +110,10 @@ module.exports = {
                 'buttons-text': 'rgba(var(--buttons-text) / <alpha-value>)',
                 'buttons-text-disabled': 'rgba(var(--buttons-text-disabled) / <alpha-value>)',
 
-                'buttons-def': 'rgba(var(--buttons-default) / <alpha-value>)',
-                'buttons-hov': 'rgba(var(--buttons-hover) / <alpha-value>)',
-                'buttons-act': 'rgba(var(--buttons-active) / <alpha-value>)',
-                'buttons-dis': 'rgba(var(--buttons-disabled) / <alpha-value>)',
+                'buttons-default': 'rgba(var(--buttons-default) / <alpha-value>)',
+                'buttons-hover': 'rgba(var(--buttons-hover) / <alpha-value>)',
+                'buttons-active': 'rgba(var(--buttons-active) / <alpha-value>)',
+                'buttons-disabled': 'rgba(var(--buttons-disabled) / <alpha-value>)',
 
                 'accent': 'rgba(var(--accent) / <alpha-value>)',
             }

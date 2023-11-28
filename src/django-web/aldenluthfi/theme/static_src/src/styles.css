@@ -323,7 +323,9 @@ button {
     --rose-800: 159 18 57;
     --rose-900: 136 19 55;
     --rose-950: 76 5 25;
+}
 
+.neutral {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
     --sidebar-background: var(--neutral-300);
@@ -341,7 +343,7 @@ button {
     --accent: var(--neutral-500);
 }
 
-.-dark {
+.neutral-dark {
     --background: var(--neutral-950);
     --card-background: var(--neutral-800);
     --sidebar-background: var(--neutral-700);

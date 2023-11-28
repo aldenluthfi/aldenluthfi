@@ -1,10 +1,55 @@
 const cursorDot = document.querySelector(".cursor");
 
-const moon = document.querySelector(".dark-mode");
-const sun = document.querySelector(".light-mode");
+const dark = document.querySelector(".dark-mode");
+const light = document.querySelector(".light-mode");
 const hue = document.querySelector(".hue-selector");
 
 var mouseDown = 0;
+
+dark.addEventListener(
+    "mousedown",
+    function (e) {
+        current = document.documentElement.classList[0]
+        hueClass = current + "-dark"
+        document.documentElement.classList.remove(current);
+        document.documentElement.classList.add(hueClass);
+        dark.classList.add("hidden");
+        light.classList.remove("hidden");
+    }
+)
+
+light.addEventListener(
+    "mousedown",
+    function (e) {
+        current = document.documentElement.classList[0]
+        hueClass = current.replace("-dark", "")
+        document.documentElement.classList.remove(current);
+        document.documentElement.classList.add(hueClass);
+        dark.classList.remove("hidden");
+        light.classList.add("hidden");
+    }
+)
+
+function setHue() {
+    const hues = ["neutral", "rose", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
+
+    for (let i = 0; i < hues.length; i++) {
+        let hueButton = document.querySelector(`.hue-${hues[i]}`)
+        hueButton.addEventListener(
+            "mousedown",
+            function (e) {
+                hueClass = `${hues[i]}`
+                current = document.documentElement.classList[0]
+                console.log(current)
+                if (current.includes("-dark")) {
+                    hueClass = `${hues[i]}-dark`
+                }
+                document.documentElement.classList.remove(current)
+                document.documentElement.classList.add(hueClass)
+            }
+        );
+    }
+}
 
 window.addEventListener(
     "mousemove",
@@ -118,3 +163,4 @@ function setClickable(target) {
 }
 
 setClickable(document)
+setHue()
