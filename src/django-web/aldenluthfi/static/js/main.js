@@ -9,24 +9,28 @@ var mouseDown = 0;
 dark.addEventListener(
     "mousedown",
     function (e) {
-        current = document.documentElement.classList[0]
-        hueClass = current + "-dark"
-        document.documentElement.classList.remove(current);
-        document.documentElement.classList.add(hueClass);
-        dark.classList.add("hidden");
-        light.classList.remove("hidden");
+        if (document.body.clientWidth >= 1024 || dark == document.activeElement) {
+            current = document.documentElement.classList[0]
+            hueClass = current + "-dark"
+            document.documentElement.classList.remove(current);
+            document.documentElement.classList.add(hueClass);
+            dark.classList.add("hidden");
+            light.classList.remove("hidden")
+        }
     }
 )
 
 light.addEventListener(
     "mousedown",
     function (e) {
-        current = document.documentElement.classList[0]
-        hueClass = current.replace("-dark", "")
-        document.documentElement.classList.remove(current);
-        document.documentElement.classList.add(hueClass);
-        dark.classList.remove("hidden");
-        light.classList.add("hidden");
+        if (document.body.clientWidth >= 1024 || light == document.activeElement) {
+            current = document.documentElement.classList[0]
+            hueClass = current.replace("-dark", "")
+            document.documentElement.classList.remove(current);
+            document.documentElement.classList.add(hueClass);
+            dark.classList.remove("hidden");
+            light.classList.add("hidden");
+        }
     }
 )
 
@@ -40,7 +44,6 @@ function setHue() {
             function (e) {
                 hueClass = `${hues[i]}`
                 current = document.documentElement.classList[0]
-                console.log(current)
                 if (current.includes("-dark")) {
                     hueClass = `${hues[i]}-dark`
                 }
@@ -54,7 +57,7 @@ function setHue() {
 window.addEventListener(
     "mousemove",
     function (e) {
-        if (document.body.clientWidth >= 1024) {
+        if (document.body.clientWidth >= 14) {
             cursorDot.classList.remove('hidden')
         }
         cursorDot.animate({
