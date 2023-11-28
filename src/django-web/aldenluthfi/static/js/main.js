@@ -107,8 +107,10 @@ function setHue() {
 window.addEventListener(
     "mousemove",
     function (e) {
-        if (document.body.clientWidth >= 1920) {
+        if (document.body.clientWidth >= 1280) {
             cursorDot.classList.remove('hidden')
+        } else {
+            cursorDot.classList.add('hidden')
         }
 
         if (e.target.classList.contains("mode-toggle") || e.target.classList.contains("hue-selector")) {

@@ -95,7 +95,7 @@ module.exports = {
             },
             screens: {
                 'tablet': '768px',
-                'desktop': '1920px',
+                'desktop': '1280px',
             },
             colors: {
                 'transparent': 'transparent',
