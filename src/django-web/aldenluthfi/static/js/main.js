@@ -1,10 +1,13 @@
 const cursorDot = document.querySelector(".cursor");
 
-const dark = document.querySelector(".dark-mode");
-const light = document.querySelector(".light-mode");
+const dark = document.querySelector(".moon");
+const light = document.querySelector(".sun");
+const modeToggle = document.querySelector(".mode-toggle");
 const hue = document.querySelector(".hue-selector");
 
 var mouseDown = 0;
+var modeToggleClicked = 0;
+var hueSelectorOpened = 0;
 
 let theme = localStorage.getItem("theme");
 if (theme != null) {
@@ -12,9 +15,13 @@ if (theme != null) {
     if (theme.includes("-dark")) {
         dark.classList.add("hidden");
         light.classList.remove("hidden");
+        document.querySelector(".neutral-icon").classList.add("fill-neutral-700");
+        document.querySelector(".neutral-icon").classList.remove("fill-neutral-500");
     } else {
         dark.classList.remove("hidden");
         light.classList.add("hidden");
+        document.querySelector(".neutral-icon").classList.remove("fill-neutral-700");
+        document.querySelector(".neutral-icon").classList.add("fill-neutral-500");
     }
 } else {
     document.documentElement.classList.add("neutral");
@@ -29,38 +36,43 @@ document.documentElement.addEventListener(
         if (document.activeElement.tagName != "A" && document.activeElement.tagName != "BUTTON" && !document.activeElement.classList.contains("clickable")) {
             document.activeElement.blur();
         }
-    }
-)
 
-dark.addEventListener(
-    "mousedown",
-    function (e) {
-        if (document.body.clientWidth >= 1024 || dark == document.activeElement) {
-            current = document.documentElement.classList[document.documentElement.classList.length - 1]
-            hueClass = current + "-dark"
-            document.documentElement.classList.remove(current);
-            document.documentElement.classList.add(hueClass);
-            localStorage.setItem("theme", hueClass);
-            dark.classList.add("hidden");
-            light.classList.remove("hidden")
+        if (document.activeElement != modeToggle) {
+            modeToggleClicked = 0;
+            hueSelectorOpened = 0;
         }
     }
 )
 
-light.addEventListener(
-    "mousedown",
+modeToggle.addEventListener(
+    "click",
     function (e) {
-        if (document.body.clientWidth >= 1024 || light == document.activeElement) {
+        if (document.body.clientWidth >= 1024 || modeToggleClicked == 1 || hueSelectorOpened == 1) {
             current = document.documentElement.classList[document.documentElement.classList.length - 1]
-            hueClass = current.replace("-dark", "")
+            if (current.includes("-dark")) {
+                hueClass = current.replace("-dark", "")
+                dark.classList.remove("hidden");
+                light.classList.add("hidden")
+                document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+                document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
+            } else {
+                hueClass = current + "-dark"
+                dark.classList.add("hidden");
+                light.classList.remove("hidden")
+                document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+                document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
+            }
             document.documentElement.classList.remove(current);
             document.documentElement.classList.add(hueClass);
             localStorage.setItem("theme", hueClass);
-            dark.classList.remove("hidden");
-            light.classList.add("hidden");
+            modeToggleClicked = 0;
+        } else {
+            modeToggleClicked = 1;
+            hueSelectorOpened = 1;
         }
     }
 )
+
 
 function setHue() {
     const hues = ["neutral", "rose", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
@@ -74,6 +86,15 @@ function setHue() {
                 current = document.documentElement.classList[0]
                 if (current.includes("-dark")) {
                     hueClass = `${hues[i]}-dark`
+                    if (!current.includes("neutral")) {
+                        document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+                        document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
+                    }
+                } else {
+                    if (!current.includes("neutral")) {
+                        document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+                        document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
+                    }
                 }
                 document.documentElement.classList.remove(current)
                 document.documentElement.classList.add(hueClass)
@@ -88,6 +109,10 @@ window.addEventListener(
     function (e) {
         if (document.body.clientWidth >= 1024) {
             cursorDot.classList.remove('hidden')
+        }
+
+        if (e.target.classList.contains("mode-toggle") || e.target.classList.contains("hue-selector")) {
+            document.activeElement.blur();
         }
         cursorDot.animate({
             left: `${e.clientX}px`,

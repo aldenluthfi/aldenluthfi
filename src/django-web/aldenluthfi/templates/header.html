@@ -36,15 +36,12 @@
       </div>
 
       <div class="relative group flex flex-col justify-center items-center">
-        <a class="dark-mode peer p-2 rounded-t-md delay-100 max-desktop:focus:delay-0 max-desktop:focus:bg-card-background max-desktop:focus:shadow-md desktop:group-hover:bg-card-background desktop:group-hover:delay-0 desktop:group-hover:shadow-md" tabindex="0">
+        <a class="mode-toggle peer p-2 rounded-t-md delay-100 duration-100 max-desktop:focus:delay-0 max-desktop:focus:bg-card-background max-desktop:focus:shadow-md desktop:group-hover:bg-card-background desktop:group-hover:delay-0 desktop:group-hover:shadow-md" tabindex="0">
           {% svg 'moon' %}
-        </a>
-
-        <a class="light-mode peer hidden p-2 rounded-t-md delay-100 max-desktop:focus:delay-0 max-desktop:focus:bg-card-background max-desktop:focus:shadow-md desktop:group-hover:bg-card-background desktop:group-hover:delay-0 desktop:group-hover:shadow-md" tabindex="0">
           {% svg 'sun' %}
         </a>
 
-        <div class="hue-selector h-0 peer-focus:h-54 focus:h-54 desktop:peer-hover:h-54 desktop:hover:h-54 absolute top-9 duration-100 flex flex-col space-y-1 items-center bg-card-background rounded-b-md overflow-auto no-scrollbar m-2 shadow-md">
+        <div class="hue-selector h-0 peer-focus:h-54 focus:h-54 desktop:peer-hover:h-54 desktop:hover:h-54 absolute top-8 duration-100 flex flex-col space-y-1 items-center bg-card-background rounded-b-md overflow-auto no-scrollbar m-2 shadow-md">
           <button class="hue-neutral px-2 pt-2">{% svg 'hue-neutral' %}</button>
           <button class="hue-red">{% svg 'hue-red' %}</button>
           <button class="hue-orange">{% svg 'hue-orange' %}</button>
