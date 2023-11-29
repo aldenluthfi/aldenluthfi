@@ -42,10 +42,19 @@ document.documentElement.addEventListener(
     }
 )
 
+document.documentElement.addEventListener(
+    "mouseover",
+    function (e) {
+        if (document.documentElement.clientWidth >= 1024) {
+            document.activeElement.blur()
+        }
+    }
+)
+
 modeToggle.addEventListener(
     "mousedown",
     function (e) {
-        if (document.body.clientWidth >= 1024 || modeToggleClicked == 1 || hueSelectorOpened == 1) {
+        if (document.documentElement.clientWidth >= 1024 || modeToggleClicked == 1 || hueSelectorOpened == 1) {
             current = document.documentElement.classList[document.documentElement.classList.length - 1]
             if (current.includes("-dark")) {
                 hueClass = current.replace("-dark", "")

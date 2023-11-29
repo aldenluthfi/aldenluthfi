@@ -101,7 +101,7 @@ clickables.forEach(clickable => {
 window.addEventListener(
     "mousemove",
     function (e) {
-        if (document.body.clientWidth >= 1024) {
+        if (document.documentElement.clientWidth >= 1024) {
             cursorDot.classList.remove('hidden')
         } else {
             cursorDot.classList.add('hidden')
