@@ -113,9 +113,6 @@ window.addEventListener(
             cursorDot.classList.add('hidden')
         }
 
-        if (e.target.classList.contains("mode-toggle") || e.target.classList.contains("hue-selector")) {
-            document.activeElement.blur();
-        }
         cursorDot.animate({
             left: `${e.clientX}px`,
             top: `${e.clientY}px`,
