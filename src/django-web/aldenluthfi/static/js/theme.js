@@ -70,15 +70,6 @@ modeToggle.addEventListener(
         }
     }
 )
-
-modeToggle.addEventListener(
-    "mouseover",
-    function (e) {
-        modeToggleClicked = 1
-        hueSelectorOpened = 1
-    }
-)
-
 const hues = ["neutral", "rose", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
 
 hues.forEach(hue => {
