@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="pointer-events-none" width="30" height="30" viewBox="0 0 30 30">
+	<path d="M2.5,3.2h30v30h-30V3.2z" fill="none" />
+	<path d="M27.5,15c0,4.3-2.2,8.5-6.3,10.8c-6,3.5-13.6,1.4-17.1-4.6c-1-1.8-1.6-3.8-1.7-5.8l0-0.4H27.5z"
+		fill="#fafafa" />
+	<path class="st2" d="M27.5,15h-25l0-0.4C2.7,10.3,5,6.3,8.8,4.2c6-3.5,13.6-1.4,17.1,4.6C27,10.7,27.5,12.9,27.5,15z"
+		fill="#ef4444" />
+</svg>

@@ -25,13 +25,14 @@
     </div>
 
     <div class="flex pr-6 w-48 my-auto justify-end">
-      <div class="relative group flex flex-col justify-center items-center">
-        <a class="language p-2 rounded-t-md delay-100 max-desktop:focus:delay-0 max-desktop:focus:bg-card-background max-desktop:focus:shadow-md desktop:group-hover:bg-card-background desktop:group-hover:delay-0 desktop:group-hover:shadow-md" tabindex="0">
+      <div class="relative group/lang flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
+        <a class="p-2 rounded-t-md delay-100 duration-100 hover:bg-card-background hover:delay-0 hover:shadow-md desktop:group-hover/lang:bg-card-background desktop:group-hover/lang:delay-0 desktop:group-hover/lang:shadow-md" tabindex="0">
           {% svg 'language' %}
         </a>
 
-        <div class="languaege-selector h-0 peer-focus:h-54 focus:h-54 desktop:peer-hover:h-54 desktop:hover:h-54 absolute top-9 duration-100 flex flex-col space-y-1 items-center bg-card-background rounded-b-md overflow-auto no-scrollbar m-2 shadow-md">
-
+        <div class="hue-selector h-0 fixed top-14 mt-[7px] duration-100 flex flex-col items-center bg-card-background rounded-b-md overflow-auto no-scrollbar shadow-md group-hover/lang:h-22 desktop:hover:h-22" tabindex="0">
+            <a class="lang-id px-2 pb-1 pt-2">{% svg 'id' %}</a>
+            <a class="lang-en px-2 pt-1 pb-2">{% svg 'en' %}</a>
         </div>
       </div>
 

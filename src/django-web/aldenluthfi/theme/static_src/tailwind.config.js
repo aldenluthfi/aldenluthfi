@@ -47,7 +47,8 @@ module.exports = {
     theme: {
         extend: {
             spacing: {
-                58: "238px"
+                58: "238px",
+                22: "86px"
             },
             transitionTimingFunction: {
                 'bounce': 'cubic-bezier(0.59,-0.14,0.56,1.8)',
