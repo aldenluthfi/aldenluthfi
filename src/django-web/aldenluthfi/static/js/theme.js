@@ -43,7 +43,7 @@ document.documentElement.addEventListener(
 )
 
 modeToggle.addEventListener(
-    "click",
+    "mousedown",
     function (e) {
         if (document.body.clientWidth >= 1024 || modeToggleClicked == 1 || hueSelectorOpened == 1) {
             current = document.documentElement.classList[document.documentElement.classList.length - 1]
@@ -71,6 +71,13 @@ modeToggle.addEventListener(
     }
 )
 
+modeToggle.addEventListener(
+    "mouseover",
+    function (e) {
+        modeToggleClicked = 1
+        hueSelectorOpened = 1
+    }
+)
 
 const hues = ["neutral", "rose", "red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose"]
 
