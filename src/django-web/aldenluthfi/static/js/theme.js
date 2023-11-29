@@ -45,7 +45,7 @@ document.documentElement.addEventListener(
 modeToggle.addEventListener(
     "mousedown",
     function (e) {
-        if (document.body.clientWidth >= 1024 || modeToggleClicked == 2 || hueSelectorOpened == 2) {
+        if (document.body.clientWidth >= 1024 || modeToggleClicked == 1 || hueSelectorOpened == 1) {
             current = document.documentElement.classList[document.documentElement.classList.length - 1]
             if (current.includes("-dark")) {
                 hueClass = current.replace("-dark", "")
@@ -65,8 +65,8 @@ modeToggle.addEventListener(
             localStorage.setItem("theme", hueClass)
             modeToggleClicked = 0
         } else {
-            modeToggleClicked = 2
-            hueSelectorOpened = 2
+            modeToggleClicked = 1
+            hueSelectorOpened = 1
         }
     }
 )
