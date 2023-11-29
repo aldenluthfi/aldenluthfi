@@ -83,9 +83,10 @@ modeToggle.addEventListener(
 modeToggle.addEventListener(
     "mouseover",
     function (e) {
-        document.activeElement.blur()
-        modeToggleClicked = 1
-        hueSelectorOpened = 1
+        if (document.activeElement != modeToggle && document.activeElement != hue) {
+            modeToggleClicked = 1
+            hueSelectorOpened = 1
+        }
     }
 )
 
