@@ -4,26 +4,27 @@
 <!DOCTYPE html>
 <html lang="en" class="">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
-    {% tailwind_css %}
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  {% tailwind_css %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
+</head>
 
-  <body class="flex flex-col select-none bg-background duration-200">
-    <div
-      class="cursor hidden fixed top-0 z-50 left-0 w-10 h-10 bg-transparent pointer-events-none border-solid border-accent rounded-full border-2 -translate-x-1/2 -translate-y-1/2 ease-bounce duration-200">
-    </div>
-    {% include 'header.html' %}
-    <main>
-      {% block content %}
-      {% endblock %}
-    </main>
-    {% include 'footer.html' %}
+<body class="flex flex-col select-none bg-background duration-200">
+  <div
+    class="cursor hidden fixed top-0 z-50 left-0 w-10 h-10 bg-transparent pointer-events-none border-solid border-accent rounded-full border-2 -translate-x-1/2 -translate-y-1/2 ease-bounce duration-200">
+  </div>
+  {% include 'header.html' %}
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+  {% include 'footer.html' %}
 
-    <script src="{% static 'js/cursor.js' %}"></script>
-    <script src="{% static 'js/theme.js' %}"></script>
-  </body>
+  <script src="{% static 'js/cursor.js' %}"></script>
+  <script src="{% static 'js/theme.js' %}"></script>
+</body>
 
 </html>
