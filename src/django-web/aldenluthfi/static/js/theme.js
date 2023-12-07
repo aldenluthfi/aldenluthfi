@@ -67,6 +67,8 @@ modeToggle.addEventListener(
             document.documentElement.classList.remove(current)
             document.documentElement.classList.add(hueClass)
             localStorage.setItem("theme", hueClass)
+        } else if (!iosDevice) {
+            modeToggleClicked = 1
         }
     }
 )
