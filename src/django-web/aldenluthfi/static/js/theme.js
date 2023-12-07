@@ -4,7 +4,6 @@ const modeToggle = document.querySelector(".mode-toggle")
 const hue = document.querySelector(".hue-selector")
 
 var modeToggleClicked = 0
-var hueSelectorOpened = 0
 
 let theme = localStorage.getItem("theme")
 
@@ -34,11 +33,6 @@ document.documentElement.addEventListener(
         if (document.activeElement != modeToggle && document.activeElement != hue) {
             document.activeElement.blur()
         }
-
-        if (document.activeElement != modeToggle && document.activeElement != hue) {
-            modeToggleClicked = 0
-            hueSelectorOpened = 0
-        }
     }
 )
 
@@ -54,7 +48,7 @@ document.documentElement.addEventListener(
 modeToggle.addEventListener(
     "mousedown",
     function (e) {
-        if (document.documentElement.clientWidth >= 1024 || modeToggleClicked == 1 || hueSelectorOpened == 1) {
+        if (document.documentElement.clientWidth >= 1024 || modeToggleClicked == 1) {
             current = document.documentElement.classList[document.documentElement.classList.length - 1]
             if (current.includes("-dark")) {
                 hueClass = current.replace("-dark", "")
@@ -72,10 +66,24 @@ modeToggle.addEventListener(
             document.documentElement.classList.remove(current)
             document.documentElement.classList.add(hueClass)
             localStorage.setItem("theme", hueClass)
+        }
+    }
+)
+
+modeToggle.addEventListener(
+    "mouseleave",
+    function (e) {
+        if (document.documentElement.clientWidth < 1024) {
             modeToggleClicked = 0
-        } else {
+        }
+    }
+)
+
+modeToggle.addEventListener(
+    "mouseover",
+    function (e) {
+        if (document.documentElement.clientWidth < 1024) {
             modeToggleClicked = 1
-            hueSelectorOpened = 1
         }
     }
 )
