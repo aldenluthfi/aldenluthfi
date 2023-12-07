@@ -3,6 +3,7 @@ const light = document.querySelector(".sun")
 const modeToggle = document.querySelector(".mode-toggle")
 const hue = document.querySelector(".hue-selector")
 
+var iosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && "matchMedia" in window
 var modeToggleClicked = 0
 
 let theme = localStorage.getItem("theme")
@@ -73,7 +74,7 @@ modeToggle.addEventListener(
 modeToggle.addEventListener(
     "mouseleave",
     function (e) {
-        if (document.documentElement.clientWidth < 1024) {
+        if (document.documentElement.clientWidth < 1024 && iosDevice) {
             modeToggleClicked = 0
         }
     }
@@ -82,7 +83,7 @@ modeToggle.addEventListener(
 modeToggle.addEventListener(
     "mouseover",
     function (e) {
-        if (document.documentElement.clientWidth < 1024) {
+        if (document.documentElement.clientWidth < 1024 && iosDevice) {
             modeToggleClicked = 1
         }
     }
