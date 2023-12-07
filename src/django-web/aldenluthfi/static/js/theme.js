@@ -33,6 +33,7 @@ document.documentElement.addEventListener(
     function (e) {
         if (document.activeElement != modeToggle && document.activeElement != hue) {
             document.activeElement.blur()
+            modeToggleClicked = 0
         }
     }
 )
