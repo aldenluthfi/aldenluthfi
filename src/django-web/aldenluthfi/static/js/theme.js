@@ -116,6 +116,7 @@ hues.forEach(hue => {
             document.documentElement.classList.remove(current)
             document.documentElement.classList.add(hueClass)
             localStorage.setItem("theme", hueClass);
+            modeToggleClicked = 1
         }
     )
 })

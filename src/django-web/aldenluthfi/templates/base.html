@@ -1,5 +1,6 @@
 {% load static %}
 {% load static tailwind_tags %}
+{% load django_htmx %}
 
 <!DOCTYPE html>
 <html lang="en" class="">
@@ -25,6 +26,8 @@
 
   <script src="{% static 'js/cursor.js' %}"></script>
   <script src="{% static 'js/theme.js' %}"></script>
+  <script src="{% static 'htmx.min.js' %}" defer></script>
+  {% django_htmx_script %}
 </body>
 
 </html>
