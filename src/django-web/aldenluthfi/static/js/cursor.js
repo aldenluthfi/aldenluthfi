@@ -1,4 +1,5 @@
 const cursorDot = document.querySelector(".cursor");
+var mouseDown = 0;
 
 window.addEventListener(
     "mousemove",

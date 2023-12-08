@@ -1,3 +1,10 @@
+const dark = document.querySelector(".moon")
+const light = document.querySelector(".sun")
+const modeToggle = document.querySelector(".mode-toggle")
+const hue = document.querySelector(".hue-selector")
+
+var iosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && "matchMedia" in window
+var modeToggleClicked = 0
 
 document.documentElement.addEventListener(
     "click",
