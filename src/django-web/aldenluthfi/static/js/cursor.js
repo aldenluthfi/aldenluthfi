@@ -65,7 +65,6 @@ window.addEventListener(
 )
 
 function cursor() {
-    const cursorDot = document.querySelector(".cursor");
     const clickables = document.querySelectorAll("a, button, .clickable");
     var mouseDown = 0;
 
