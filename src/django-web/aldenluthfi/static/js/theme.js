@@ -31,7 +31,7 @@ if (theme != null) {
 document.documentElement.addEventListener(
     "click",
     function (e) {
-        if (document.activeElement != modeToggle && document.activeElement != hue) {
+        if (document.activeElement != document.querySelector(".mode-toggle") && document.activeElement != document.querySelector(".hue-selector")) {
             document.activeElement.blur()
             modeToggleClicked = 0
         }
