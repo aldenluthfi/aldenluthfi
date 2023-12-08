@@ -1,14 +1,14 @@
 {% load svg %}
 <header class="fixed top-0 z-10 w-screen bg-backgrund">
   <nav class="flex justify-between items-start h-20">
-    <div class="pl-6 w-48 my-auto" id="home-link" hx-preserve>
+    <div class="pl-6 w-48 my-auto">
       <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
         aldenluth.fi
       </a>
     </div>
 
     <div class="hidden w-screen tablet:flex justify-center font-body text-sm text-text my-auto">
-      <ul class="tablet:grid gap-6 grid-cols-3">
+      <ul class="w-1/4 tablet:grid gap-6 grid-cols-3">
         <li
           class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
           <a href="" tabindex="0">Projects</a>
@@ -19,19 +19,19 @@
         </li>
         <li
           class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
-          <a href="" tabindex="0">Contacts</a>
+          <a href="" tabindex="0">Random</a>
         </li>
       </ul>
     </div>
 
-    <div class="flex pr-6 w-48 my-auto justify-end" id="lang-toggle" hx-preserve>
+    <div class="flex pr-6 w-48 my-auto justify-end">
       <div class="relative group/lang flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
         <a class="p-2 rounded-md bg-transparent desktop:hover:bg-card-background duration-100" hx-get="/toggle-language/" hx-target="main">
           {% svg 'language' %}
         </a>
       </div>
 
-      <div class="relative group/hue flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md" id="color-toggle" hx-preserve>
+      <div class="relative group/hue flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
         <a class="mode-toggle p-2 rounded-t-md delay-100 duration-100 hover:bg-card-background hover:delay-0 hover:shadow-md group-hover/hue:bg-card-background group-hover/hue:delay-0 group-hover/hue:shadow-md" tabindex="0">
           {% svg 'moon' %}
           {% svg 'sun' %}
