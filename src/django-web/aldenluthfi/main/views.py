@@ -4,7 +4,6 @@ from django.shortcuts import redirect, render
 def main(request):
 
     if "language" not in request.session:
-        print("NOOOO")
         request.session["language"] = "en"
 
     if request.session["language"] == "en":
@@ -18,6 +17,7 @@ def main(request):
         content_file = "main-id.html"
 
     context = {
+        "title": "aldenluthfi",
         "header": header_file,
         "footer": footer_file,
         "content": content_file,
