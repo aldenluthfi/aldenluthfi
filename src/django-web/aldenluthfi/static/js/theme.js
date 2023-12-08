@@ -1,4 +1,23 @@
 
+document.documentElement.addEventListener(
+    "click",
+    function (e) {
+        if (document.activeElement != modeToggle && document.activeElement != hue) {
+            document.activeElement.blur()
+            modeToggleClicked = 0
+        }
+    }
+)
+
+document.documentElement.addEventListener(
+    "mouseover",
+    function (e) {
+        if (document.documentElement.clientWidth >= 1024) {
+            document.activeElement.blur()
+        }
+    }
+)
+
 function theme() {
     const dark = document.querySelector(".moon")
     const light = document.querySelector(".sun")
@@ -29,25 +48,6 @@ function theme() {
         dark.classList.remove("hidden")
         light.classList.add("hidden")
     }
-
-    document.documentElement.addEventListener(
-        "click",
-        function (e) {
-            if (document.activeElement != modeToggle && document.activeElement != hue) {
-                document.activeElement.blur()
-                modeToggleClicked = 0
-            }
-        }
-    )
-
-    document.documentElement.addEventListener(
-        "mouseover",
-        function (e) {
-            if (document.documentElement.clientWidth >= 1024) {
-                document.activeElement.blur()
-            }
-        }
-    )
 
     modeToggle.addEventListener(
         "mousedown",
@@ -126,4 +126,4 @@ function theme() {
 
 theme()
 
-document.addEventListener("htmx:afterRequest", function (e) {theme()})
+document.addEventListener("htmx:afterRequest", function (e) { theme() })

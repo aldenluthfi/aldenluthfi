@@ -1,55 +1,72 @@
+const cursorDot = document.querySelector(".cursor");
+
+window.addEventListener(
+    "mousemove",
+    function (e) {
+        if (document.documentElement.clientWidth >= 1024) {
+            cursorDot.classList.remove('hidden')
+        } else {
+            cursorDot.classList.add('hidden')
+        }
+
+        cursorDot.animate({
+            left: `${e.clientX}px`,
+            top: `${e.clientY}px`,
+        }, { duration: 500, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
+    }
+)
+
+window.addEventListener(
+    "mousedown",
+    function (e) {
+        let classList = cursorDot.classList
+        classList.remove('w-10')
+        classList.remove('h-10')
+        classList.remove('h-6')
+        classList.remove('w-6')
+        classList.remove('h-4')
+        classList.remove('w-4')
+        classList.remove('h-2')
+        classList.remove('w-2')
+        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
+            classList.add('h-6')
+            classList.add('w-6')
+        } else {
+            classList.add('h-2')
+            classList.add('w-2')
+        }
+        this.document.activeElement.blur();
+        mouseDown++;
+    }
+)
+
+window.addEventListener(
+    "mouseup",
+    function (e) {
+        let classList = cursorDot.classList
+        classList.remove('w-10')
+        classList.remove('h-10')
+        classList.remove('h-6')
+        classList.remove('w-6')
+        classList.remove('h-4')
+        classList.remove('w-4')
+        classList.remove('h-2')
+        classList.remove('w-2')
+        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
+            classList.add('w-10')
+            classList.add('h-10')
+        } else {
+            classList.add('h-4')
+            classList.add('w-4')
+        }
+        mouseDown--;
+    }
+)
 
 function cursor() {
     const cursorDot = document.querySelector(".cursor");
     const clickables = document.querySelectorAll("a, button, .clickable");
     var mouseDown = 0;
-
-    window.addEventListener(
-        "mousedown",
-        function (e) {
-            let classList = cursorDot.classList
-            classList.remove('w-10')
-            classList.remove('h-10')
-            classList.remove('h-6')
-            classList.remove('w-6')
-            classList.remove('h-4')
-            classList.remove('w-4')
-            classList.remove('h-2')
-            classList.remove('w-2')
-            if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
-                classList.add('h-6')
-                classList.add('w-6')
-            } else {
-                classList.add('h-2')
-                classList.add('w-2')
-            }
-            this.document.activeElement.blur();
-            mouseDown++;
-        }
-    )
-
-    window.addEventListener(
-        "mouseup",
-        function (e) {
-            let classList = cursorDot.classList
-            classList.remove('w-10')
-            classList.remove('h-10')
-            classList.remove('h-6')
-            classList.remove('w-6')
-            classList.remove('h-4')
-            classList.remove('w-4')
-            classList.remove('h-2')
-            classList.remove('w-2')
-            if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
-                classList.add('w-10')
-                classList.add('h-10')
-            } else {
-                classList.add('h-4')
-                classList.add('w-4')
-            }
-            mouseDown--;
-        }
-    )
 
     clickables.forEach(clickable => {
         clickable.addEventListener(
@@ -99,24 +116,8 @@ function cursor() {
             }
         )
     });
-
-    window.addEventListener(
-        "mousemove",
-        function (e) {
-            if (document.documentElement.clientWidth >= 1024) {
-                cursorDot.classList.remove('hidden')
-            } else {
-                cursorDot.classList.add('hidden')
-            }
-
-            cursorDot.animate({
-                left: `${e.clientX}px`,
-                top: `${e.clientY}px`,
-            }, { duration: 500, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
-        }
-    )
 }
 
 cursor()
 
-document.addEventListener("htmx:afterRequest", function (e) {cursor()})
+document.addEventListener("htmx:afterRequest", function (e) { cursor() })
