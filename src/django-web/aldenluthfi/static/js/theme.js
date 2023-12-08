@@ -6,6 +6,28 @@ const hue = document.querySelector(".hue-selector")
 var iosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && "matchMedia" in window
 var modeToggleClicked = 0
 
+let theme = localStorage.getItem("theme")
+
+if (theme != null) {
+    document.documentElement.classList.add(theme);
+    if (theme.includes("-dark")) {
+        dark.classList.add("hidden")
+        light.classList.remove("hidden")
+        document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+        document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
+    } else {
+        dark.classList.remove("hidden")
+        light.classList.add("hidden")
+        document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+        document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
+    }
+} else {
+    document.documentElement.classList.add("neutral")
+    localStorage.setItem("theme", "neutral")
+    dark.classList.remove("hidden")
+    light.classList.add("hidden")
+}
+
 document.documentElement.addEventListener(
     "click",
     function (e) {
@@ -25,35 +47,10 @@ document.documentElement.addEventListener(
     }
 )
 
-function theme() {
+function themeSetter() {
     const dark = document.querySelector(".moon")
     const light = document.querySelector(".sun")
     const modeToggle = document.querySelector(".mode-toggle")
-    const hue = document.querySelector(".hue-selector")
-
-    var iosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && "matchMedia" in window
-
-    let theme = localStorage.getItem("theme")
-
-    if (theme != null) {
-        document.documentElement.classList.add(theme);
-        if (theme.includes("-dark")) {
-            dark.classList.add("hidden")
-            light.classList.remove("hidden")
-            document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
-            document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
-        } else {
-            dark.classList.remove("hidden")
-            light.classList.add("hidden")
-            document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
-            document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
-        }
-    } else {
-        document.documentElement.classList.add("neutral")
-        localStorage.setItem("theme", "neutral")
-        dark.classList.remove("hidden")
-        light.classList.add("hidden")
-    }
 
     modeToggle.addEventListener(
         "mousedown",
@@ -130,6 +127,6 @@ function theme() {
     })
 }
 
-theme()
+themeSetter()
 
-document.addEventListener("htmx:afterRequest", function (e) { theme() })
+document.addEventListener("htmx:afterRequest", function (e) { themeSetter() })

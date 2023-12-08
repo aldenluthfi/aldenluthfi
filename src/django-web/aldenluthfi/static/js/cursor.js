@@ -66,7 +66,6 @@ window.addEventListener(
 
 function cursor() {
     const clickables = document.querySelectorAll("a, button, .clickable");
-    var mouseDown = 0;
 
     clickables.forEach(clickable => {
         clickable.addEventListener(
