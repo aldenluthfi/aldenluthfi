@@ -29,7 +29,7 @@ window.addEventListener(
         classList.remove('w-4')
         classList.remove('h-2')
         classList.remove('w-2')
-        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
+        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON")) {
             classList.add('h-6')
             classList.add('w-6')
         } else {
@@ -53,7 +53,7 @@ window.addEventListener(
         classList.remove('w-4')
         classList.remove('h-2')
         classList.remove('w-2')
-        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON") && !(e.target.classList.contains("clickable"))) {
+        if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON")) {
             classList.add('w-10')
             classList.add('h-10')
         } else {
@@ -65,7 +65,7 @@ window.addEventListener(
 )
 
 function cursor() {
-    const clickables = document.querySelectorAll("a, button, .clickable");
+    const clickables = document.querySelectorAll("a, button");
 
     clickables.forEach(clickable => {
         clickable.addEventListener(

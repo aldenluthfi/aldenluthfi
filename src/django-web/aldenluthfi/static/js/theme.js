@@ -52,6 +52,28 @@ function themeSetter() {
     const light = document.querySelector(".sun")
     const modeToggle = document.querySelector(".mode-toggle")
 
+    let theme = localStorage.getItem("theme")
+
+    if (theme != null) {
+        document.documentElement.classList.add(theme);
+        if (theme.includes("-dark")) {
+            dark.classList.add("hidden")
+            light.classList.remove("hidden")
+            document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+            document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
+        } else {
+            dark.classList.remove("hidden")
+            light.classList.add("hidden")
+            document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+            document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
+        }
+    } else {
+        document.documentElement.classList.add("neutral")
+        localStorage.setItem("theme", "neutral")
+        dark.classList.remove("hidden")
+        light.classList.add("hidden")
+    }
+
     modeToggle.addEventListener(
         "mousedown",
         function (e) {

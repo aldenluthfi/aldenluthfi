@@ -1,43 +1,54 @@
 {% load svg %}
-<header class="fixed top-0 z-10 w-screen bg-backgrund">
-  <nav class="flex justify-between items-start h-20">
-    <div class="pl-6 w-48 my-auto">
-      <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
-        aldenluth.fi
-      </a>
-    </div>
-
-    <div class="hidden w-screen tablet:flex justify-center font-body text-sm text-text my-auto">
-      <ul class="w-96 tablet:grid gap-6 grid-cols-3">
-        <li
-          class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
-          <a href="" tabindex="0">Proyek</a>
-        </li>
-        <li
-          class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
-          <a href="" tabindex="0">Tulisan</a>
-        </li>
-        <li
-          class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out clickable">
-          <a href="" tabindex="0">Sembarang</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="flex pr-6 w-48 my-auto justify-end">
-      <div class="relative group/lang flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
-        <a class="p-2 rounded-md bg-transparent desktop:hover:bg-card-background duration-100" hx-get="/toggle-language/" hx-target="main">
-          {% svg 'language' %}
+<header class="sticky top-[-1px] z-10 w-screen bg-background duration-300">
+  <div class="padding duration-0">
+    <nav class="flex justify-between items-start h-20">
+      <div class="pl-6 w-48 my-auto">
+        <a href="{% url 'main:main' %}" class="font-heading text-2xl text-text">
+          aldenluth.fi
         </a>
       </div>
 
-      <div class="relative group/hue flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
-        <a class="mode-toggle p-2 rounded-t-md delay-100 duration-100 hover:bg-card-background hover:delay-0 hover:shadow-md group-hover/hue:bg-card-background group-hover/hue:delay-0 group-hover/hue:shadow-md" tabindex="0">
-          {% svg 'moon' %}
-          {% svg 'sun' %}
-        </a>
+      <div class="hidden w-screen tablet:flex justify-center font-body text-sm text-text my-auto">
+        <ul class="w-96 tablet:grid gap-6 grid-cols-3">
+          <li>
+            <a class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out"
+              href="" tabindex="0">
+              Proyek
+            </a>
+          </li>
+          <li>
+            <a class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out"
+              href="" tabindex="0">
+              Tulisan
+            </a>
+          </li>
+          <li>
+            <a class="flex justify-center py-2 px-3 rounded-md bg-buttons-default hover:shadow-lg active:shadow-md hover:bg-buttons-hover active:bg-buttons-active text-buttons-text duration-200 ease-in-out"
+              href="" tabindex="0">
+              Sembarang
+            </a>
+          </li>
+        </ul>
+      </div>
 
-        <div class="hue-selector h-0 fixed top-14 mt-[7px] duration-100 flex flex-col items-center bg-card-background rounded-b-md overflow-auto no-scrollbar shadow-md group-hover/hue:h-58 hover:h-58" tabindex="0">
+      <div class="flex pr-6 w-48 my-auto justify-end">
+        <div class="relative group/lang flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
+          <a class="p-2 rounded-md bg-transparent desktop:hover:bg-card-background duration-100"
+            hx-get="/toggle-language/" hx-target="main">
+            {% svg 'language' %}
+          </a>
+        </div>
+
+        <div class="relative group/hue flex flex-col justify-center items-center delay-100 duration-100 rounded-t-md">
+          <a class="mode-toggle p-2 rounded-t-md delay-100 duration-100 hover:bg-card-background hover:delay-0 hover:shadow-md group-hover/hue:bg-card-background group-hover/hue:delay-0 group-hover/hue:shadow-md"
+            tabindex="0">
+            {% svg 'moon' %}
+            {% svg 'sun' %}
+          </a>
+
+          <div
+            class="hue-selector h-0 fixed top-14 mt-[7px] duration-100 flex flex-col items-center bg-card-background rounded-b-md overflow-auto no-scrollbar shadow-md group-hover/hue:h-58 hover:h-58"
+            tabindex="0">
             <a class="hue-neutral px-2 pb-1 pt-2">{% svg 'hue-neutral' %}</a>
             <a class="hue-red px-2 py-1">{% svg 'hue-red' %}</a>
             <a class="hue-orange px-2 py-1">{% svg 'hue-orange' %}</a>
@@ -56,15 +67,16 @@
             <a class="hue-fuchsia px-2 py-1">{% svg 'hue-fuchsia' %}</a>
             <a class="hue-pink px-2 py-1">{% svg 'hue-pink' %}</a>
             <a class="hue-rose px-2 pt-1 pb-2">{% svg 'hue-rose' %}</a>
+          </div>
         </div>
-      </div>
 
-      <div class="relative group flex flex-col justify-center items-center">
-        <a class="burger tablet:hidden p-2 rounded-md" tabindex="0">
-          {% svg 'burger' %}
-        </a>
-      </div>
+        <div class="relative group flex flex-col justify-center items-center">
+          <a class="burger tablet:hidden p-2 rounded-md" tabindex="0">
+            {% svg 'burger' %}
+          </a>
+        </div>
 
-    </div>
-  </nav>
+      </div>
+    </nav>
+  </div>
 </header>
