@@ -5,4 +5,5 @@ app_name = 'main'
 
 urlpatterns = [
     path('', views.main, name='main'),
+    path('toggle-language/', views.toggle_language, name='toggle-language')
 ]
