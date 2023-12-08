@@ -32,7 +32,6 @@ function theme() {
     const hue = document.querySelector(".hue-selector")
 
     var iosDevice = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && "matchMedia" in window
-    var modeToggleClicked = 0
 
     let theme = localStorage.getItem("theme")
 
