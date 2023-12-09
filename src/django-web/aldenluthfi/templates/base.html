@@ -19,7 +19,7 @@
   </div>
   <main>
     {% include header %}
-    <div class="momentum-scroll top-[-90px]">
+    <div class="momentum-scroll">
       {% include content %}
     </div>
     {% include footer %}
@@ -28,6 +28,7 @@
   <script src="{% static 'js/theme.js' %}"></script>
   <script src="{% static 'js/header.js' %}"></script>
   <script src="{% static 'js/scroll.js' %}"></script>
+  <script></script>
   <script src="{% static 'js/htmx.min.js' %}" defer></script>
   {% django_htmx_script %}
 </body>
