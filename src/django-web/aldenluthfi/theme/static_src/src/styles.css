@@ -328,7 +328,7 @@ button {
 .neutral {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
-    --sidebar-background: var(--neutral-300);
+    --neutral-accent: var(--neutral-400);
 
     --text: var(--neutral-900);
 
@@ -345,8 +345,8 @@ button {
 
 .neutral-dark {
     --background: var(--neutral-950);
-    --card-background: var(--neutral-800);
-    --sidebar-background: var(--neutral-700);
+    --card-background: var(--neutral-900);
+    --neutral-accent: var(--neutral-700);
 
     --text: var(--neutral-100);
 
@@ -364,7 +364,7 @@ button {
 .red {
     --background: var(--stone-50);
     --card-background: var(--stone-200);
-    --sidebar-background: var(--stone-300);
+    --neutral-accent: var(--stone-400);
 
     --text: var(--stone-950);
 
@@ -381,8 +381,8 @@ button {
 
 .red-dark {
     --background: var(--stone-950);
-    --card-background: var(--stone-800);
-    --sidebar-background: var(--stone-700);
+    --card-background: var(--stone-900);
+    --neutral-accent: var(--stone-700);
 
     --text: var(--stone-50);
 
@@ -400,7 +400,7 @@ button {
 .orange {
     --background: var(--stone-50);
     --card-background: var(--stone-200);
-    --sidebar-background: var(--stone-300);
+    --neutral-accent: var(--stone-400);
 
     --text: var(--stone-950);
 
@@ -417,8 +417,8 @@ button {
 
 .orange-dark {
     --background: var(--stone-950);
-    --card-background: var(--stone-800);
-    --sidebar-background: var(--stone-700);
+    --card-background: var(--stone-900);
+    --neutral-accent: var(--stone-700);
 
     --text: var(--stone-50);
 
@@ -436,7 +436,7 @@ button {
 .amber {
     --background: var(--stone-50);
     --card-background: var(--stone-200);
-    --sidebar-background: var(--stone-300);
+    --neutral-accent: var(--stone-400);
 
     --text: var(--stone-950);
 
@@ -453,8 +453,8 @@ button {
 
 .amber-dark {
     --background: var(--stone-950);
-    --card-background: var(--stone-800);
-    --sidebar-background: var(--stone-700);
+    --card-background: var(--stone-900);
+    --neutral-accent: var(--stone-700);
 
     --text: var(--stone-50);
 
@@ -472,7 +472,7 @@ button {
 .yellow {
     --background: var(--stone-50);
     --card-background: var(--stone-200);
-    --sidebar-background: var(--stone-300);
+    --neutral-accent: var(--stone-400);
 
     --text: var(--stone-950);
 
@@ -489,8 +489,8 @@ button {
 
 .yellow-dark {
     --background: var(--stone-950);
-    --card-background: var(--stone-800);
-    --sidebar-background: var(--stone-700);
+    --card-background: var(--stone-900);
+    --neutral-accent: var(--stone-700);
 
     --text: var(--stone-50);
 
@@ -508,7 +508,7 @@ button {
 .lime {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
-    --sidebar-background: var(--neutral-300);
+    --neutral-accent: var(--neutral-400);
 
     --text: var(--neutral-950);
 
@@ -525,8 +525,8 @@ button {
 
 .lime-dark {
     --background: var(--neutral-950);
-    --card-background: var(--neutral-800);
-    --sidebar-background: var(--neutral-700);
+    --card-background: var(--neutral-900);
+    --neutral-accent: var(--neutral-700);
 
     --text: var(--neutral-50);
 
@@ -544,7 +544,7 @@ button {
 .green {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
-    --sidebar-background: var(--neutral-300);
+    --neutral-accent: var(--neutral-400);
 
     --text: var(--neutral-950);
 
@@ -561,8 +561,8 @@ button {
 
 .green-dark {
     --background: var(--neutral-950);
-    --card-background: var(--neutral-800);
-    --sidebar-background: var(--neutral-700);
+    --card-background: var(--neutral-900);
+    --neutral-accent: var(--neutral-700);
 
     --text: var(--neutral-50);
 
@@ -580,7 +580,7 @@ button {
 .emerald {
     --background: var(--zinc-50);
     --card-background: var(--zinc-200);
-    --sidebar-background: var(--zinc-300);
+    --neutral-accent: var(--zinc-400);
 
     --text: var(--zinc-950);
 
@@ -597,8 +597,8 @@ button {
 
 .emerald-dark {
     --background: var(--zinc-950);
-    --card-background: var(--zinc-800);
-    --sidebar-background: var(--zinc-700);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
     --text: var(--zinc-50);
 
@@ -616,7 +616,7 @@ button {
 .teal {
     --background: var(--zinc-50);
     --card-background: var(--zinc-200);
-    --sidebar-background: var(--zinc-300);
+    --neutral-accent: var(--zinc-400);
 
     --text: var(--zinc-950);
 
@@ -633,8 +633,8 @@ button {
 
 .teal-dark {
     --background: var(--zinc-950);
-    --card-background: var(--zinc-800);
-    --sidebar-background: var(--zinc-700);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
     --text: var(--zinc-50);
 
@@ -652,7 +652,7 @@ button {
 .cyan {
     --background: var(--zinc-50);
     --card-background: var(--zinc-200);
-    --sidebar-background: var(--zinc-300);
+    --neutral-accent: var(--zinc-400);
 
     --text: var(--zinc-950);
 
@@ -669,8 +669,8 @@ button {
 
 .cyan-dark {
     --background: var(--zinc-950);
-    --card-background: var(--zinc-800);
-    --sidebar-background: var(--zinc-700);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
     --text: var(--zinc-50);
 
@@ -688,7 +688,7 @@ button {
 .sky {
     --background: var(--zinc-50);
     --card-background: var(--zinc-200);
-    --sidebar-background: var(--zinc-300);
+    --neutral-accent: var(--zinc-400);
 
     --text: var(--zinc-950);
 
@@ -705,8 +705,8 @@ button {
 
 .sky-dark {
     --background: var(--zinc-950);
-    --card-background: var(--zinc-800);
-    --sidebar-background: var(--zinc-700);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
     --text: var(--zinc-50);
 
@@ -724,7 +724,7 @@ button {
 .blue {
     --background: var(--zinc-50);
     --card-background: var(--zinc-200);
-    --sidebar-background: var(--zinc-300);
+    --neutral-accent: var(--zinc-400);
 
     --text: var(--zinc-950);
 
@@ -741,8 +741,8 @@ button {
 
 .blue-dark {
     --background: var(--zinc-950);
-    --card-background: var(--zinc-800);
-    --sidebar-background: var(--zinc-700);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
     --text: var(--zinc-50);
 
@@ -759,7 +759,7 @@ button {
 .indigo {
     --background: var(--zinc-50);
     --card-background: var(--zinc-200);
-    --sidebar-background: var(--zinc-300);
+    --neutral-accent: var(--zinc-400);
 
     --text: var(--zinc-950);
 
@@ -776,8 +776,8 @@ button {
 
 .indigo-dark {
     --background: var(--zinc-950);
-    --card-background: var(--zinc-800);
-    --sidebar-background: var(--zinc-700);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
     --text: var(--zinc-50);
 
@@ -795,7 +795,7 @@ button {
 .violet {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
-    --sidebar-background: var(--neutral-300);
+    --neutral-accent: var(--neutral-400);
 
     --text: var(--neutral-950);
 
@@ -812,8 +812,8 @@ button {
 
 .violet-dark {
     --background: var(--neutral-950);
-    --card-background: var(--neutral-800);
-    --sidebar-background: var(--neutral-700);
+    --card-background: var(--neutral-900);
+    --neutral-accent: var(--neutral-700);
 
     --text: var(--neutral-50);
 
@@ -831,7 +831,7 @@ button {
 .purple {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
-    --sidebar-background: var(--neutral-300);
+    --neutral-accent: var(--neutral-400);
 
     --text: var(--neutral-950);
 
@@ -848,8 +848,8 @@ button {
 
 .purple-dark {
     --background: var(--neutral-950);
-    --card-background: var(--neutral-800);
-    --sidebar-background: var(--neutral-700);
+    --card-background: var(--neutral-900);
+    --neutral-accent: var(--neutral-700);
 
     --text: var(--neutral-50);
 
@@ -867,7 +867,7 @@ button {
 .fuchsia {
     --background: var(--neutral-50);
     --card-background: var(--neutral-200);
-    --sidebar-background: var(--neutral-300);
+    --neutral-accent: var(--neutral-400);
 
     --text: var(--neutral-950);
 
@@ -884,8 +884,8 @@ button {
 
 .fuchsia-dark {
     --background: var(--neutral-950);
-    --card-background: var(--neutral-800);
-    --sidebar-background: var(--neutral-700);
+    --card-background: var(--neutral-900);
+    --neutral-accent: var(--neutral-700);
 
     --text: var(--neutral-50);
 
@@ -903,7 +903,7 @@ button {
 .pink {
     --background: var(--stone-50);
     --card-background: var(--stone-200);
-    --sidebar-background: var(--stone-300);
+    --neutral-accent: var(--stone-400);
 
     --text: var(--stone-950);
 
@@ -920,8 +920,8 @@ button {
 
 .pink-dark {
     --background: var(--stone-950);
-    --card-background: var(--stone-800);
-    --sidebar-background: var(--stone-700);
+    --card-background: var(--stone-900);
+    --neutral-accent: var(--stone-700);
 
     --text: var(--stone-50);
 
@@ -939,7 +939,7 @@ button {
 .rose {
     --background: var(--stone-50);
     --card-background: var(--stone-200);
-    --sidebar-background: var(--stone-300);
+    --neutral-accent: var(--stone-400);
 
     --text: var(--stone-950);
 
@@ -956,8 +956,8 @@ button {
 
 .rose-dark {
     --background: var(--stone-950);
-    --card-background: var(--stone-800);
-    --sidebar-background: var(--stone-700);
+    --card-background: var(--stone-900);
+    --neutral-accent: var(--stone-700);
 
     --text: var(--stone-50);
 

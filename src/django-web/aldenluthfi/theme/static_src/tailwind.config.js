@@ -46,9 +46,12 @@ module.exports = {
     ],
     theme: {
         extend: {
+            boxShadow: {
+                'glow': '0 2px 15px -6px rgb(200 200 200 / 0.1), 0 1px 12px -8px rgb(200 200 200 / 0.1)'
+            },
             spacing: {
-                58: "236px",
-                22: "85px"
+                "6-hues": "236px",
+                "desktop": "1024px",
             },
             transitionTimingFunction: {
                 'bounce': 'cubic-bezier(0.59,-0.14,0.56,1.8)',
@@ -105,7 +108,7 @@ module.exports = {
                 /* Theme Colors */
                 'background': 'rgba(var(--background) / <alpha-value>)',
                 'card-background': 'rgba(var(--card-background) / <alpha-value>)',
-                'sidebar-background': 'rgba(var(--sidebar-background) / <alpha-value>)',
+                'neutral-accent': 'rgba(var(--neutral-accent) / <alpha-value>)',
 
                 'text': 'rgba(var(--text) / <alpha-value>)',
                 'buttons-text': 'rgba(var(--buttons-text) / <alpha-value>)',
