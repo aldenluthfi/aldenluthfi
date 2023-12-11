@@ -127,7 +127,7 @@ function themeSetter() {
             "mousedown",
             function (e) {
                 hueClass = `${hue}`
-                current = document.documentElement.classList[0]
+                current = document.documentElement.classList[document.documentElement.classList.length - 1]
                 if (current.includes("-dark")) {
                     hueClass = `${hue}-dark`
                     if (!current.includes("neutral")) {

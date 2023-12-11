@@ -3,14 +3,13 @@
 {% load django_htmx %}
 
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="no-scrollbar">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   {% tailwind_css %}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css" />
 </head>
 
 <body class="flex flex-col select-none bg-background duration-200">
@@ -19,16 +18,15 @@
   </div>
   <main>
     {% include header %}
-    <div class="momentum-scroll">
+    <div id="scroll-content">
       {% include content %}
+      {% include footer %}
     </div>
-    {% include footer %}
   </main>
   <script src="{% static 'js/cursor.js' %}"></script>
   <script src="{% static 'js/theme.js' %}"></script>
   <script src="{% static 'js/header.js' %}"></script>
   <script src="{% static 'js/scroll.js' %}"></script>
-  <script></script>
   <script src="{% static 'js/htmx.min.js' %}" defer></script>
   {% django_htmx_script %}
 </body>
