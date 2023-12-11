@@ -1,6 +1,6 @@
 
 function scrollSmooth() {
-    const scrollWrap = document.querySelectorAll(".momentum-scroll")
+    const scrollWrap = document.querySelector(".momentum-scroll")
     const speed = 0.1
 
     var offset = 0
@@ -9,9 +9,7 @@ function scrollSmooth() {
         offset += (window.scrollY - offset) * speed;
 
         var scroll = "translateY(-" + offset + "px) translateZ(0)";
-        scrollWrap.forEach(function (el) {
-            el.style.transform = scroll;
-        })
+        scrollWrap.style.transform = scroll;
 
         callScroll = requestAnimationFrame(smoothScroll);
     }
