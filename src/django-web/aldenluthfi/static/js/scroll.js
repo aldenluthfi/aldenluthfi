@@ -1,14 +1,16 @@
 function scrollSmooth() {
     const scrollWrap = document.querySelector("#scroll-content")
-    const speed = 0.1
+    const height = scrollWrap.getBoundingClientRect().height - 1
+    const speed = 0.07
 
     var offset = 0
+
+    document.body.style.height = Math.floor(height) + "px";
 
     function smoothScroll() {
         offset += (window.scrollY - offset) * speed;
 
-        var scroll = "translateY(-" + offset + "px) translateZ(0)";
-        scrollWrap.style.transform = scroll;
+        scrollWrap.style.transform = "translateY(-" + offset + "px)";
 
         callScroll = requestAnimationFrame(smoothScroll);
     }
