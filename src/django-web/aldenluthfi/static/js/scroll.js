@@ -17,10 +17,8 @@ function scrollSmooth() {
 
 }
 
-window.onload = scrollSmooth
-document.addEventListener("htmx:afterRequest", function (e) { scrollSmooth() })
 
-window.addEventListener('touchstart', function (e) {
-    this.document.removeEventListener("htmx:afterRequest")
-    window.onload = null
-})
+if (document.documentElement.clientWidth >= 1024) {
+    window.onload = scrollSmooth
+    document.addEventListener("htmx:afterRequest", function (e) { scrollSmooth() })
+}
