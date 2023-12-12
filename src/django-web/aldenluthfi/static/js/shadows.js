@@ -38,6 +38,19 @@ document.addEventListener("htmx:afterRequest", function (e) {
             button.classList.add("hover:shadow-lg");
         }
     });
+
+    if (window.scrollY > 0) {
+        document.querySelector("header").classList.remove("shadow-glow-md");
+        document.querySelector("header").classList.remove("shadow-md");
+        if (localStorage.getItem("theme").includes("dark")) {
+            document.querySelector("header").classList.add("shadow-glow-md");
+        } else {
+            document.querySelector("header").classList.add("shadow-md");
+        }
+    } else {
+        document.querySelector("header").classList.remove("shadow-glow-md");
+        document.querySelector("header").classList.remove("shadow-md");
+    }
 })
 
 window.addEventListener("scroll", function () {
