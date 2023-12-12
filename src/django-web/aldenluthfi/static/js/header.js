@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-    if (window,this.scrollY > 0) {
+    if (window.scrollY > 0) {
         document.querySelector("header").classList.remove("shadow-glow");
         document.querySelector("header").classList.remove("shadow-md");
         if (localStorage.getItem("theme").includes("dark")) {

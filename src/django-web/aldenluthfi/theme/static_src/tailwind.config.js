@@ -47,7 +47,7 @@ module.exports = {
     theme: {
         extend: {
             boxShadow: {
-                'glow': '0 2px 15px -6px rgb(200 200 200 / 0.1), 0 1px 12px -8px rgb(200 200 200 / 0.1)'
+                'glow': '0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1)'
             },
             spacing: {
                 "6-hues": "236px",

@@ -96,7 +96,7 @@ function themeSetter() {
                 document.documentElement.classList.add(hueClass)
                 localStorage.setItem("theme", hueClass)
 
-                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                if (window.scrollY > 0) {
                     document.querySelector("header").classList.remove("shadow-glow");
                     document.querySelector("header").classList.remove("shadow-md");
                     if (localStorage.getItem("theme").includes("dark")) {
