@@ -165,3 +165,11 @@ function themeSetter() {
 themeSetter()
 
 document.addEventListener("htmx:afterRequest", function (e) { themeSetter() })
+
+document.documentElement.addEventListener('dragstart', event => {
+  event.preventDefault();
+});
+
+document.documentElement.addEventListener('drop', event => {
+  event.preventDefault();
+});
