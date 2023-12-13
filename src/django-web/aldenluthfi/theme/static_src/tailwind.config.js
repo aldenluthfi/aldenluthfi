@@ -66,8 +66,18 @@ module.exports = {
                 '14xl': ['18rem', '18rem'],
             },
             fontFamily: {
-                'heading': ['heading', 'sans-serif'],
-                'heading-italic': ['heading-italic', 'sans-serif'],
+                'heading': [
+                    "'heading', 'sans-serif'",
+                    {
+                        fontFeatureSettings: '"ss01", "ss03"',
+                    }
+                ],
+                'heading-italic': [
+                    "'heading-italic', 'sans-serif'",
+                    {
+                        fontFeatureSettings: '"ss01", "ss03"',
+                    }
+                ],
                 'code': [
                     "'code', 'sans-serif'",
                     {
@@ -86,18 +96,6 @@ module.exports = {
                         fontFeatureSettings: '"ss05", "liga", "ss02"',
                     }
                 ],
-                'body-italic': [
-                    "'body-italic', 'sans-serif'",
-                    {
-                        fontFeatureSettings: '"ss05", "liga", "ss02"',
-                    }
-                ],
-                'body-bold-italic': [
-                    "'body-bold-italic', 'sans-serif'",
-                    {
-                        fontFeatureSettings: '"ss05", "liga", "ss02"',
-                    }
-                ],
             },
             screens: {
                 'tablet': '768px',
@@ -107,7 +105,6 @@ module.exports = {
                 'transparent': 'transparent',
                 'current': 'currentColor',
 
-                /* Theme Colors */
                 'background': 'rgba(var(--background) / <alpha-value>)',
                 'card-background': 'rgba(var(--card-background) / <alpha-value>)',
                 'neutral-accent': 'rgba(var(--neutral-accent) / <alpha-value>)',
