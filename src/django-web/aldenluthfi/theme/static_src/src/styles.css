@@ -10,24 +10,13 @@
 
 @font-face {
     font-family: 'body';
-    src: url('../../../static/fonts/CartographCF-Regular.otf') format('opentype');
+    src: url('../../../static/fonts/CastledownPro-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'body-bold';
-    src: url('../../../static/fonts/CartographCF-Bold.otf') format('opentype');
+    src: url('../../../static/fonts/CastledownPro-Heavy.ttf') format('truetype');
 }
-
-@font-face {
-    font-family: 'body-italic';
-    src: url('../../../static/fonts/CartographCF-RegularItalic.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'body-bold-italic';
-    src: url('../../../static/fonts/CartographCF-BoldItalic.otf') format('opentype');
-}
-
 
 @font-face {
     font-family: 'code';
@@ -358,7 +347,7 @@ button {
     --buttons-text: var(--neutral-500);
     --buttons-text-disabled: var(--neutral-800);
 
-    --accent: var(--neutral-700);
+    --accent: var(--neutral-600);
 }
 
 .red {

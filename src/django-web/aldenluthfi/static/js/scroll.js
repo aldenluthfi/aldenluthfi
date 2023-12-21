@@ -1,26 +1,31 @@
-function scrollSmooth() {
-    const scrollWrap = document.querySelector("#scroll-content")
-    const height = scrollWrap.getBoundingClientRect().height - 1
-    const speed = 0.07
+var x = 0
+var speed = document.documentElement.clientWidth / 500
 
-    var offset = 0
+function getTranslateX(element) {
+    const style = window.getComputedStyle(element)
+    const matrix = new DOMMatrixReadOnly(style.transform)
+    return matrix.m41
+}
 
-    document.body.style.height = Math.floor(height) + "px";
+function inOutQuad(n) {
+    n *= 2;
+    if (n < 1) return 0.5 * n * n;
+    return - 0.5 * (--n * (n - 2) - 1);
+};
 
-    function smoothScroll() {
-        offset += (window.scrollY - offset) * speed;
+function marquee() {
+    var text = document.querySelector('.sliding')
 
-        scrollWrap.style.transform = "translateY(-" + offset + "px)";
+    x = getTranslateX(text) - speed
 
-        callScroll = requestAnimationFrame(smoothScroll);
+    if (x <= -Math.floor(0.25 * text.getBoundingClientRect().width)) {
+        x = -x + speed
     }
 
-    smoothScroll()
+    text.style.transform = `translateX(${x}px) skewX(0deg)`
 
+    requestAnimationFrame(marquee)
 }
 
+marquee()
 
-if (document.documentElement.clientWidth >= 1024) {
-    window.onload = scrollSmooth
-    document.addEventListener("htmx:afterRequest", function (e) { scrollSmooth() })
-}

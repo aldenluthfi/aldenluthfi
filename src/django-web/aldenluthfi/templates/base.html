@@ -16,12 +16,10 @@
   <div
     class="cursor hidden desktop:inline-block fixed -translate-y-1/2 -translate-x-1/2 top-0 z-50 left-0 w-10 h-10 bg-transparent pointer-events-none border-solid border-accent rounded-full border-2 ease-bounce duration-200">
   </div>
-  <main>
+  <main class="">
     {% include header %}
-    <div class="w-screen h-screen overflow-visible" id="scroll-content">
-      {% include content %}
-      {% include footer %}
-    </div>
+    {% include content %}
+    {% include footer %}
   </main>
   <script src="{% static 'js/cursor.js' %}"></script>
   <script src="{% static 'js/theme.js' %}"></script>

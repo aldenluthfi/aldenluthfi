@@ -13,12 +13,12 @@ if (theme != null) {
     if (theme.includes("-dark")) {
         dark.classList.add("hidden")
         light.classList.remove("hidden")
-        document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+        document.querySelector(".neutral-icon").classList.add("fill-neutral-600")
         document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
     } else {
         dark.classList.remove("hidden")
         light.classList.add("hidden")
-        document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+        document.querySelector(".neutral-icon").classList.remove("fill-neutral-600")
         document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
     }
 } else {
@@ -59,12 +59,12 @@ function themeSetter() {
         if (theme.includes("-dark")) {
             dark.classList.add("hidden")
             light.classList.remove("hidden")
-            document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+            document.querySelector(".neutral-icon").classList.add("fill-neutral-600")
             document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
         } else {
             dark.classList.remove("hidden")
             light.classList.add("hidden")
-            document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+            document.querySelector(".neutral-icon").classList.remove("fill-neutral-600")
             document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
         }
     } else {
@@ -83,13 +83,13 @@ function themeSetter() {
                     hueClass = current.replace("-dark", "")
                     dark.classList.remove("hidden")
                     light.classList.add("hidden")
-                    document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+                    document.querySelector(".neutral-icon").classList.remove("fill-neutral-600")
                     document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
                 } else {
                     hueClass = current + "-dark"
                     dark.classList.add("hidden")
                     light.classList.remove("hidden")
-                    document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+                    document.querySelector(".neutral-icon").classList.add("fill-neutral-600")
                     document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
                 }
                 document.documentElement.classList.remove(current)
@@ -97,16 +97,16 @@ function themeSetter() {
                 localStorage.setItem("theme", hueClass)
 
                 if (window.scrollY > 0) {
-                    document.querySelector("header").classList.remove("shadow-glow-md");
-                    document.querySelector("header").classList.remove("shadow-md");
+                    document.querySelector("header").classList.remove("drop-shadow-glow-md");
+                    document.querySelector("header").classList.remove("drop-shadow-md");
                     if (localStorage.getItem("theme").includes("dark")) {
-                        document.querySelector("header").classList.add("shadow-glow-md");
+                        document.querySelector("header").classList.add("drop-shadow-glow-md");
                     } else {
-                        document.querySelector("header").classList.add("shadow-md");
+                        document.querySelector("header").classList.add("drop-shadow-md");
                     }
                 } else {
-                    document.querySelector("header").classList.remove("shadow-glow-md");
-                    document.querySelector("header").classList.remove("shadow-md");
+                    document.querySelector("header").classList.remove("drop-shadow-glow-md");
+                    document.querySelector("header").classList.remove("drop-shadow-md");
                 }
 
                 document.querySelectorAll(".button").forEach(function (button) {
@@ -154,12 +154,12 @@ function themeSetter() {
                 if (current.includes("-dark")) {
                     hueClass = `${hue}-dark`
                     if (!current.includes("neutral")) {
-                        document.querySelector(".neutral-icon").classList.add("fill-neutral-700")
+                        document.querySelector(".neutral-icon").classList.add("fill-neutral-600")
                         document.querySelector(".neutral-icon").classList.remove("fill-neutral-500")
                     }
                 } else {
                     if (!current.includes("neutral")) {
-                        document.querySelector(".neutral-icon").classList.remove("fill-neutral-700")
+                        document.querySelector(".neutral-icon").classList.remove("fill-neutral-600")
                         document.querySelector(".neutral-icon").classList.add("fill-neutral-500")
                     }
                 }

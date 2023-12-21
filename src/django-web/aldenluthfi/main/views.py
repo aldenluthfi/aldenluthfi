@@ -4,7 +4,7 @@ from django.shortcuts import redirect, render
 def main(request):
 
     if "language" not in request.session:
-        request.session["language"] = "en"
+        request.session["language"] = "id"
 
     if request.session["language"] == "en":
         header_file = "header-en.html"

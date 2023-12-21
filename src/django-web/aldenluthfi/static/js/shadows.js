@@ -40,30 +40,30 @@ document.addEventListener("htmx:afterRequest", function (e) {
     });
 
     if (window.scrollY > 0) {
-        document.querySelector("header").classList.remove("shadow-glow-md");
-        document.querySelector("header").classList.remove("shadow-md");
+        document.querySelector("header").classList.remove("drop-shadow-glow-md");
+        document.querySelector("header").classList.remove("drop-shadow-md");
         if (localStorage.getItem("theme").includes("dark")) {
-            document.querySelector("header").classList.add("shadow-glow-md");
+            document.querySelector("header").classList.add("drop-shadow-glow-md");
         } else {
-            document.querySelector("header").classList.add("shadow-md");
+            document.querySelector("header").classList.add("drop-shadow-md");
         }
     } else {
-        document.querySelector("header").classList.remove("shadow-glow-md");
-        document.querySelector("header").classList.remove("shadow-md");
+        document.querySelector("header").classList.remove("drop-shadow-glow-md");
+        document.querySelector("header").classList.remove("drop-shadow-md");
     }
 })
 
 window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
-        document.querySelector("header").classList.remove("shadow-glow-md");
-        document.querySelector("header").classList.remove("shadow-md");
+        document.querySelector("header").classList.remove("drop-shadow-glow-md");
+        document.querySelector("header").classList.remove("drop-shadow-md");
         if (localStorage.getItem("theme").includes("dark")) {
-            document.querySelector("header").classList.add("shadow-glow-md");
+            document.querySelector("header").classList.add("drop-shadow-glow-md");
         } else {
-            document.querySelector("header").classList.add("shadow-md");
+            document.querySelector("header").classList.add("drop-shadow-md");
         }
     } else {
-        document.querySelector("header").classList.remove("shadow-glow-md");
-        document.querySelector("header").classList.remove("shadow-md");
+        document.querySelector("header").classList.remove("drop-shadow-glow-md");
+        document.querySelector("header").classList.remove("drop-shadow-md");
     }
 });
