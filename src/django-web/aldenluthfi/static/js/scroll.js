@@ -1,5 +1,5 @@
 var x = 0
-var speed = document.documentElement.clientWidth / 500
+var speed = Math.floor(document.documentElement.clientWidth / 500)
 
 function getTranslateX(element) {
     const style = window.getComputedStyle(element)
