@@ -68,6 +68,7 @@ module.exports = {
             spacing: {
                 "6-hues": "236px",
                 "desktop": "1024px",
+                'phone': '480px',
             },
             transitionTimingFunction: {
                 'bounce': 'cubic-bezier(0.59,-0.14,0.56,1.8)',
