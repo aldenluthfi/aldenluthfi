@@ -118,6 +118,16 @@ function themeSetter() {
                         button.classList.add("hover:shadow-lg");
                     }
                 });
+
+                document.querySelectorAll(".photo").forEach(function (button) {
+                    button.classList.remove("hover:shadow-glow-xl");
+                    button.classList.remove("hover:shadow-xl");
+                    if (localStorage.getItem("theme").includes("dark")) {
+                        button.classList.add("hover:shadow-glow-xl");
+                    } else {
+                        button.classList.add("hover:shadow-xl");
+                    }
+                });
             } else if (!iosDevice) {
                 modeToggleClicked = 1
             }

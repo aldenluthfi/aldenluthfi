@@ -8,13 +8,13 @@ document.querySelector(".burger").addEventListener("mouseover", function () {
     }
 });
 
-document.querySelectorAll(".button").forEach(function (button) {
-    button.classList.remove("hover:shadow-glow-lg");
-    button.classList.remove("hover:shadow-lg");
+document.querySelectorAll(".photo").forEach(function (button) {
+    button.classList.remove("hover:shadow-glow-xl");
+    button.classList.remove("hover:shadow-xl");
     if (localStorage.getItem("theme").includes("dark")) {
-        button.classList.add("hover:shadow-glow-lg");
+        button.classList.add("hover:shadow-glow-xl");
     } else {
-        button.classList.add("hover:shadow-lg");
+        button.classList.add("hover:shadow-xl");
     }
 });
 
@@ -36,6 +36,16 @@ document.addEventListener("htmx:afterRequest", function (e) {
             button.classList.add("hover:shadow-glow-lg");
         } else {
             button.classList.add("hover:shadow-lg");
+        }
+    });
+
+    document.querySelectorAll(".photo").forEach(function (button) {
+        button.classList.remove("hover:shadow-glow-xl");
+        button.classList.remove("hover:shadow-xl");
+        if (localStorage.getItem("theme").includes("dark")) {
+            button.classList.add("hover:shadow-glow-xl");
+        } else {
+            button.classList.add("hover:shadow-xl");
         }
     });
 
