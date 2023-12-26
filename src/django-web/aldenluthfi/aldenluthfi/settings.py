@@ -29,10 +29,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['DEBUG'] == "True"
 
-ALLOWED_HOSTS = ['aldenluth.fi', 'www.aldenluth.fi', '127.0.0.1', 'django']
-
-if os.name == 'nt':
-    NPM_BIN_PATH = r"C:\Users\aldenluthfi\scoop\apps\nodejs\current\npm.cmd"
+ALLOWED_HOSTS = ['aldenluth.fi', 'www.aldenluth.fi', '127.0.0.1', 'django', 'localhost']
 
 # Application definition
 

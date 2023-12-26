@@ -4,6 +4,7 @@ var mouseDown = 0;
 window.addEventListener(
     "mousemove",
     function (e) {
+        cursorDot.style.transform = `translate(-50%, -50%)`
         cursorDot.animate({
             left: `${e.clientX}px`,
             top: `${e.clientY}px`,
@@ -14,21 +15,16 @@ window.addEventListener(
 window.addEventListener(
     "mousedown",
     function (e) {
-        let classList = cursorDot.classList
-        classList.remove('w-10')
-        classList.remove('h-10')
-        classList.remove('h-6')
-        classList.remove('w-6')
-        classList.remove('h-4')
-        classList.remove('w-4')
-        classList.remove('h-2')
-        classList.remove('w-2')
         if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON")) {
-            classList.add('h-6')
-            classList.add('w-6')
+            cursorDot.animate({
+                width: `1.5rem`,
+                height: `1.5rem`,
+            }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
         } else {
-            classList.add('h-2')
-            classList.add('w-2')
+            cursorDot.animate({
+                width: `0.5rem`,
+                height: `0.5rem`,
+            }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
         }
         this.document.activeElement.blur();
         mouseDown++;
@@ -38,21 +34,16 @@ window.addEventListener(
 window.addEventListener(
     "mouseup",
     function (e) {
-        let classList = cursorDot.classList
-        classList.remove('w-10')
-        classList.remove('h-10')
-        classList.remove('h-6')
-        classList.remove('w-6')
-        classList.remove('h-4')
-        classList.remove('w-4')
-        classList.remove('h-2')
-        classList.remove('w-2')
         if (!(e.target.tagName == "A") && !(e.target.tagName == "BUTTON")) {
-            classList.add('w-10')
-            classList.add('h-10')
+            cursorDot.animate({
+                width: `2.5rem`,
+                height: `2.5rem`,
+            }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
         } else {
-            classList.add('h-4')
-            classList.add('w-4')
+            cursorDot.animate({
+                width: `1rem`,
+                height: `1rem`,
+            }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
         }
         mouseDown--;
     }
@@ -68,43 +59,36 @@ function cursor() {
                 let classList = cursorDot.classList
                 classList.remove('bg-transparent')
                 classList.add('bg-accent')
-                classList.remove('w-10')
-                classList.remove('h-10')
-                classList.remove('h-6')
-                classList.remove('w-6')
-                classList.remove('h-4')
-                classList.remove('w-4')
-                classList.remove('h-2')
-                classList.remove('w-2')
                 if (mouseDown == 1) {
-                    classList.add('h-2')
-                    classList.add('w-2')
+                    cursorDot.animate({
+                        width: `0.5rem`,
+                        height: `0.5rem`,
+                    }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
                 } else {
-                    classList.add('h-4')
-                    classList.add('w-4')
+                    cursorDot.animate({
+                        width: `1rem`,
+                        height: `1rem`,
+                    }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
                 }
             }
         )
         clickable.addEventListener(
             "mouseleave",
             function (e) {
+                console.log(cursorDot)
                 let classList = cursorDot.classList
                 classList.add('bg-transparent')
                 classList.remove('bg-accent')
-                classList.remove('w-10')
-                classList.remove('h-10')
-                classList.remove('h-6')
-                classList.remove('w-6')
-                classList.remove('h-4')
-                classList.remove('w-4')
-                classList.remove('h-2')
-                classList.remove('w-2')
                 if (mouseDown == 1) {
-                    classList.toggle('w-6')
-                    classList.toggle('h-6')
+                    cursorDot.animate({
+                        width: `1.5rem`,
+                        height: `1.5rem`,
+                    }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
                 } else {
-                    classList.toggle('w-10')
-                    classList.toggle('h-10')
+                    cursorDot.animate({
+                        width: `2.5rem`,
+                        height: `2.5rem`,
+                    }, { duration: 200, fill: "forwards", easing: "cubic-bezier(0.3, 0.2, 0.2, 1.4)" });
                 }
             }
         )
