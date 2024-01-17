@@ -18,6 +18,29 @@ document.querySelectorAll(".photo").forEach(function (button) {
     }
 });
 
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+        document.querySelector("header").classList.remove("drop-shadow-glow-md");
+        document.querySelector("header").classList.remove("drop-shadow-md");
+        if (localStorage.getItem("theme").includes("dark")) {
+            document.querySelector("header").classList.add("drop-shadow-glow-md");
+        } else {
+            document.querySelector("header").classList.add("drop-shadow-md");
+        }
+    } else {
+        document.querySelector("header").classList.remove("drop-shadow-glow-md");
+        document.querySelector("header").classList.remove("drop-shadow-md");
+    }
+});
+
+document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
+document.querySelector(".article").classList.remove("desktop:shadow-article");
+if (localStorage.getItem("theme").includes("dark")) {
+    document.querySelector(".article").classList.add("desktop:shadow-glow-article");
+} else {
+    document.querySelector(".article").classList.add("desktop:shadow-article");
+}
+
 document.addEventListener("htmx:afterRequest", function (e) {
     document.querySelector(".burger").addEventListener("mouseover", function () {
         document.querySelector(".sidebar").classList.remove("shadow-glow-xl");
@@ -49,6 +72,14 @@ document.addEventListener("htmx:afterRequest", function (e) {
         }
     });
 
+    document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
+    document.querySelector(".article").classList.remove("desktop:shadow-article");
+    if (localStorage.getItem("theme").includes("dark")) {
+        document.querySelector(".article").classList.add("desktop:shadow-glow-article");
+    } else {
+        document.querySelector(".article").classList.add("desktop:shadow-article");
+    }
+
     if (window.scrollY > 0) {
         document.querySelector("header").classList.remove("drop-shadow-glow-md");
         document.querySelector("header").classList.remove("drop-shadow-md");
@@ -62,18 +93,3 @@ document.addEventListener("htmx:afterRequest", function (e) {
         document.querySelector("header").classList.remove("drop-shadow-md");
     }
 })
-
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 0) {
-        document.querySelector("header").classList.remove("drop-shadow-glow-md");
-        document.querySelector("header").classList.remove("drop-shadow-md");
-        if (localStorage.getItem("theme").includes("dark")) {
-            document.querySelector("header").classList.add("drop-shadow-glow-md");
-        } else {
-            document.querySelector("header").classList.add("drop-shadow-md");
-        }
-    } else {
-        document.querySelector("header").classList.remove("drop-shadow-glow-md");
-        document.querySelector("header").classList.remove("drop-shadow-md");
-    }
-});
