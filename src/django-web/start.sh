@@ -5,4 +5,4 @@ python manage.py tailwind build --no-input
 python manage.py migrate --no-input
 python manage.py collectstatic --no-input
 
-gunicorn aldenluthfi.wsgi:application --bind 0.0.0.0:8000
+gunicorn aldenluthfi.wsgi:application --bind 0.0.0.0:8000 --workers 3 --threads 8 --timeout 300
