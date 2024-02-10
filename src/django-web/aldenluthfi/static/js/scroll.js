@@ -16,8 +16,8 @@ function marquee() {
         x = -x + speed
     }
 
-    text.style.transform = `translateX(${x}px)`
-    text.style.webkitTransform = `translateX(${x}px)`
+    text.style.webkitTransform = `translate(${x}px, 0px)`
+    text.style.transform = `translate(${x}px, 0px)`
 
     requestAnimationFrame(marquee)
 }
