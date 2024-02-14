@@ -1,10 +1,10 @@
 document.querySelector(".burger").addEventListener("mouseover", function () {
-    document.querySelector(".sidebar").classList.remove("shadow-glow-xl");
-    document.querySelector(".sidebar").classList.remove("shadow-xl");
+    document.querySelector(".sidebar").classList.remove("shadow-glow-article");
+    document.querySelector(".sidebar").classList.remove("shadow-article");
     if (localStorage.getItem("theme").includes("dark")) {
-        document.querySelector(".sidebar").classList.add("shadow-glow-xl");
+        document.querySelector(".sidebar").classList.add("shadow-glow-article");
     } else {
-        document.querySelector(".sidebar").classList.add("shadow-xl");
+        document.querySelector(".sidebar").classList.add("shadow-article");
     }
 });
 
@@ -33,22 +33,24 @@ window.addEventListener("scroll", function () {
     }
 });
 
-document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
-document.querySelector(".article").classList.remove("desktop:shadow-article");
-if (localStorage.getItem("theme").includes("dark")) {
-    document.querySelector(".article").classList.add("desktop:shadow-glow-article");
-} else {
-    document.querySelector(".article").classList.add("desktop:shadow-article");
+if (document.querySelector(".article") != null) {
+    document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
+    document.querySelector(".article").classList.remove("desktop:shadow-article");
+    if (localStorage.getItem("theme").includes("dark")) {
+        document.querySelector(".article").classList.add("desktop:shadow-glow-article");
+    } else {
+        document.querySelector(".article").classList.add("desktop:shadow-article");
+    }
 }
 
 document.addEventListener("htmx:afterRequest", function (e) {
     document.querySelector(".burger").addEventListener("mouseover", function () {
-        document.querySelector(".sidebar").classList.remove("shadow-glow-xl");
-        document.querySelector(".sidebar").classList.remove("shadow-xl");
+        document.querySelector(".sidebar").classList.remove("shadow-glow-article");
+        document.querySelector(".sidebar").classList.remove("shadow-article");
         if (localStorage.getItem("theme").includes("dark")) {
-            document.querySelector(".sidebar").classList.add("shadow-glow-xl");
+            document.querySelector(".sidebar").classList.add("shadow-glow-article");
         } else {
-            document.querySelector(".sidebar").classList.add("shadow-xl");
+            document.querySelector(".sidebar").classList.add("shadow-article");
         }
     });
 
@@ -72,12 +74,14 @@ document.addEventListener("htmx:afterRequest", function (e) {
         }
     });
 
-    document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
-    document.querySelector(".article").classList.remove("desktop:shadow-article");
-    if (localStorage.getItem("theme").includes("dark")) {
-        document.querySelector(".article").classList.add("desktop:shadow-glow-article");
-    } else {
-        document.querySelector(".article").classList.add("desktop:shadow-article");
+    if (document.querySelector(".article") != null) {
+        document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
+        document.querySelector(".article").classList.remove("desktop:shadow-article");
+        if (localStorage.getItem("theme").includes("dark")) {
+            document.querySelector(".article").classList.add("desktop:shadow-glow-article");
+        } else {
+            document.querySelector(".article").classList.add("desktop:shadow-article");
+        }
     }
 
     if (window.scrollY > 0) {
