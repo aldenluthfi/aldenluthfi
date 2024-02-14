@@ -1,5 +1,5 @@
 var x = 0
-var speed = Math.floor(document.documentElement.clientWidth / 500)
+var scrollSpeed = Math.floor(document.documentElement.clientWidth / 500)
 
 function getTranslateX(element) {
     const style = window.getComputedStyle(element)
@@ -10,10 +10,10 @@ function getTranslateX(element) {
 function marquee() {
     var text = document.querySelector('.sliding')
 
-    x = getTranslateX(text) - speed
+    x = getTranslateX(text) - scrollSpeed
 
     if (x <= -Math.floor(0.25 * text.getBoundingClientRect().width)) {
-        x = -x + speed
+        x = -x + scrollSpeed
     }
 
     text.style.webkitTransform = `translate(${x}px, 0px)`
