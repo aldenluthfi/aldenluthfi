@@ -129,12 +129,14 @@ function themeSetter() {
                     }
                 });
 
-                document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
-                document.querySelector(".article").classList.remove("desktop:shadow-article");
-                if (localStorage.getItem("theme").includes("dark")) {
-                    document.querySelector(".article").classList.add("desktop:shadow-glow-article");
-                } else {
-                    document.querySelector(".article").classList.add("desktop:shadow-article");
+                if (document.querySelector(".article") != null) {
+                    document.querySelector(".article").classList.remove("desktop:shadow-glow-article");
+                    document.querySelector(".article").classList.remove("desktop:shadow-article");
+                    if (localStorage.getItem("theme").includes("dark")) {
+                        document.querySelector(".article").classList.add("desktop:shadow-glow-article");
+                    } else {
+                        document.querySelector(".article").classList.add("desktop:shadow-article");
+                    }
                 }
 
             } else if (!iosDevice) {
