@@ -9,7 +9,7 @@
 <br>
 <br>
   <a href="https://github.com/aldenluthfi">
-    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=aldenluthfi&layout=compact&langs_count=10&theme=transparent&hide_title=true&title_color=ffffff&text_color=909090&border_color=909090&card_width=480&exclude_repo=exercise-profiling,eshop-adpro&size_weight=0.5&count_weight=0.5" />
+    <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=aldenluthfi&layout=compact&langs_count=10&theme=transparent&hide_title=true&title_color=ffffff&text_color=909090&border_color=909090&card_width=480&size_weight=0.5&count_weight=0.5" />
   </a>
 </div>
 
