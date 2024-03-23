@@ -1,6 +1,6 @@
 
 <h1 align="center">Hi there, I'm Alden Luthfi! 👋 </h1>
-<h3 align="center">I'm a Computer Science Student at the University of Indonesia</h3>
+<h3 align="center">I'm a Computer Science Student at Universitas Indonesia</h3>
 <br>
 <div align="center">
 	<a href="https://github.com/aldenluthfi">
