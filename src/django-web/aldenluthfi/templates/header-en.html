@@ -32,14 +32,14 @@
 
     <div class="flex pr-6 w-48 my-auto justify-end space-x-1">
       <div class="relative flex flex-col justify-center items-center delay-200 duration-200 rounded-t-md">
-        <a class="p-2 rounded-md bg-transparent desktop:hover:bg-card-background duration-200 hover:scale-110 active:scale-105"
+        <a class="p-2 rounded-md bg-transparent desktop:hover:bg-card-background duration-200 desktop:hover:scale-110 desktop:active:scale-105"
           hx-get="/toggle-language/" hx-target="main">
           {% svg 'language' %}
         </a>
       </div>
 
       <div class="relative group/hue flex flex-col justify-center items-center delay-100 duration-200 rounded-t-md">
-        <a class="mode-toggle p-2 rounded-t-md delay-150 duration-200 hover:bg-card-background hover:delay-0 hover:scale-110 active:scale-105 group-hover/hue:bg-card-background group-hover/hue:delay-0 group-hover/hue:scale-110 group-active/hue:scale-105"
+        <a class="mode-toggle p-2 rounded-t-md delay-150 duration-200 hover:bg-card-background hover:delay-0 desktop:hover:scale-110 desktop:active:scale-105 group-hover/hue:bg-card-background group-hover/hue:delay-0 desktop:group-hover/hue:scale-110 desktop:group-active/hue:scale-105"
           tabindex="0">
           {% svg 'moon' %}
           {% svg 'sun' %}
@@ -48,24 +48,24 @@
         <div
           class="hue-selector h-0 fixed top-14 mt-[6px] duration-200 flex flex-col items-center bg-card-background rounded-b-md overflow-auto no-scrollbar hover:h-6-hues hover:delay-75 group-hover/hue:h-6-hues group-hover/hue:delay-75 group-active/hue:delay-0"
           tabindex="0" role="button">
-          <a class="hue-neutral px-2.5 pb-1 pt-2  duration-100 hover:scale-110 active:scale-105">{% svg 'hue-neutral' %}</a>
-          <a class="hue-red py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-red' %}</a>
-          <a class="hue-orange py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-orange' %}</a>
-          <a class="hue-amber py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-amber' %}</a>
-          <a class="hue-yellow py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-yellow' %}</a>
-          <a class="hue-lime py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-lime' %}</a>
-          <a class="hue-green py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-green' %}</a>
-          <a class="hue-emerald py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-emerald' %}</a>
-          <a class="hue-teal py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-teal' %}</a>
-          <a class="hue-cyan py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-cyan' %}</a>
-          <a class="hue-sky py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-sky' %}</a>
-          <a class="hue-blue py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-blue' %}</a>
-          <a class="hue-indigo py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-indigo' %}</a>
-          <a class="hue-violet py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-violet' %}</a>
-          <a class="hue-purple py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-purple' %}</a>
-          <a class="hue-fuchsia py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-fuchsia' %}</a>
-          <a class="hue-pink py-1 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-pink' %}</a>
-          <a class="hue-rose pt-1 pb-2.5 duration-100 hover:scale-110 active:scale-105">{% svg 'hue-rose' %}</a>
+          <a class="hue-neutral px-2.5 pb-1 pt-2  duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-neutral' %}</a>
+          <a class="hue-red py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-red' %}</a>
+          <a class="hue-orange py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-orange' %}</a>
+          <a class="hue-amber py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-amber' %}</a>
+          <a class="hue-yellow py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-yellow' %}</a>
+          <a class="hue-lime py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-lime' %}</a>
+          <a class="hue-green py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-green' %}</a>
+          <a class="hue-emerald py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-emerald' %}</a>
+          <a class="hue-teal py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-teal' %}</a>
+          <a class="hue-cyan py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-cyan' %}</a>
+          <a class="hue-sky py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-sky' %}</a>
+          <a class="hue-blue py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-blue' %}</a>
+          <a class="hue-indigo py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-indigo' %}</a>
+          <a class="hue-violet py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-violet' %}</a>
+          <a class="hue-purple py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-purple' %}</a>
+          <a class="hue-fuchsia py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-fuchsia' %}</a>
+          <a class="hue-pink py-1 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-pink' %}</a>
+          <a class="hue-rose pt-1 pb-2.5 duration-100 desktop:hover:scale-110 desktop:active:scale-105">{% svg 'hue-rose' %}</a>
         </div>
       </div>
 
