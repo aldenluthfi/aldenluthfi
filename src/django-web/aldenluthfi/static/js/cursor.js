@@ -134,7 +134,6 @@ function cursor() {
         clickable.addEventListener(
             "mouseleave",
             function (e) {
-                console.log(cursorDot)
                 let classList = cursorDot.classList
                 classList.add('bg-transparent')
                 classList.remove('bg-accent')
