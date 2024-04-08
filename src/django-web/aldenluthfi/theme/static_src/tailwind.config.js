@@ -47,9 +47,9 @@ module.exports = {
     theme: {
         extend: {
             boxShadow: {
-                'glow-md': '0 4px 6px -1px rgb(255 255 255 / 0.2), 0 2px 4px -2px rgb(255 255 255 / 0.2)',
-                'glow-lg': '0 10px 15px -3px rgb(255 255 255 / 0.2), 0 4px 6px -4px rgb(255 255 255 / 0.2)',
-                'glow-xl': '0 20px 25px -5px rgb(255 255 255 / 0.2), 0 8px 10px -6px rgb(255 255 255 / 0.2)',
+                'glow-md': '0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1)',
+                'glow-lg': '0 10px 15px -3px rgb(255 255 255 / 0.1), 0 4px 6px -4px rgb(255 255 255 / 0.1)',
+                'glow-xl': '0 20px 25px -5px rgb(255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1)',
                 'glow-article': '0 0 25px -5px rgb(255 255 255 / 0.2), 0 0 10px -6px rgb(255 255 255 / 0.2)',
                 'article': '0 0 25px -5px rgb(0 0 0 / 0.1), 0 0 10px -6px rgb(0 0 0 / 0.1)'
             },
