@@ -59,7 +59,7 @@ const tick = () => {
   circleElement.style.transform = `translate(-50%, -50%) ${rotateTransform} ${scaleTransform}`;
   circleElement.style.left = `${circle.x}px`;
   circleElement.style.top = `${circle.y}px`;
-  circleElement.style.filter = `blur(${(currentScale * 8).toFixed(1)}px)`
+  circleElement.style.filter = `blur(${(currentScale * 5).toFixed(1)}px)`
 
   // Request the next frame to continue the animation
   window.requestAnimationFrame(tick);
