@@ -1,5 +1,5 @@
 var x = 0
-var slideSpeed = Math.max(Math.floor(document.documentElement.clientWidth / 500), 1)
+var slideSpeed = (document.documentElement.clientWidth / 500) + 1
 
 function getTranslateX(element) {
     const style = window.getComputedStyle(element)
