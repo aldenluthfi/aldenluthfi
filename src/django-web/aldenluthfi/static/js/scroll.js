@@ -34,7 +34,6 @@ function marquee() {
     oldMouseX = mouseX
 
     text.style.transform = `translate(${text_x}px, 0px) skewX(${Math.max(Math.min(slideSpeed + (deltaX - slideSpeed) * 0.1, 6), -8).toFixed(1)}deg)`
-    text.style.filter = `blur(${Math.abs(slideSpeed / 20).toFixed(1)}px)`
     window.requestAnimationFrame(marquee)
 }
 
