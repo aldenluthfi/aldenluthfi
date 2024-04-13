@@ -1,5 +1,5 @@
-var text_x = -1610
-var slideSpeed = 3
+var text_x = 0
+var slideSpeed = 0
 
 function getTranslateX(element) {
     const style = window.getComputedStyle(element)
@@ -30,10 +30,10 @@ function marquee() {
 
     text_x = (getTranslateX(text) - slideSpeed - 3)
 
-    if (text_x < -1610) {
-        text_x += 3227
-    } else if (text_x > 1617) {
-        text_x -= 3227
+    if (text_x < -text.getBoundingClientRect().width * 0.25) {
+        text_x += text.getBoundingClientRect().width * 0.5 + 11
+    } else if (text_x > text.getBoundingClientRect().width * 0.25) {
+        text_x -= text.getBoundingClientRect().width * 0.5 + 11
     }
 
     deltaX = mouseX - oldMouseX
