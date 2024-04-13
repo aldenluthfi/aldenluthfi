@@ -46,10 +46,11 @@ function marquee() {
 marquee()
 
 document.addEventListener("htmx:afterRequest", function (e) {
-    if (document.documentElement.clientWidth >= 1024) {
-        document.querySelector('.title').addEventListener('mousemove', function (e) {
-            mouseX = e.clientX
-        })
-    }
+    document.querySelector('.title').addEventListener('mousemove', function (e) {
+        mouseX = e.clientX
+    })
+    document.querySelector('.title').addEventListener('mouseover', function (e) {
+        oldMouseX = e.clientX
+    })
 })
 
