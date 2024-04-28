@@ -315,11 +315,11 @@ button {
 }
 
 .neutral {
-    --background: var(--neutral-50);
-    --card-background: var(--neutral-200);
-    --neutral-accent: var(--neutral-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--neutral-900);
+    --text: var(--zinc-900);
 
     --buttons-default: var(--neutral-200);
     --buttons-hover: var(--neutral-300);
@@ -333,11 +333,11 @@ button {
 }
 
 .neutral-dark {
-    --background: var(--neutral-950);
-    --card-background: var(--neutral-900);
-    --neutral-accent: var(--neutral-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--neutral-100);
+    --text: var(--zinc-100);
 
     --buttons-default: var(--neutral-800);
     --buttons-hover: var(--neutral-700);
@@ -351,11 +351,11 @@ button {
 }
 
 .red {
-    --background: var(--stone-50);
-    --card-background: var(--stone-200);
-    --neutral-accent: var(--stone-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--stone-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--red-200);
     --buttons-hover: var(--red-300);
@@ -369,11 +369,11 @@ button {
 }
 
 .red-dark {
-    --background: var(--stone-950);
-    --card-background: var(--stone-900);
-    --neutral-accent: var(--stone-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--stone-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--red-800);
     --buttons-hover: var(--red-700);
@@ -387,11 +387,11 @@ button {
 }
 
 .orange {
-    --background: var(--stone-50);
-    --card-background: var(--stone-200);
-    --neutral-accent: var(--stone-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--stone-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--orange-200);
     --buttons-hover: var(--orange-300);
@@ -405,11 +405,11 @@ button {
 }
 
 .orange-dark {
-    --background: var(--stone-950);
-    --card-background: var(--stone-900);
-    --neutral-accent: var(--stone-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--stone-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--orange-800);
     --buttons-hover: var(--orange-700);
@@ -423,11 +423,11 @@ button {
 }
 
 .amber {
-    --background: var(--stone-50);
-    --card-background: var(--stone-200);
-    --neutral-accent: var(--stone-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--stone-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--amber-200);
     --buttons-hover: var(--amber-300);
@@ -441,11 +441,11 @@ button {
 }
 
 .amber-dark {
-    --background: var(--stone-950);
-    --card-background: var(--stone-900);
-    --neutral-accent: var(--stone-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--stone-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--amber-800);
     --buttons-hover: var(--amber-700);
@@ -459,11 +459,11 @@ button {
 }
 
 .yellow {
-    --background: var(--stone-50);
-    --card-background: var(--stone-200);
-    --neutral-accent: var(--stone-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--stone-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--yellow-200);
     --buttons-hover: var(--yellow-300);
@@ -477,11 +477,11 @@ button {
 }
 
 .yellow-dark {
-    --background: var(--stone-950);
-    --card-background: var(--stone-900);
-    --neutral-accent: var(--stone-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--stone-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--yellow-800);
     --buttons-hover: var(--yellow-700);
@@ -495,11 +495,11 @@ button {
 }
 
 .lime {
-    --background: var(--neutral-50);
-    --card-background: var(--neutral-200);
-    --neutral-accent: var(--neutral-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--neutral-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--lime-200);
     --buttons-hover: var(--lime-300);
@@ -513,11 +513,11 @@ button {
 }
 
 .lime-dark {
-    --background: var(--neutral-950);
-    --card-background: var(--neutral-900);
-    --neutral-accent: var(--neutral-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--neutral-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--lime-900);
     --buttons-hover: var(--lime-800);
@@ -531,11 +531,11 @@ button {
 }
 
 .green {
-    --background: var(--neutral-50);
-    --card-background: var(--neutral-200);
-    --neutral-accent: var(--neutral-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--neutral-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--green-200);
     --buttons-hover: var(--green-300);
@@ -549,11 +549,11 @@ button {
 }
 
 .green-dark {
-    --background: var(--neutral-950);
-    --card-background: var(--neutral-900);
-    --neutral-accent: var(--neutral-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--neutral-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--green-900);
     --buttons-hover: var(--green-800);
@@ -782,11 +782,11 @@ button {
 }
 
 .violet {
-    --background: var(--neutral-50);
-    --card-background: var(--neutral-200);
-    --neutral-accent: var(--neutral-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--neutral-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--violet-200);
     --buttons-hover: var(--violet-300);
@@ -800,11 +800,11 @@ button {
 }
 
 .violet-dark {
-    --background: var(--neutral-950);
-    --card-background: var(--neutral-900);
-    --neutral-accent: var(--neutral-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--neutral-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--violet-800);
     --buttons-hover: var(--violet-700);
@@ -818,11 +818,11 @@ button {
 }
 
 .purple {
-    --background: var(--neutral-50);
-    --card-background: var(--neutral-200);
-    --neutral-accent: var(--neutral-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--neutral-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--purple-200);
     --buttons-hover: var(--purple-300);
@@ -836,11 +836,11 @@ button {
 }
 
 .purple-dark {
-    --background: var(--neutral-950);
-    --card-background: var(--neutral-900);
-    --neutral-accent: var(--neutral-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--neutral-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--purple-800);
     --buttons-hover: var(--purple-700);
@@ -854,11 +854,11 @@ button {
 }
 
 .fuchsia {
-    --background: var(--neutral-50);
-    --card-background: var(--neutral-200);
-    --neutral-accent: var(--neutral-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--neutral-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--fuchsia-200);
     --buttons-hover: var(--fuchsia-300);
@@ -872,11 +872,11 @@ button {
 }
 
 .fuchsia-dark {
-    --background: var(--neutral-950);
-    --card-background: var(--neutral-900);
-    --neutral-accent: var(--neutral-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--neutral-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--fuchsia-800);
     --buttons-hover: var(--fuchsia-700);
@@ -890,11 +890,11 @@ button {
 }
 
 .pink {
-    --background: var(--stone-50);
-    --card-background: var(--stone-200);
-    --neutral-accent: var(--stone-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--stone-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--pink-200);
     --buttons-hover: var(--pink-300);
@@ -908,11 +908,11 @@ button {
 }
 
 .pink-dark {
-    --background: var(--stone-950);
-    --card-background: var(--stone-900);
-    --neutral-accent: var(--stone-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--stone-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--pink-800);
     --buttons-hover: var(--pink-700);
@@ -926,11 +926,11 @@ button {
 }
 
 .rose {
-    --background: var(--stone-50);
-    --card-background: var(--stone-200);
-    --neutral-accent: var(--stone-400);
+    --background: var(--zinc-50);
+    --card-background: var(--zinc-200);
+    --neutral-accent: var(--zinc-400);
 
-    --text: var(--stone-950);
+    --text: var(--zinc-950);
 
     --buttons-default: var(--rose-200);
     --buttons-hover: var(--rose-300);
@@ -944,11 +944,11 @@ button {
 }
 
 .rose-dark {
-    --background: var(--stone-950);
-    --card-background: var(--stone-900);
-    --neutral-accent: var(--stone-700);
+    --background: var(--zinc-950);
+    --card-background: var(--zinc-900);
+    --neutral-accent: var(--zinc-700);
 
-    --text: var(--stone-50);
+    --text: var(--zinc-50);
 
     --buttons-default: var(--rose-800);
     --buttons-hover: var(--rose-700);
