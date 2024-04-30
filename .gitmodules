@@ -1,0 +1,6 @@
+[submodule "kuliahluthfi"]
+	path = kuliahluthfi
+	url = https://github.com/aldenluthfi/kuliahluthfi
+[submodule "situsluthfi"]
+	path = situsluthfi
+	url = https://github.com/aldenluthfi/situsluthfi
