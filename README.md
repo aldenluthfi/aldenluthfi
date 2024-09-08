@@ -1,4 +1,9 @@
-# AldenLuthfi
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/8920d30d-03ad-40b6-954e-5a137ae718bf">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/0d35dbd5-38b3-475f-a012-045529a44652">
+  <img>
+</picture>
+
 ### Hi there, I'm Upi 👋
 I'm a Computer Science Student at Universitas Indonesia
 <br>
