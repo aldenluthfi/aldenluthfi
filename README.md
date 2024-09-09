@@ -1,9 +1,8 @@
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/4fec1d41-cb62-4be5-b208-bf6725a9c637">
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/ee4569c3-4bd7-490c-9d09-c42801cbb0de">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/254f8bb2-8953-48b1-b619-d3c8e8e3b925">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/a1b53b2e-7422-4827-8ebf-720f713e4116">
   <img>
 </picture>
-
 
 ### Hi there, I'm Upi 👋
 I'm a Computer Science Student at Universitas Indonesia
