@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/254f8bb2-8953-48b1-b619-d3c8e8e3b925">
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/user-attachments/assets/a1b53b2e-7422-4827-8ebf-720f713e4116">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/user-attachments/assets/bcaa8fa9-f82f-40b8-914c-c33859bc9380">
+  <source media="(prefers-color-scheme: dark)"  srcset="https://github.com/user-attachments/assets/73d59b27-2bb2-497d-804a-8d03257e7a27">
   <img>
 </picture>
 
