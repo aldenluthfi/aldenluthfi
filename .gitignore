@@ -1,2 +1,4 @@
 .DS_Store
 commit.sh
+pull.sh
+push.sh
