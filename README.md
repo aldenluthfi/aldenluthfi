@@ -4,5 +4,5 @@
   <img>
 </picture>
 
-### Hi there, I'm Upi 👋
+# Hi there, I'm Upi 👋
 I'm a Computer Science Student at Universitas Indonesia
