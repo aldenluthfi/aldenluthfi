@@ -6,3 +6,17 @@
 
 # Hi there, I'm Upi 👋
 I'm a Computer Science Student at Universitas Indonesia
+
+<!-- LANGUAGES BREAKDOWN START -->
+```
+[ LANGUAGES BREAKDOWN ]
+
+TypeScript   --> 310,331 lines
+JavaScript   --> 134,127 lines
+JSX          --> 20,576 lines
+PHP          --> 5,248 lines
+Others       --> 9,942 lines
+
+[ TOTAL LINES OF CODE: 480,224 ]
+```
+<!-- LANGUAGES BREAKDOWN END -->
