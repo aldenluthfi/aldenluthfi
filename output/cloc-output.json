@@ -1,17 +1,42 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 2.93883299827576,
-  "n_files"            : 3272,
-  "n_lines"            : 424160,
-  "files_per_second"   : 1113.36710929805,
-  "lines_per_second"   : 144329.398863038,
+  "elapsed_seconds"    : 5.068678855896,
+  "n_files"            : 5046,
+  "n_lines"            : 960720,
+  "files_per_second"   : 995.52568696089,
+  "lines_per_second"   : 189540.514858713,
   "report_file"        : "../output/cloc-output.json"},
+"JSON" :{
+  "nFiles": 181,
+  "blank": 37,
+  "comment": 0,
+  "code": 134261},
+"CSV" :{
+  "nFiles": 13,
+  "blank": 10,
+  "comment": 0,
+  "code": 103030},
+"Markdown" :{
+  "nFiles": 547,
+  "blank": 26585,
+  "comment": 19,
+  "code": 89900},
 "Python" :{
   "nFiles": 794,
   "blank": 13791,
   "comment": 5662,
   "code": 69815},
+"SVG" :{
+  "nFiles": 183,
+  "blank": 4419,
+  "comment": 39,
+  "code": 45061},
+"CSS" :{
+  "nFiles": 70,
+  "blank": 8157,
+  "comment": 1219,
+  "code": 42995},
 "TypeScript" :{
   "nFiles": 397,
   "blank": 4168,
@@ -27,6 +52,11 @@
   "blank": 5858,
   "comment": 9589,
   "code": 26701},
+"HTML" :{
+  "nFiles": 272,
+  "blank": 2154,
+  "comment": 84,
+  "code": 22329},
 "GDScript" :{
   "nFiles": 321,
   "blank": 8571,
@@ -57,6 +87,26 @@
   "blank": 0,
   "comment": 39221,
   "code": 15154},
+"XML" :{
+  "nFiles": 79,
+  "blank": 12,
+  "comment": 92,
+  "code": 14392},
+"YAML" :{
+  "nFiles": 167,
+  "blank": 2947,
+  "comment": 1475,
+  "code": 14067},
+"Text" :{
+  "nFiles": 171,
+  "blank": 163,
+  "comment": 0,
+  "code": 10454},
+"SCSS" :{
+  "nFiles": 47,
+  "blank": 1811,
+  "comment": 849,
+  "code": 9386},
 "Go" :{
   "nFiles": 51,
   "blank": 761,
@@ -132,6 +182,11 @@
   "blank": 162,
   "comment": 12,
   "code": 580},
+"TOML" :{
+  "nFiles": 25,
+  "blank": 56,
+  "comment": 16,
+  "code": 358},
 "PHP" :{
   "nFiles": 6,
   "blank": 58,
@@ -172,6 +227,11 @@
   "blank": 43,
   "comment": 16,
   "code": 146},
+"Properties" :{
+  "nFiles": 19,
+  "blank": 34,
+  "comment": 14,
+  "code": 135},
 "make" :{
   "nFiles": 10,
   "blank": 32,
@@ -218,7 +278,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 54326,
-  "comment": 69747,
-  "code": 300087,
-  "nFiles": 3272} }
+  "blank": 100711,
+  "comment": 73554,
+  "code": 786455,
+  "nFiles": 5046} }

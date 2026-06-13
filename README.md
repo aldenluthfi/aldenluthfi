@@ -20,7 +20,7 @@ Rust         --> 16,597 lines
 C            --> 1,754 lines
 C++          --> 1,748 lines
 Lua          --> 1,058 lines
-Others       --> 139,769 lines
+Others       --> 626,137 lines
 
-[ TOTAL LINES OF CODE: 300,087 ]
+[ TOTAL LINES OF CODE: 786,455 ]
 ```
