@@ -17,7 +17,7 @@ jobs:
       HIGHLIGHT_LANGS: "C,C++,Java,Lua,Python,Rust,TypeScript"
 
       # IGNORE_LANGS: drop these languages entirely (not shown and not counted)
-      IGNORE_LANGS: ""
+      IGNORE_LANGS: "Makefile"
 
     steps:
       - name: Checkout Code
