@@ -1,0 +1,224 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.98",
+  "elapsed_seconds"    : 3.78455901145935,
+  "n_files"            : 3272,
+  "n_lines"            : 424160,
+  "files_per_second"   : 864.565723534139,
+  "lines_per_second"   : 112076.466165721,
+  "report_file"        : "../output/cloc-output.json"},
+"Python" :{
+  "nFiles": 794,
+  "blank": 13791,
+  "comment": 5662,
+  "code": 69815},
+"TypeScript" :{
+  "nFiles": 397,
+  "blank": 4168,
+  "comment": 283,
+  "code": 37890},
+"Java" :{
+  "nFiles": 392,
+  "blank": 6829,
+  "comment": 2731,
+  "code": 31456},
+"JavaScript" :{
+  "nFiles": 256,
+  "blank": 5858,
+  "comment": 9589,
+  "code": 26701},
+"GDScript" :{
+  "nFiles": 321,
+  "blank": 8571,
+  "comment": 3418,
+  "code": 21957},
+"Godot Scene" :{
+  "nFiles": 163,
+  "blank": 2773,
+  "comment": 0,
+  "code": 17262},
+"Vuejs Component" :{
+  "nFiles": 152,
+  "blank": 1404,
+  "comment": 495,
+  "code": 16921},
+"Rust" :{
+  "nFiles": 76,
+  "blank": 3035,
+  "comment": 2340,
+  "code": 16597},
+"TeX" :{
+  "nFiles": 85,
+  "blank": 2271,
+  "comment": 2950,
+  "code": 15466},
+"Jupyter Notebook" :{
+  "nFiles": 24,
+  "blank": 0,
+  "comment": 39221,
+  "code": 15154},
+"Go" :{
+  "nFiles": 51,
+  "blank": 761,
+  "comment": 483,
+  "code": 5740},
+"Swift" :{
+  "nFiles": 87,
+  "blank": 884,
+  "comment": 465,
+  "code": 5061},
+"Dart" :{
+  "nFiles": 50,
+  "blank": 397,
+  "comment": 144,
+  "code": 4983},
+"C" :{
+  "nFiles": 22,
+  "blank": 344,
+  "comment": 36,
+  "code": 1754},
+"C++" :{
+  "nFiles": 26,
+  "blank": 434,
+  "comment": 91,
+  "code": 1748},
+"FXML" :{
+  "nFiles": 23,
+  "blank": 52,
+  "comment": 0,
+  "code": 1357},
+"Bourne Shell" :{
+  "nFiles": 61,
+  "blank": 325,
+  "comment": 430,
+  "code": 1298},
+"Dockerfile" :{
+  "nFiles": 89,
+  "blank": 588,
+  "comment": 165,
+  "code": 1194},
+"Lua" :{
+  "nFiles": 2,
+  "blank": 138,
+  "comment": 42,
+  "code": 1058},
+"Assembly" :{
+  "nFiles": 13,
+  "blank": 378,
+  "comment": 113,
+  "code": 1020},
+"Godot Resource" :{
+  "nFiles": 40,
+  "blank": 113,
+  "comment": 0,
+  "code": 867},
+"Gradle" :{
+  "nFiles": 39,
+  "blank": 157,
+  "comment": 26,
+  "code": 804},
+"CMake" :{
+  "nFiles": 12,
+  "blank": 178,
+  "comment": 247,
+  "code": 685},
+"Solidity" :{
+  "nFiles": 19,
+  "blank": 170,
+  "comment": 412,
+  "code": 656},
+"DOS Batch" :{
+  "nFiles": 7,
+  "blank": 162,
+  "comment": 12,
+  "code": 580},
+"PHP" :{
+  "nFiles": 6,
+  "blank": 58,
+  "comment": 2,
+  "code": 296},
+"SQL" :{
+  "nFiles": 8,
+  "blank": 115,
+  "comment": 176,
+  "code": 261},
+"C/C++ Header" :{
+  "nFiles": 9,
+  "blank": 67,
+  "comment": 66,
+  "code": 227},
+"INI" :{
+  "nFiles": 4,
+  "blank": 55,
+  "comment": 0,
+  "code": 224},
+"Windows Resource File" :{
+  "nFiles": 3,
+  "blank": 69,
+  "comment": 87,
+  "code": 207},
+"EJS" :{
+  "nFiles": 2,
+  "blank": 16,
+  "comment": 0,
+  "code": 186},
+"Maven" :{
+  "nFiles": 3,
+  "blank": 8,
+  "comment": 2,
+  "code": 159},
+"Godot Shaders" :{
+  "nFiles": 8,
+  "blank": 43,
+  "comment": 16,
+  "code": 146},
+"make" :{
+  "nFiles": 10,
+  "blank": 32,
+  "comment": 20,
+  "code": 99},
+"Bourne Again Shell" :{
+  "nFiles": 6,
+  "blank": 20,
+  "comment": 9,
+  "code": 69},
+"PowerShell" :{
+  "nFiles": 2,
+  "blank": 16,
+  "comment": 0,
+  "code": 49},
+"Haskell" :{
+  "nFiles": 2,
+  "blank": 12,
+  "comment": 14,
+  "code": 38},
+"Protocol Buffers" :{
+  "nFiles": 1,
+  "blank": 9,
+  "comment": 0,
+  "code": 31},
+"Nunjucks" :{
+  "nFiles": 1,
+  "blank": 0,
+  "comment": 0,
+  "code": 22},
+"Cairo" :{
+  "nFiles": 2,
+  "blank": 12,
+  "comment": 0,
+  "code": 20},
+"Mako" :{
+  "nFiles": 1,
+  "blank": 7,
+  "comment": 0,
+  "code": 17},
+"Kotlin" :{
+  "nFiles": 3,
+  "blank": 6,
+  "comment": 0,
+  "code": 12},
+"SUM": {
+  "blank": 54326,
+  "comment": 69747,
+  "code": 300087,
+  "nFiles": 3272} }

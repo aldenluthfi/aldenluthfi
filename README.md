@@ -11,12 +11,15 @@ I'm a Computer Science Student at Universitas Indonesia
 ```
 [ LANGUAGES BREAKDOWN ]
 
-TypeScript   --> 310,331 lines
-JavaScript   --> 134,127 lines
-JSX          --> 20,576 lines
-PHP          --> 5,248 lines
-Others       --> 9,942 lines
+Python       --> 69,815 lines
+TypeScript   --> 37,890 lines
+Java         --> 31,456 lines
+Rust         --> 16,597 lines
+C            --> 1,754 lines
+C++          --> 1,748 lines
+Lua          --> 1,058 lines
+Others       --> 139,769 lines
 
-[ TOTAL LINES OF CODE: 480,224 ]
+[ TOTAL LINES OF CODE: 300,087 ]
 ```
 <!-- LANGUAGES BREAKDOWN END -->
