@@ -115,19 +115,18 @@ jobs:
           # Format total ONCE (do not overwrite later)
           FORMATTED_TOTAL=$(format_number "$TOTAL_LINES")
 
-          CODE_BLOCK="\`\`\`
-          [ LANGUAGES BREAKDOWN ]
-
+          # Only the dynamic part is regenerated. The "[ LANGUAGES BREAKDOWN ]"
+          # header (above) and the closing code fence (below) act as natural
+          # sentinels, so static content (e.g. the [ ABOUT ] section) stays
+          # untouched in README.md.
+          CODE_BLOCK="
           $FORMATTED_BREAKDOWN
-          [ TOTAL LINES OF CODE: $FORMATTED_TOTAL ]
-          \`\`\`"
+          [ TOTAL LINES OF CODE: $FORMATTED_TOTAL ]"
 
-          # Replace content between markers. Requires these in README.md:
-          # <!-- LANGUAGES BREAKDOWN START --> ... <!-- LANGUAGES BREAKDOWN END -->
           echo "$CODE_BLOCK" > temp_block.txt
-          sed -i '/<!-- LANGUAGES BREAKDOWN START -->/,/<!-- LANGUAGES BREAKDOWN END -->/{
+          sed -i '/\[ LANGUAGES BREAKDOWN \]/,/```/{
               //!d
-              /<!-- LANGUAGES BREAKDOWN START -->/r temp_block.txt
+              /\[ LANGUAGES BREAKDOWN \]/r temp_block.txt
           }' README.md
 
           rm temp_block.txt

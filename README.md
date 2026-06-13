@@ -4,11 +4,13 @@
   <img>
 </picture>
 
-# Hi there, I'm Upi 👋
-I'm a Computer Science Student at Universitas Indonesia
-
-<!-- LANGUAGES BREAKDOWN START -->
 ```
+[ ABOUT ]
+
+Name      --> Upi
+Role      --> Computer Science Student
+School    --> Universitas Indonesia
+
 [ LANGUAGES BREAKDOWN ]
 
 Python       --> 69,815 lines
@@ -22,4 +24,3 @@ Others       --> 139,769 lines
 
 [ TOTAL LINES OF CODE: 300,087 ]
 ```
-<!-- LANGUAGES BREAKDOWN END -->
