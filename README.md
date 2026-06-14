@@ -17,10 +17,10 @@ Python       --> 69,815 lines
 TypeScript   --> 37,890 lines
 Java         --> 31,456 lines
 Rust         --> 16,597 lines
-C            --> 1,754 lines
+C            --> 6,333 lines
 C++          --> 1,748 lines
 Lua          --> 1,058 lines
-Others       --> 626,197 lines
+Others       --> 628,735 lines
 
-[ TOTAL LINES OF CODE: 786,515 ]
+[ TOTAL LINES OF CODE: 793,632 ]
 ```

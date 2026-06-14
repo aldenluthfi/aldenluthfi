@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 5.13221883773804,
-  "n_files"            : 5046,
-  "n_lines"            : 960780,
-  "files_per_second"   : 983.200475181601,
-  "lines_per_second"   : 187205.579180535,
+  "elapsed_seconds"    : 4.71934700012207,
+  "n_files"            : 5109,
+  "n_lines"            : 971429,
+  "files_per_second"   : 1082.56502432812,
+  "lines_per_second"   : 205839.706208268,
   "report_file"        : "../output/cloc-output.json"},
 "JSON" :{
   "nFiles": 181,
@@ -18,10 +18,10 @@
   "comment": 0,
   "code": 103030},
 "Markdown" :{
-  "nFiles": 547,
-  "blank": 26585,
+  "nFiles": 548,
+  "blank": 26822,
   "comment": 19,
-  "code": 89900},
+  "code": 91148},
 "Python" :{
   "nFiles": 794,
   "blank": 13791,
@@ -107,6 +107,11 @@
   "blank": 1811,
   "comment": 849,
   "code": 9386},
+"C" :{
+  "nFiles": 66,
+  "blank": 753,
+  "comment": 1734,
+  "code": 6333},
 "Go" :{
   "nFiles": 51,
   "blank": 761,
@@ -122,16 +127,16 @@
   "blank": 397,
   "comment": 144,
   "code": 4983},
-"C" :{
-  "nFiles": 22,
-  "blank": 344,
-  "comment": 36,
-  "code": 1754},
 "C++" :{
   "nFiles": 26,
   "blank": 434,
   "comment": 91,
   "code": 1748},
+"C/C++ Header" :{
+  "nFiles": 27,
+  "blank": 407,
+  "comment": 914,
+  "code": 1517},
 "FXML" :{
   "nFiles": 23,
   "blank": 52,
@@ -197,11 +202,6 @@
   "blank": 115,
   "comment": 176,
   "code": 261},
-"C/C++ Header" :{
-  "nFiles": 9,
-  "blank": 67,
-  "comment": 66,
-  "code": 227},
 "INI" :{
   "nFiles": 4,
   "blank": 55,
@@ -278,7 +278,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 100711,
-  "comment": 73554,
-  "code": 786515,
-  "nFiles": 5046} }
+  "blank": 101697,
+  "comment": 76100,
+  "code": 793632,
+  "nFiles": 5109} }
