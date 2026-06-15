@@ -13,14 +13,14 @@ School    --> Universitas Indonesia
 
 [ LANGUAGES BREAKDOWN ]
 
-Python       --> 69,815 lines
+Python       --> 69,875 lines
 TypeScript   --> 37,890 lines
 Java         --> 31,456 lines
 Rust         --> 16,597 lines
-C            --> 6,333 lines
+C            --> 8,910 lines
 C++          --> 1,748 lines
 Lua          --> 1,058 lines
-Others       --> 628,735 lines
+Others       --> 631,241 lines
 
-[ TOTAL LINES OF CODE: 793,632 ]
+[ TOTAL LINES OF CODE: 798,775 ]
 ```

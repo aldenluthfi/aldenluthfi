@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 4.71934700012207,
-  "n_files"            : 5109,
-  "n_lines"            : 971429,
-  "files_per_second"   : 1082.56502432812,
-  "lines_per_second"   : 205839.706208268,
+  "elapsed_seconds"    : 5.01669001579285,
+  "n_files"            : 5145,
+  "n_lines"            : 980427,
+  "files_per_second"   : 1025.57662199642,
+  "lines_per_second"   : 195433.043882232,
   "report_file"        : "../output/cloc-output.json"},
 "JSON" :{
   "nFiles": 181,
@@ -18,15 +18,15 @@
   "comment": 0,
   "code": 103030},
 "Markdown" :{
-  "nFiles": 548,
-  "blank": 26822,
+  "nFiles": 550,
+  "blank": 27264,
   "comment": 19,
-  "code": 91148},
+  "code": 93213},
 "Python" :{
-  "nFiles": 794,
-  "blank": 13791,
-  "comment": 5662,
-  "code": 69815},
+  "nFiles": 795,
+  "blank": 13808,
+  "comment": 5669,
+  "code": 69875},
 "SVG" :{
   "nFiles": 183,
   "blank": 4419,
@@ -108,10 +108,10 @@
   "comment": 849,
   "code": 9386},
 "C" :{
-  "nFiles": 66,
-  "blank": 753,
-  "comment": 1734,
-  "code": 6333},
+  "nFiles": 90,
+  "blank": 1111,
+  "comment": 3079,
+  "code": 8910},
 "Go" :{
   "nFiles": 51,
   "blank": 761,
@@ -127,16 +127,16 @@
   "blank": 397,
   "comment": 144,
   "code": 4983},
+"C/C++ Header" :{
+  "nFiles": 36,
+  "blank": 604,
+  "comment": 2401,
+  "code": 1949},
 "C++" :{
   "nFiles": 26,
   "blank": 434,
   "comment": 91,
   "code": 1748},
-"C/C++ Header" :{
-  "nFiles": 27,
-  "blank": 407,
-  "comment": 914,
-  "code": 1517},
 "FXML" :{
   "nFiles": 23,
   "blank": 52,
@@ -234,9 +234,9 @@
   "code": 135},
 "make" :{
   "nFiles": 10,
-  "blank": 32,
-  "comment": 20,
-  "code": 99},
+  "blank": 33,
+  "comment": 21,
+  "code": 108},
 "Bourne Again Shell" :{
   "nFiles": 6,
   "blank": 20,
@@ -278,7 +278,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 101697,
-  "comment": 76100,
-  "code": 793632,
-  "nFiles": 5109} }
+  "blank": 102712,
+  "comment": 78940,
+  "code": 798775,
+  "nFiles": 5145} }
