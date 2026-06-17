@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 4.67118287086487,
-  "n_files"            : 5175,
-  "n_lines"            : 1003286,
-  "files_per_second"   : 1107.85643445422,
-  "lines_per_second"   : 214782.000134848,
+  "elapsed_seconds"    : 5.3163628578186,
+  "n_files"            : 5068,
+  "n_lines"            : 977863,
+  "files_per_second"   : 953.283313336421,
+  "lines_per_second"   : 183934.585759489,
   "report_file"        : "../output/cloc-output.json"},
 "JSON" :{
   "nFiles": 183,
@@ -18,10 +18,10 @@
   "comment": 0,
   "code": 103030},
 "Markdown" :{
-  "nFiles": 551,
-  "blank": 28154,
+  "nFiles": 547,
+  "blank": 26585,
   "comment": 19,
-  "code": 96544},
+  "code": 89900},
 "Python" :{
   "nFiles": 797,
   "blank": 14057,
@@ -102,11 +102,6 @@
   "blank": 163,
   "comment": 0,
   "code": 10454},
-"C" :{
-  "nFiles": 95,
-  "blank": 1138,
-  "comment": 3172,
-  "code": 9998},
 "SCSS" :{
   "nFiles": 47,
   "blank": 1811,
@@ -127,11 +122,11 @@
   "blank": 397,
   "comment": 144,
   "code": 4983},
-"C/C++ Header" :{
-  "nFiles": 39,
-  "blank": 670,
-  "comment": 2543,
-  "code": 2130},
+"C" :{
+  "nFiles": 22,
+  "blank": 344,
+  "comment": 36,
+  "code": 1754},
 "C++" :{
   "nFiles": 26,
   "blank": 434,
@@ -202,6 +197,11 @@
   "blank": 115,
   "comment": 176,
   "code": 261},
+"C/C++ Header" :{
+  "nFiles": 9,
+  "blank": 67,
+  "comment": 66,
+  "code": 227},
 "INI" :{
   "nFiles": 4,
   "blank": 55,
@@ -227,16 +227,16 @@
   "blank": 43,
   "comment": 16,
   "code": 146},
-"make" :{
-  "nFiles": 10,
-  "blank": 39,
-  "comment": 24,
-  "code": 142},
 "Properties" :{
   "nFiles": 20,
   "blank": 34,
   "comment": 14,
   "code": 137},
+"make" :{
+  "nFiles": 10,
+  "blank": 34,
+  "comment": 18,
+  "code": 100},
 "Bourne Again Shell" :{
   "nFiles": 6,
   "blank": 20,
@@ -278,7 +278,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 103931,
-  "comment": 79335,
-  "code": 820020,
-  "nFiles": 5175} }
+  "blank": 100960,
+  "comment": 73716,
+  "code": 803187,
+  "nFiles": 5068} }
