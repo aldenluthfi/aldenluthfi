@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 5.11924815177917,
-  "n_files"            : 5068,
-  "n_lines"            : 977863,
-  "files_per_second"   : 989.989125305175,
-  "lines_per_second"   : 191016.917134628,
+  "elapsed_seconds"    : 5.03727793693542,
+  "n_files"            : 5071,
+  "n_lines"            : 978647,
+  "files_per_second"   : 1006.6945011744,
+  "lines_per_second"   : 194280.921611284,
   "report_file"        : "../output/cloc-output.json"},
 "JSON" :{
   "nFiles": 183,
@@ -23,10 +23,10 @@
   "comment": 19,
   "code": 89900},
 "Python" :{
-  "nFiles": 797,
-  "blank": 14057,
-  "comment": 5918,
-  "code": 70960},
+  "nFiles": 800,
+  "blank": 14165,
+  "comment": 5960,
+  "code": 71248},
 "SVG" :{
   "nFiles": 183,
   "blank": 4419,
@@ -39,9 +39,9 @@
   "code": 42995},
 "TypeScript" :{
   "nFiles": 398,
-  "blank": 4187,
+  "blank": 4195,
   "comment": 472,
-  "code": 37891},
+  "code": 37927},
 "Java" :{
   "nFiles": 392,
   "blank": 6829,
@@ -82,16 +82,16 @@
   "blank": 0,
   "comment": 39221,
   "code": 15154},
+"Vuejs Component" :{
+  "nFiles": 166,
+  "blank": 1377,
+  "comment": 217,
+  "code": 14505},
 "XML" :{
   "nFiles": 79,
   "blank": 12,
   "comment": 92,
   "code": 14392},
-"Vuejs Component" :{
-  "nFiles": 166,
-  "blank": 1360,
-  "comment": 214,
-  "code": 14223},
 "YAML" :{
   "nFiles": 168,
   "blank": 2954,
@@ -278,7 +278,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 100960,
-  "comment": 73716,
-  "code": 803187,
-  "nFiles": 5068} }
+  "blank": 101093,
+  "comment": 73761,
+  "code": 803793,
+  "nFiles": 5071} }
