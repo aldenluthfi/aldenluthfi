@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 5.03727793693542,
-  "n_files"            : 5071,
-  "n_lines"            : 978647,
-  "files_per_second"   : 1006.6945011744,
-  "lines_per_second"   : 194280.921611284,
+  "elapsed_seconds"    : 5.07904601097107,
+  "n_files"            : 5079,
+  "n_lines"            : 979949,
+  "files_per_second"   : 999.990941021017,
+  "lines_per_second"   : 192939.579181454,
   "report_file"        : "../output/cloc-output.json"},
 "JSON" :{
   "nFiles": 183,
@@ -19,9 +19,9 @@
   "code": 103030},
 "Markdown" :{
   "nFiles": 547,
-  "blank": 26585,
+  "blank": 26567,
   "comment": 19,
-  "code": 89900},
+  "code": 89867},
 "Python" :{
   "nFiles": 800,
   "blank": 14165,
@@ -123,10 +123,10 @@
   "comment": 144,
   "code": 4983},
 "C" :{
-  "nFiles": 22,
-  "blank": 344,
-  "comment": 36,
-  "code": 1754},
+  "nFiles": 25,
+  "blank": 384,
+  "comment": 129,
+  "code": 1871},
 "C++" :{
   "nFiles": 26,
   "blank": 434,
@@ -167,6 +167,11 @@
   "blank": 157,
   "comment": 26,
   "code": 804},
+"C/C++ Header" :{
+  "nFiles": 14,
+  "blank": 224,
+  "comment": 493,
+  "code": 747},
 "CMake" :{
   "nFiles": 12,
   "blank": 178,
@@ -197,11 +202,6 @@
   "blank": 115,
   "comment": 176,
   "code": 261},
-"C/C++ Header" :{
-  "nFiles": 9,
-  "blank": 67,
-  "comment": 66,
-  "code": 227},
 "INI" :{
   "nFiles": 4,
   "blank": 55,
@@ -236,7 +236,7 @@
   "nFiles": 10,
   "blank": 34,
   "comment": 18,
-  "code": 100},
+  "code": 99},
 "Bourne Again Shell" :{
   "nFiles": 6,
   "blank": 20,
@@ -278,7 +278,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 101093,
-  "comment": 73761,
-  "code": 803793,
-  "nFiles": 5071} }
+  "blank": 101272,
+  "comment": 74281,
+  "code": 804396,
+  "nFiles": 5079} }
