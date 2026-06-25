@@ -14,12 +14,13 @@ jobs:
     env:
       # Check cloc docs for supported languages and exact names (e.g., "Vuejs Component", "C#")
       # HIGHLIGHT_LANGS: show these languages individually; everything else goes to "Others"
-      HIGHLIGHT_LANGS: "C,C++,Java,Lua,Python,Rust,TypeScript"
+      HIGHLIGHT_LANGS: "Assembly,C,C++,CSS,Dart,GDScript,Go,HTML,Java,JavaScript,Lua,Python,Rust,SCSS,Swift,TypeScript,Vuejs Component"
 
       # IGNORE_LANGS: drop these languages entirely (not shown and not counted).
       # Filters out build systems, config formats, templates, editor-generated
-      # files, docs, and notebooks so "Others" reflects real source code only.
-      IGNORE_LANGS: "Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook"
+      # files, data formats (JSON/CSV/XML/YAML/TOML/Properties), docs (Markdown/TeX/Text),
+      # graphics (SVG), and notebooks so "Others" reflects real source code only.
+      IGNORE_LANGS: "Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,TOML,Properties,YAML,JSON,XML,CSV,Markdown,Text,SVG,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook"
 
     steps:
       - name: Checkout Code
@@ -85,30 +86,37 @@ jobs:
           TOTAL_LINES=$(jq '.SUM.code // 0' output/cloc-output.json)
 
           OTHER_LINES=0
-          MAX_LINES=0
+          OTHER_COMMENT=0
+          MAX_TOTAL=0
 
           # Parallel arrays preserve cloc's ordering for the second (render) pass.
           LANG_NAMES=()
           LANG_LINES=()
+          LANG_COMMENT=()
 
-          # Normalize the highlight list for exact, comma-bounded matching (no false partial matches)
-          HL=",$(echo "$HIGHLIGHT_LANGS" | tr -d ' '),"
+          # Normalize the highlight list for exact, comma-bounded matching (no false partial matches).
+          # Only strip spaces around commas — preserves spaces inside multi-word cloc categories like "Vuejs Component".
+          HL=",$(echo "$HIGHLIGHT_LANGS" | sed 's/^ *//;s/ *$//;s/ *, */,/g'),"
 
           while read -r entry; do
             LANG=$(echo "$entry" | jq -r '.lang')
             LINES=$(echo "$entry" | jq -r '.lines')
+            COMMENT=$(echo "$entry" | jq -r '.comment')
 
             if [[ "$HL" == *",$LANG,"* ]]; then
               LANG_NAMES+=("$LANG")
               LANG_LINES+=("$LINES")
-              if (( LINES > MAX_LINES )); then MAX_LINES=$LINES; fi
+              LANG_COMMENT+=("$COMMENT")
+              TOTAL=$((LINES + COMMENT))
+              if (( TOTAL > MAX_TOTAL )); then MAX_TOTAL=$TOTAL; fi
             else
               OTHER_LINES=$((OTHER_LINES + LINES))
+              OTHER_COMMENT=$((OTHER_COMMENT + COMMENT))
             fi
           done < <(
             jq -c 'to_entries
               | map(select(.key != "header" and .key != "SUM"))
-              | map({lang: .key, lines: .value.code})
+              | map({lang: .key, lines: .value.code, comment: .value.comment})
               | map(select(.lines > 0))
               | .[]' output/cloc-output.json
           )
@@ -117,24 +125,35 @@ jobs:
           if [[ $OTHER_LINES -gt 0 ]]; then
             LANG_NAMES+=("Others")
             LANG_LINES+=("$OTHER_LINES")
-            if (( OTHER_LINES > MAX_LINES )); then MAX_LINES=$OTHER_LINES; fi
+            LANG_COMMENT+=("$OTHER_COMMENT")
+            TOTAL=$((OTHER_LINES + OTHER_COMMENT))
+            if (( TOTAL > MAX_TOTAL )); then MAX_TOTAL=$TOTAL; fi
           fi
 
-          # Render each row as: <name col>  <bar>  <right-aligned formatted count>
-          # Bar width is fixed at 40; filled portion scales linearly against MAX_LINES.
+          # Render each row as: <name col>  <bar>  <right-aligned formatted code count>.
+          # The bar is split into █ (code), ▓ (comments), and ░ (track), scaled
+          # against MAX_TOTAL (max of code+comment across all rows). This means a
+          # heavily-commented language reads as a longer total bar with a visible
+          # ▓ segment past its █ portion.
           BAR_WIDTH=40
           FORMATTED_BREAKDOWN=""
-          if (( MAX_LINES > 0 )); then
+          if (( MAX_TOTAL > 0 )); then
             for i in "${!LANG_NAMES[@]}"; do
               LANG="${LANG_NAMES[$i]}"
               LINES="${LANG_LINES[$i]}"
-              FILLED=$(awk -v n="$LINES" -v m="$MAX_LINES" -v w="$BAR_WIDTH" 'BEGIN{ printf "%d", (n*w/m)+0.5 }')
-              BAR=$(awk -v f="$FILLED" -v w="$BAR_WIDTH" 'BEGIN{
-                for(i=0;i<f;i++) printf "█";
-                for(i=f;i<w;i++) printf "░";
+              COMMENT="${LANG_COMMENT[$i]}"
+              TOTAL=$((LINES + COMMENT))
+              CODE_CHARS=$(awk -v n="$LINES" -v m="$MAX_TOTAL" -v w="$BAR_WIDTH" 'BEGIN{ printf "%d", (n*w/m)+0.5 }')
+              TOTAL_CHARS=$(awk -v n="$TOTAL" -v m="$MAX_TOTAL" -v w="$BAR_WIDTH" 'BEGIN{ printf "%d", (n*w/m)+0.5 }')
+              COMMENT_CHARS=$((TOTAL_CHARS - CODE_CHARS))
+              if (( COMMENT_CHARS < 0 )); then COMMENT_CHARS=0; fi
+              BAR=$(awk -v c="$CODE_CHARS" -v m="$COMMENT_CHARS" -v w="$BAR_WIDTH" 'BEGIN{
+                for(i=0;i<c;i++) printf "█";
+                for(i=0;i<m;i++) printf "▓";
+                for(i=c+m;i<w;i++) printf "░";
               }')
               FORMATTED=$(format_number "$LINES")
-              FORMATTED_BREAKDOWN+=$(printf "%-12s %s   %9s" "$LANG" "$BAR" "$FORMATTED")$'\n'
+              FORMATTED_BREAKDOWN+=$(printf "%-15s %s   %9s" "$LANG" "$BAR" "$FORMATTED")$'\n'
             done
           fi
 
@@ -146,6 +165,8 @@ jobs:
           # sentinels, so static content (e.g. the [ ABOUT ] section) stays
           # untouched in README.md.
           CODE_BLOCK="
+          Legend: █ code   ▓ comments   ░ unfilled
+
           $FORMATTED_BREAKDOWN
           [ TOTAL LINES OF CODE: $FORMATTED_TOTAL ]"
 
