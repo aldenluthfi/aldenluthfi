@@ -16,8 +16,10 @@ jobs:
       # HIGHLIGHT_LANGS: show these languages individually; everything else goes to "Others"
       HIGHLIGHT_LANGS: "C,C++,Java,Lua,Python,Rust,TypeScript"
 
-      # IGNORE_LANGS: drop these languages entirely (not shown and not counted)
-      IGNORE_LANGS: "Makefile"
+      # IGNORE_LANGS: drop these languages entirely (not shown and not counted).
+      # Filters out build systems, config formats, templates, editor-generated
+      # files, docs, and notebooks so "Others" reflects real source code only.
+      IGNORE_LANGS: "Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook"
 
     steps:
       - name: Checkout Code
@@ -83,7 +85,11 @@ jobs:
           TOTAL_LINES=$(jq '.SUM.code // 0' output/cloc-output.json)
 
           OTHER_LINES=0
-          FORMATTED_BREAKDOWN=""
+          MAX_LINES=0
+
+          # Parallel arrays preserve cloc's ordering for the second (render) pass.
+          LANG_NAMES=()
+          LANG_LINES=()
 
           # Normalize the highlight list for exact, comma-bounded matching (no false partial matches)
           HL=",$(echo "$HIGHLIGHT_LANGS" | tr -d ' '),"
@@ -93,8 +99,9 @@ jobs:
             LINES=$(echo "$entry" | jq -r '.lines')
 
             if [[ "$HL" == *",$LANG,"* ]]; then
-              FORMATTED=$(format_number "$LINES")
-              FORMATTED_BREAKDOWN+=$(printf "%-12s --> %s lines\n" "$LANG" "$FORMATTED")$'\n'
+              LANG_NAMES+=("$LANG")
+              LANG_LINES+=("$LINES")
+              if (( LINES > MAX_LINES )); then MAX_LINES=$LINES; fi
             else
               OTHER_LINES=$((OTHER_LINES + LINES))
             fi
@@ -108,8 +115,27 @@ jobs:
 
           # "Others" includes all non-highlighted languages that cloc reported (after --exclude-lang); excluded ones never reach here
           if [[ $OTHER_LINES -gt 0 ]]; then
-            FORMATTED_OTHER=$(format_number "$OTHER_LINES")
-            FORMATTED_BREAKDOWN+=$(printf "%-12s --> %s lines\n" "Others" "$FORMATTED_OTHER")$'\n'
+            LANG_NAMES+=("Others")
+            LANG_LINES+=("$OTHER_LINES")
+            if (( OTHER_LINES > MAX_LINES )); then MAX_LINES=$OTHER_LINES; fi
+          fi
+
+          # Render each row as: <name col>  <bar>  <right-aligned formatted count>
+          # Bar width is fixed at 40; filled portion scales linearly against MAX_LINES.
+          BAR_WIDTH=40
+          FORMATTED_BREAKDOWN=""
+          if (( MAX_LINES > 0 )); then
+            for i in "${!LANG_NAMES[@]}"; do
+              LANG="${LANG_NAMES[$i]}"
+              LINES="${LANG_LINES[$i]}"
+              FILLED=$(awk -v n="$LINES" -v m="$MAX_LINES" -v w="$BAR_WIDTH" 'BEGIN{ printf "%d", (n*w/m)+0.5 }')
+              BAR=$(awk -v f="$FILLED" -v w="$BAR_WIDTH" 'BEGIN{
+                for(i=0;i<f;i++) printf "█";
+                for(i=f;i<w;i++) printf "░";
+              }')
+              FORMATTED=$(format_number "$LINES")
+              FORMATTED_BREAKDOWN+=$(printf "%-12s %s   %9s" "$LANG" "$BAR" "$FORMATTED")$'\n'
+            done
           fi
 
           # Format total ONCE (do not overwrite later)

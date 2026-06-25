@@ -1,9 +1,0 @@
-[submodule "kuliahluthfi"]
-	path = kuliahluthfi
-	url = https://github.com/aldenluthfi/kuliahluthfi
-[submodule "situsluthfi"]
-	path = situsluthfi
-	url = https://github.com/aldenluthfi/situsluthfi
-[submodule "susunluthfi"]
-	path = susunluthfi
-	url = https://github.com/aldenluthfi/susunluthfi

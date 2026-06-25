@@ -7,20 +7,41 @@
 ```
 [ ABOUT ]
 
-Name      --> Upi
+Name      --> Upi (Alden Luthfi)
 Role      --> Computer Science Student
 School    --> Universitas Indonesia
+Focus     --> Algorithms, games, dev tooling, and the occasional chess engine
+
+[ FEATURED PROJECTS ]
+
+kuliahluthfi  --> Centralized archive of my CS journey at Universitas Indonesia
+situsluthfi   --> Personal portfolio site (React + Express + Elasticsearch)
+anekamacam    --> Chess variant engine with a custom notation pipeline (Rust)
+voronoi       --> Interactive Voronoi & Delaunay visualizer in PyGame
+susunluthfi   --> Cross-platform dotfiles for Linux, macOS, and Windows
+malpolys      --> Math-themed tower defense built in Godot
+
+[ TECH STACK ]
+
+Languages    --> Python, TypeScript, Java, Rust, C/C++, GDScript, Lua
+Frameworks   --> React, Vue, Express, Godot, PyGame
+Tools        --> Git, Docker, GNU Stow, Linux / macOS / Windows
+
+[ CONTACT ]
+
+Email        --> aldenluthfi@gmail.com
 
 [ LANGUAGES BREAKDOWN ]
 
-Python       --> 71,248 lines
-TypeScript   --> 37,927 lines
-Java         --> 31,456 lines
-Rust         --> 16,597 lines
-C            --> 1,871 lines
-C++          --> 1,748 lines
-Lua          --> 1,058 lines
-Others       --> 642,491 lines
+=======
+Python       █████████████████████████████████░░░░░░░      69,815
+TypeScript   ██████████████████░░░░░░░░░░░░░░░░░░░░░░      37,890
+Java         ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░      31,456
+Rust         ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░      16,597
+C            █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       1,754
+C++          █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       1,748
+Lua          █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░       1,058
+Others       ████████████████████████████████████████      83,893
 
-[ TOTAL LINES OF CODE: 804,396 ]
+[ TOTAL LINES OF CODE: 244,211 ]
 ```
