@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 5.13830494880676,
-  "n_files"            : 5079,
-  "n_lines"            : 979949,
-  "files_per_second"   : 988.458266023986,
-  "lines_per_second"   : 190714.449563288,
+  "elapsed_seconds"    : 4.23370885848999,
+  "n_files"            : 4498,
+  "n_lines"            : 874195,
+  "files_per_second"   : 1062.42544075274,
+  "lines_per_second"   : 206484.439346118,
   "report_file"        : "../output/cloc-output.json"},
 "JSON" :{
   "nFiles": 183,
@@ -19,19 +19,19 @@
   "code": 103030},
 "Markdown" :{
   "nFiles": 547,
-  "blank": 26567,
+  "blank": 26573,
   "comment": 19,
-  "code": 89867},
+  "code": 89882},
 "Python" :{
   "nFiles": 800,
   "blank": 14165,
   "comment": 5960,
   "code": 71248},
 "SVG" :{
-  "nFiles": 183,
+  "nFiles": 184,
   "blank": 4419,
   "comment": 39,
-  "code": 45061},
+  "code": 45062},
 "CSS" :{
   "nFiles": 70,
   "blank": 8157,
@@ -58,30 +58,15 @@
   "comment": 84,
   "code": 22329},
 "GDScript" :{
-  "nFiles": 321,
-  "blank": 8571,
+  "nFiles": 323,
+  "blank": 8600,
   "comment": 3418,
-  "code": 21957},
-"Godot Scene" :{
-  "nFiles": 163,
-  "blank": 2773,
-  "comment": 0,
-  "code": 17262},
+  "code": 22081},
 "Rust" :{
   "nFiles": 76,
   "blank": 3035,
   "comment": 2340,
   "code": 16597},
-"TeX" :{
-  "nFiles": 85,
-  "blank": 2271,
-  "comment": 2950,
-  "code": 15466},
-"Jupyter Notebook" :{
-  "nFiles": 24,
-  "blank": 0,
-  "comment": 39221,
-  "code": 15154},
 "Vuejs Component" :{
   "nFiles": 166,
   "blank": 1377,
@@ -94,9 +79,9 @@
   "code": 14392},
 "YAML" :{
   "nFiles": 168,
-  "blank": 2954,
-  "comment": 1475,
-  "code": 14103},
+  "blank": 2956,
+  "comment": 1480,
+  "code": 14122},
 "Text" :{
   "nFiles": 171,
   "blank": 163,
@@ -132,21 +117,6 @@
   "blank": 434,
   "comment": 91,
   "code": 1748},
-"FXML" :{
-  "nFiles": 23,
-  "blank": 52,
-  "comment": 0,
-  "code": 1357},
-"Bourne Shell" :{
-  "nFiles": 61,
-  "blank": 325,
-  "comment": 430,
-  "code": 1298},
-"Dockerfile" :{
-  "nFiles": 89,
-  "blank": 587,
-  "comment": 165,
-  "code": 1195},
 "Lua" :{
   "nFiles": 2,
   "blank": 138,
@@ -157,36 +127,16 @@
   "blank": 378,
   "comment": 113,
   "code": 1020},
-"Godot Resource" :{
-  "nFiles": 40,
-  "blank": 113,
-  "comment": 0,
-  "code": 867},
-"Gradle" :{
-  "nFiles": 39,
-  "blank": 157,
-  "comment": 26,
-  "code": 804},
 "C/C++ Header" :{
   "nFiles": 14,
   "blank": 224,
   "comment": 493,
   "code": 747},
-"CMake" :{
-  "nFiles": 12,
-  "blank": 178,
-  "comment": 247,
-  "code": 685},
 "Solidity" :{
   "nFiles": 19,
   "blank": 170,
   "comment": 412,
   "code": 656},
-"DOS Batch" :{
-  "nFiles": 7,
-  "blank": 162,
-  "comment": 12,
-  "code": 580},
 "TOML" :{
   "nFiles": 25,
   "blank": 56,
@@ -202,83 +152,28 @@
   "blank": 115,
   "comment": 176,
   "code": 261},
-"INI" :{
-  "nFiles": 4,
-  "blank": 55,
-  "comment": 0,
-  "code": 224},
-"Windows Resource File" :{
-  "nFiles": 3,
-  "blank": 69,
-  "comment": 87,
-  "code": 207},
-"EJS" :{
-  "nFiles": 2,
-  "blank": 16,
-  "comment": 0,
-  "code": 186},
-"Maven" :{
-  "nFiles": 3,
-  "blank": 8,
-  "comment": 2,
-  "code": 159},
-"Godot Shaders" :{
-  "nFiles": 8,
-  "blank": 43,
-  "comment": 16,
-  "code": 146},
 "Properties" :{
   "nFiles": 20,
   "blank": 34,
   "comment": 14,
   "code": 137},
-"make" :{
-  "nFiles": 10,
-  "blank": 34,
-  "comment": 18,
-  "code": 99},
-"Bourne Again Shell" :{
-  "nFiles": 6,
-  "blank": 20,
-  "comment": 9,
-  "code": 69},
-"PowerShell" :{
-  "nFiles": 2,
-  "blank": 16,
-  "comment": 0,
-  "code": 49},
 "Haskell" :{
   "nFiles": 2,
   "blank": 12,
   "comment": 14,
   "code": 38},
-"Protocol Buffers" :{
-  "nFiles": 1,
-  "blank": 9,
-  "comment": 0,
-  "code": 31},
-"Nunjucks" :{
-  "nFiles": 1,
-  "blank": 0,
-  "comment": 0,
-  "code": 22},
 "Cairo" :{
   "nFiles": 2,
   "blank": 12,
   "comment": 0,
   "code": 20},
-"Mako" :{
-  "nFiles": 1,
-  "blank": 7,
-  "comment": 0,
-  "code": 17},
 "Kotlin" :{
   "nFiles": 3,
   "blank": 6,
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 101272,
-  "comment": 74281,
-  "code": 804396,
-  "nFiles": 5079} }
+  "blank": 94414,
+  "comment": 31103,
+  "code": 748678,
+  "nFiles": 4498} }
