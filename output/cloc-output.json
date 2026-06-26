@@ -1,27 +1,27 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 3.14597105979919,
-  "n_files"            : 3108,
-  "n_lines"            : 408333,
-  "files_per_second"   : 987.930257755894,
-  "lines_per_second"   : 129795.536016807,
+  "elapsed_seconds"    : 2.58700609207153,
+  "n_files"            : 3107,
+  "n_lines"            : 419095,
+  "files_per_second"   : 1201.00219691098,
+  "lines_per_second"   : 162000.005057743,
   "report_file"        : "../output/cloc-output.json"},
 "Python" :{
   "nFiles": 800,
   "blank": 14165,
   "comment": 5960,
   "code": 71248},
+"TypeScript" :{
+  "nFiles": 397,
+  "blank": 4190,
+  "comment": 472,
+  "code": 48518},
 "CSS" :{
   "nFiles": 70,
   "blank": 8157,
   "comment": 1219,
   "code": 42995},
-"TypeScript" :{
-  "nFiles": 398,
-  "blank": 4195,
-  "comment": 472,
-  "code": 37927},
 "Java" :{
   "nFiles": 392,
   "blank": 6829,
@@ -39,9 +39,9 @@
   "code": 22329},
 "GDScript" :{
   "nFiles": 323,
-  "blank": 8600,
-  "comment": 3418,
-  "code": 22081},
+  "blank": 8627,
+  "comment": 3431,
+  "code": 22192},
 "Rust" :{
   "nFiles": 76,
   "blank": 3035,
@@ -94,9 +94,9 @@
   "code": 1020},
 "C/C++ Header" :{
   "nFiles": 14,
-  "blank": 224,
-  "comment": 493,
-  "code": 747},
+  "blank": 229,
+  "comment": 506,
+  "code": 760},
 "Solidity" :{
   "nFiles": 19,
   "blank": 170,
@@ -109,9 +109,9 @@
   "code": 296},
 "SQL" :{
   "nFiles": 8,
-  "blank": 115,
+  "blank": 114,
   "comment": 176,
-  "code": 261},
+  "code": 256},
 "Haskell" :{
   "nFiles": 2,
   "blank": 12,
@@ -128,7 +128,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 60154,
-  "comment": 29443,
-  "code": 318736,
-  "nFiles": 3108} }
+  "blank": 60180,
+  "comment": 29469,
+  "code": 329446,
+  "nFiles": 3107} }
