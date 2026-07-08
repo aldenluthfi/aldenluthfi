@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 3.26093006134033,
+  "elapsed_seconds"    : 3.12719392776489,
   "n_files"            : 3117,
-  "n_lines"            : 425839,
-  "files_per_second"   : 955.862266705232,
-  "lines_per_second"   : 130588.203975454,
+  "n_lines"            : 426267,
+  "files_per_second"   : 996.740231658042,
+  "lines_per_second"   : 136309.742806602,
   "report_file"        : "../output/cloc-output.json"},
 "Python" :{
   "nFiles": 800,
@@ -44,9 +44,9 @@
   "code": 22329},
 "Rust" :{
   "nFiles": 79,
-  "blank": 3406,
-  "comment": 6131,
-  "code": 18591},
+  "blank": 3447,
+  "comment": 6211,
+  "code": 18898},
 "Vuejs Component" :{
   "nFiles": 166,
   "blank": 1377,
@@ -128,7 +128,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 60658,
-  "comment": 33302,
-  "code": 331879,
+  "blank": 60699,
+  "comment": 33382,
+  "code": 332186,
   "nFiles": 3117} }
