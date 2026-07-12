@@ -20,7 +20,7 @@ jobs:
       # Filters out build systems, config formats, templates, editor-generated
       # files, data formats (JSON/CSV/XML/YAML/TOML/Properties), docs (Markdown/TeX/Text),
       # graphics (SVG), and notebooks so "Others" reflects real source code only.
-      IGNORE_LANGS: "HTML,SCSS,Vuejs Component,JavaScript,GDScript,Dart,CSS,Lua,Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,TOML,Properties,YAML,JSON,XML,CSV,Markdown,Text,SVG,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook"
+      IGNORE_LANGS: "HTML,SCSS,Vuejs Component,JavaScript,GDScript,Dart,CSS,Lua,Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,TOML,Properties,YAML,JSON,XML,CSV,Markdown,Text,SVG,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook,Solidity,C/C++ Header,PHP,SQL,Haskell"
 
     steps:
       - name: Checkout Code
