@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 3.23698091506958,
-  "n_files"            : 3126,
-  "n_lines"            : 429362,
-  "files_per_second"   : 965.714683533377,
-  "lines_per_second"   : 132642.734469372,
+  "elapsed_seconds"    : 2.56473112106323,
+  "n_files"            : 1947,
+  "n_lines"            : 244545,
+  "files_per_second"   : 759.14390557746,
+  "lines_per_second"   : 95349.1763684848,
   "report_file"        : "../output/cloc-output.json"},
 "Python" :{
   "nFiles": 802,
@@ -17,46 +17,16 @@
   "blank": 4237,
   "comment": 500,
   "code": 48743},
-"CSS" :{
-  "nFiles": 70,
-  "blank": 8157,
-  "comment": 1219,
-  "code": 42995},
 "Java" :{
   "nFiles": 392,
   "blank": 6829,
   "comment": 2731,
   "code": 31456},
-"JavaScript" :{
-  "nFiles": 256,
-  "blank": 5858,
-  "comment": 9589,
-  "code": 26701},
-"GDScript" :{
-  "nFiles": 329,
-  "blank": 8689,
-  "comment": 3445,
-  "code": 22459},
-"HTML" :{
-  "nFiles": 272,
-  "blank": 2154,
-  "comment": 84,
-  "code": 22329},
 "Rust" :{
   "nFiles": 79,
   "blank": 3583,
   "comment": 6501,
   "code": 19432},
-"Vuejs Component" :{
-  "nFiles": 167,
-  "blank": 1408,
-  "comment": 225,
-  "code": 14846},
-"SCSS" :{
-  "nFiles": 47,
-  "blank": 1811,
-  "comment": 849,
-  "code": 9386},
 "Swift" :{
   "nFiles": 93,
   "blank": 1091,
@@ -67,26 +37,16 @@
   "blank": 761,
   "comment": 483,
   "code": 5740},
-"Dart" :{
-  "nFiles": 50,
-  "blank": 397,
-  "comment": 144,
-  "code": 4983},
 "C" :{
-  "nFiles": 25,
-  "blank": 384,
-  "comment": 129,
-  "code": 1871},
+  "nFiles": 39,
+  "blank": 936,
+  "comment": 1574,
+  "code": 3589},
 "C++" :{
   "nFiles": 26,
   "blank": 434,
   "comment": 91,
   "code": 1748},
-"Lua" :{
-  "nFiles": 2,
-  "blank": 138,
-  "comment": 42,
-  "code": 1058},
 "Assembly" :{
   "nFiles": 13,
   "blank": 378,
@@ -94,9 +54,9 @@
   "code": 1020},
 "C/C++ Header" :{
   "nFiles": 14,
-  "blank": 229,
-  "comment": 506,
-  "code": 760},
+  "blank": 293,
+  "comment": 694,
+  "code": 942},
 "Solidity" :{
   "nFiles": 19,
   "blank": 170,
@@ -128,7 +88,7 @@
   "comment": 0,
   "code": 12},
 "SUM": {
-  "blank": 61123,
-  "comment": 33764,
-  "code": 334475,
-  "nFiles": 3126} }
+  "blank": 33127,
+  "comment": 19800,
+  "code": 191618,
+  "nFiles": 1947} }
