@@ -14,13 +14,13 @@ jobs:
     env:
       # Check cloc docs for supported languages and exact names (e.g., "Vuejs Component", "C#")
       # HIGHLIGHT_LANGS: show these languages individually; everything else goes to "Others"
-      HIGHLIGHT_LANGS: "Assembly,C,C++,CSS,Dart,GDScript,Go,HTML,Java,JavaScript,Lua,Python,Rust,SCSS,Swift,TypeScript,Vuejs Component"
+      HIGHLIGHT_LANGS: "Assembly,C,C++,Go,Java,Python,Rust,Swift,TypeScript"
 
       # IGNORE_LANGS: drop these languages entirely (not shown and not counted).
       # Filters out build systems, config formats, templates, editor-generated
       # files, data formats (JSON/CSV/XML/YAML/TOML/Properties), docs (Markdown/TeX/Text),
       # graphics (SVG), and notebooks so "Others" reflects real source code only.
-      IGNORE_LANGS: "Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,TOML,Properties,YAML,JSON,XML,CSV,Markdown,Text,SVG,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook"
+      IGNORE_LANGS: "HTML,SCSS,Vuejs Component,JavaScript,GDScript,Dart,CSS,Lua,Makefile,make,Gradle,CMake,Maven,Dockerfile,DOS Batch,Bourne Shell,Bourne Again Shell,PowerShell,Windows Resource File,INI,TOML,Properties,YAML,JSON,XML,CSV,Markdown,Text,SVG,Godot Scene,Godot Resource,Godot Shaders,FXML,EJS,Nunjucks,Mako,Protocol Buffers,TeX,Jupyter Notebook"
 
     steps:
       - name: Checkout Code
