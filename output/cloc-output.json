@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "1.98",
-  "elapsed_seconds"    : 1.35415506362915,
-  "n_files"            : 1360,
-  "n_lines"            : 197995,
-  "files_per_second"   : 1004.31629768838,
-  "lines_per_second"   : 146212.945118243,
+  "elapsed_seconds"    : 1.00894808769226,
+  "n_files"            : 1410,
+  "n_lines"            : 204892,
+  "files_per_second"   : 1397.49509137289,
+  "lines_per_second"   : 203074.86827062,
   "report_file"        : "../output/cloc-output.json"},
 "TypeScript" :{
   "nFiles": 288,
@@ -24,19 +24,19 @@
   "code": 25813},
 "Rust" :{
   "nFiles": 82,
-  "blank": 4259,
-  "comment": 12214,
-  "code": 23077},
+  "blank": 4315,
+  "comment": 12381,
+  "code": 23442},
 "Swift" :{
   "nFiles": 169,
   "blank": 2254,
   "comment": 1665,
   "code": 14415},
 "Unity-Prefab" :{
-  "nFiles": 9,
+  "nFiles": 22,
   "blank": 1,
   "comment": 0,
-  "code": 6061},
+  "code": 7946},
 "Go" :{
   "nFiles": 40,
   "blank": 657,
@@ -47,11 +47,16 @@
   "blank": 1134,
   "comment": 134,
   "code": 4388},
+"XSD" :{
+  "nFiles": 35,
+  "blank": 0,
+  "comment": 0,
+  "code": 4376},
 "C#" :{
-  "nFiles": 44,
-  "blank": 687,
+  "nFiles": 45,
+  "blank": 697,
   "comment": 159,
-  "code": 2979},
+  "code": 3016},
 "C++" :{
   "nFiles": 27,
   "blank": 436,
@@ -67,8 +72,13 @@
   "blank": 178,
   "comment": 247,
   "code": 579},
+"Titanium Style Sheet" :{
+  "nFiles": 1,
+  "blank": 0,
+  "comment": 0,
+  "code": 1},
 "SUM": {
-  "blank": 25095,
-  "comment": 20784,
-  "code": 152116,
-  "nFiles": 1360} }
+  "blank": 25161,
+  "comment": 20951,
+  "code": 158780,
+  "nFiles": 1410} }
