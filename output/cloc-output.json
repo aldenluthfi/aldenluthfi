@@ -1,11 +1,11 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "2.06",
-  "elapsed_seconds"    : 2.44378876686096,
+  "elapsed_seconds"    : 2.50730013847351,
   "n_files"            : 1648,
   "n_lines"            : 608170,
-  "files_per_second"   : 674.362703662334,
-  "lines_per_second"   : 248863.571290244,
+  "files_per_second"   : 657.280703938114,
+  "lines_per_second"   : 242559.712205123,
   "report_file"        : "../output/cloc-output.json"},
 "Unity-Prefab" :{
   "nFiles": 153,
