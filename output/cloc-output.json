@@ -1,17 +1,17 @@
 {"header" : {
   "cloc_url"           : "github.com/AlDanial/cloc",
   "cloc_version"       : "2.06",
-  "elapsed_seconds"    : 2.0104238986969,
-  "n_files"            : 1648,
-  "n_lines"            : 608170,
-  "files_per_second"   : 819.727621158994,
-  "lines_per_second"   : 302508.341844821,
+  "elapsed_seconds"    : 2.64232611656189,
+  "n_files"            : 1752,
+  "n_lines"            : 623336,
+  "files_per_second"   : 663.052145236201,
+  "lines_per_second"   : 235904.264841868,
   "report_file"        : "../output/cloc-output.json"},
 "Unity-Prefab" :{
-  "nFiles": 153,
+  "nFiles": 245,
   "blank": 2,
   "comment": 0,
-  "code": 390383},
+  "code": 403199},
 "TypeScript" :{
   "nFiles": 291,
   "blank": 2971,
@@ -33,10 +33,10 @@
   "comment": 12623,
   "code": 23807},
 "C#" :{
-  "nFiles": 144,
-  "blank": 2692,
-  "comment": 966,
-  "code": 15420},
+  "nFiles": 156,
+  "blank": 2941,
+  "comment": 1583,
+  "code": 16904},
 "Swift" :{
   "nFiles": 169,
   "blank": 2254,
@@ -73,7 +73,7 @@
   "comment": 247,
   "code": 579},
 "SUM": {
-  "blank": 28064,
-  "comment": 22235,
-  "code": 557871,
-  "nFiles": 1648} }
+  "blank": 28313,
+  "comment": 22852,
+  "code": 572171,
+  "nFiles": 1752} }
